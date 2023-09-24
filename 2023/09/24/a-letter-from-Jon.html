@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Twitter link descriptions -->
+  
+  <meta name="twitter:title" content="a letter from Jon">
+  
+  
+  <meta name="twitter:image" content="https://samuelhzx.github.io/avatar.jpg">
+  
+  <!-- Use KaTeX instead of MathJax for faster generation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/assets/css/equations.css"/>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+            // customised options
+            // • auto-render specific keys, e.g.:
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            // • rendering keys, e.g.:
+            throwOnError : false
+          });
+      });
+      $(window).on("load resize",function(){
+        $(".katex-display").each(function(i,elem){
+          var ts=$(elem).find(".tag");
+          var eqns=$(elem).find(".base");
+          if(ts.length*eqns.length==0)
+            return;
+          var t=ts[0];
+          if(eqns[eqns.length-1].getBoundingClientRect().right>t.getBoundingClientRect().left){
+            t.classList.add("tag-overflowed");
+          }else if(eqns[0].getBoundingClientRect().left-elem.getBoundingClientRect().left>=t.offsetWidth/2){
+            t.classList.remove("tag-overflowed");
+          }
+        });
+      });
+  </script>
+  <!--<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      showMathMenu: false,
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>--><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>a letter from Jon | Home</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="a letter from Jon" />
+<meta name="author" content="Mathphile" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I saw your name in Penfriends magazine, and I would like to be your penfriend. First, I will tell you something about myself. My name is Jonathan Chen. You can call me Jon. I am twelve years old, and I am about one and a half metres tall. I have very short black hair. My hobby is playing chess. I live with my parents in the UK. They are from Shanghai. We live in a small house. My dad owns a Chinese restaurant nearby and my mum works in a college. I have a brother. His name is Willie. He is at university in London. He is studying to be an accountant. He comes back home during the holidays. How many people are there in your family? What do they do? I am in Year 7 at Walker School. It is near my house, and I can walk to school. I like my School because the teachers are very friendly. I am keen on sports. I enjoy sking and playing table tennis. My best subject is Physics. My ambition is to be an architect, or maybe an engineer. I enclosed a photo of myself and some of my school friends. I am in the middle. I also enclosed a photo of our school. It is beautiful, isn’t it? I hope you will write to me soon and tell me all about yourself." />
+<meta property="og:description" content="I saw your name in Penfriends magazine, and I would like to be your penfriend. First, I will tell you something about myself. My name is Jonathan Chen. You can call me Jon. I am twelve years old, and I am about one and a half metres tall. I have very short black hair. My hobby is playing chess. I live with my parents in the UK. They are from Shanghai. We live in a small house. My dad owns a Chinese restaurant nearby and my mum works in a college. I have a brother. His name is Willie. He is at university in London. He is studying to be an accountant. He comes back home during the holidays. How many people are there in your family? What do they do? I am in Year 7 at Walker School. It is near my house, and I can walk to school. I like my School because the teachers are very friendly. I am keen on sports. I enjoy sking and playing table tennis. My best subject is Physics. My ambition is to be an architect, or maybe an engineer. I enclosed a photo of myself and some of my school friends. I am in the middle. I also enclosed a photo of our school. It is beautiful, isn’t it? I hope you will write to me soon and tell me all about yourself." />
+<link rel="canonical" href="https://samuelhzx.github.io/2023/09/24/a-letter-from-Jon.html" />
+<meta property="og:url" content="https://samuelhzx.github.io/2023/09/24/a-letter-from-Jon.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-09-24T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="a letter from Jon" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Mathphile"},"dateModified":"2023-09-24T00:00:00+08:00","datePublished":"2023-09-24T00:00:00+08:00","description":"I saw your name in Penfriends magazine, and I would like to be your penfriend. First, I will tell you something about myself. My name is Jonathan Chen. You can call me Jon. I am twelve years old, and I am about one and a half metres tall. I have very short black hair. My hobby is playing chess. I live with my parents in the UK. They are from Shanghai. We live in a small house. My dad owns a Chinese restaurant nearby and my mum works in a college. I have a brother. His name is Willie. He is at university in London. He is studying to be an accountant. He comes back home during the holidays. How many people are there in your family? What do they do? I am in Year 7 at Walker School. It is near my house, and I can walk to school. I like my School because the teachers are very friendly. I am keen on sports. I enjoy sking and playing table tennis. My best subject is Physics. My ambition is to be an architect, or maybe an engineer. I enclosed a photo of myself and some of my school friends. I am in the middle. I also enclosed a photo of our school. It is beautiful, isn’t it? I hope you will write to me soon and tell me all about yourself.","headline":"a letter from Jon","mainEntityOfPage":{"@type":"WebPage","@id":"https://samuelhzx.github.io/2023/09/24/a-letter-from-Jon.html"},"url":"https://samuelhzx.github.io/2023/09/24/a-letter-from-Jon.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/css/navbar.css"><link type="application/atom+xml" rel="alternate" href="https://samuelhzx.github.io/feed.xml" title="Home" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Home</a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger"><a class="page-link" href="/blogs/">Blogs</a></div>
+    </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <link rel="stylesheet" href="/assets/css/tag.css"/>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">a letter from Jon</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2023-09-24T00:00:00+08:00" itemprop="datePublished">Sep 24, 2023
+      </time></p>
+
+      
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I saw your name in Penfriends magazine, and I would like to be your penfriend. First, I will tell you something about myself. My name is Jonathan Chen. You can call me Jon. I am twelve years old, and I am about one and a half metres tall. I have very short black hair. My hobby is playing chess.<br />
+I live with my parents in the UK. They are from Shanghai. We live in a small house. My dad owns a Chinese restaurant nearby and my mum works in a college. I have a brother. His name is Willie. He is at university in London. He is studying to be an accountant. He comes back home during the holidays. How many people are there in your family? What do they do?<br />
+I am in Year 7 at Walker School. It is near my house, and I can walk to school. I like my School because the teachers are very friendly. I am keen on sports. I enjoy sking and playing table tennis. My best subject is Physics. My ambition is to be an architect, or maybe an engineer.<br />
+I enclosed a photo of myself and some of my school friends. I am in the middle. I also enclosed a photo of our school. It is beautiful, isn’t it? I hope you will write to me soon and tell me all about yourself.</p>
+
+  </div>
+
+  <!-- giscus comment
+  <div class="giscus">
+    <p style="color:red">[Failed to load comment section]</p>
+  </div>--><a class="u-url" href="/2023/09/24/a-letter-from-Jon.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Home</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Mathphile</li><li><a class="u-email" href="mailto:203931929@qq.com">203931929@qq.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Samuelhzx"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Samuelhzx</span></a></li><li><a href="https://www.twitter.com/Samuelhzx"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">Samuelhzx</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Mathphile&#39;s personal blog </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
