@@ -1,9 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-09-30T23:48:54+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>Samuelhzx</name></author><entry><title type="html">修改Couchy-Goursat定理的证明</title><link href="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Couchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-10-17T22:15:31+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>Samuelhzx</name></author><entry><title type="html">形式幂级数与一元方程的系数</title><link href="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html" rel="alternate" type="text/html" title="形式幂级数与一元方程的系数" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html"><![CDATA[<p>先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。</p>
+
+<p>最近在学一元二次方程，就经常遇到这种题。当然可以拆括号整理来算，但我注意到这里的x并不是一个很重要的东西，而更像一个形式，这让我想起来了形式幂级数。如果我们把 $ax^2+bx+c$ 写作 $\begin{bmatrix}
+a<br />
+b<br />
+c
+\end{bmatrix}$ , 把 $bx+c$ 写作 $\begin{bmatrix}
+b<br />
+c
+\end{bmatrix}$ 的话，那么题目里的式子就可以写成</p>
+
+\[\begin{bmatrix}
+
+1\\
+2
+\end{bmatrix}
+\begin{bmatrix}
+
+-2\\
+5
+\end{bmatrix}
+-
+\begin{bmatrix}
+1\\
+0\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+
+0\\
+1
+\end{bmatrix}
++
+\begin{bmatrix}
+
+2\\
+0
+\end{bmatrix}
+\begin{bmatrix}
+
+-3\\
+2
+\end{bmatrix}\]
+
+<p>容易发现</p>
+
+\[\begin{bmatrix}
+a\\
+b
+\end{bmatrix}\begin{bmatrix}
+c\\
+d
+\end{bmatrix}
+=
+\begin{bmatrix}
+ac\\
+ad+bc\\
+bd
+\end{bmatrix}\]
+
+\[\begin{bmatrix}
+a\\
+b\\
+c
+\end{bmatrix}+\begin{bmatrix}
+d\\
+e\\
+f
+\end{bmatrix}
+=
+\begin{bmatrix}
+a+d\\
+b+e\\
+c+f
+\end{bmatrix}\]
+
+<p>于是原式可化为</p>
+
+\[\begin{align*}
+\begin{bmatrix}
+-3\\
+1\\
+10
+\end{bmatrix}
+&amp;=
+
+\begin{bmatrix}
+-6\\
+4\\
+1
+\end{bmatrix}\\
+\begin{bmatrix}
+3\\
+-3\\
+9
+\end{bmatrix}
+&amp;=0
+\end{align*}\]
+
+<p>化简完成，题目答案为 3，-3，9。</p>
+
+<p>这样做其实没什么好处，就图一乐罢了。</p>
+
+<p>另外，注意到二次项系数只和每个单项式的二次项系数、相乘的话还有一次项系数有关。所以题目要求二次项系数就可以直接看这些。比如上面一题，就是 $1(-2)-1=0+2(-3)$ ，结果是3。</p>]]></content><author><name>Samuelhzx</name></author><category term="algebra" /><summary type="html"><![CDATA[先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
+设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have</p>
+
+\[f(z_i)=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}\]
+
+<p>Hence</p>
+
+\[\begin{align*}
+\int_{L}f(z)\mathrm dz
+=&amp;\int_{z_0}^{z_n}f(z)\mathrm dz\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}(z_{i+1}-z_i)\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}F(z_{i+1})-F(z_i)\\
+=&amp;F(z_{n})-F(z_0)\\
+\end{align*}\]
+
+<p>Q.E.D.</p>]]></content><author><name>Samuelhzx</name></author><category term="analysis" /><summary type="html"><![CDATA[任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have]]></summary></entry><entry><title type="html">浅谈达到目标的方法</title><link href="https://samuelhzx.github.io/2023/10/09/17-about-dream.html" rel="alternate" type="text/html" title="浅谈达到目标的方法" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/09/17-about-dream</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/09/17-about-dream.html"><![CDATA[<p><strong>达到目标的过程：动力 - 设立目标 - 效率 - 方法 - 进步 - 达到目标</strong></p>
+
+<p>这篇文章以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。</p>
+<h1 id="动力">动力</h1>
+<h2 id="动力的产生">动力的产生</h2>
+
+<p>人在面对选择时，会选择对自己最有利的一个选择执行。我们可以对“选择对我们的有利程度”进行一个量化，就称这个量为利值吧。</p>
+
+<p>我们可以发现一个公式：利值 $=$ 好处 $-$ 代价</p>
+
+<p>接下来我们就可以研究动力的来源了。人为何会产生动力？一开始我认为，是因为“努力”、“不努力”这两个选择中，努力这种选择的利值更大。但后来我发现这是有一点问题的，因为努力和不努力并不是两个离散的变量，而是有一个过渡的，也就是努力的程度也会有变化。然而经过几番努力后发现这样实在太复杂了，因此还是只考虑两种选择的吧。要使得这样就有这两种方式：增加努力利值、减少不努利值（或同时）。</p>
+
+<p>有了上面的铺垫，我们就可以思考如何增加动力了。</p>
+
+<h2 id="动力的提升">动力的提升</h2>
+
+<p>先来看看减少不努力利值方面。不努力会有哪些不好的结果？一个最重要的后果就是中考考不好，还有就是自尊心会受挫，老师批评等。这些是原本就有的。对于这些，我们可以让它加大力度或增加频率，比如宣传中考的重要性和危机程度等。还有原本没有的，我能想到的就是惩罚。</p>
+
+<p>接下来是增加努力利值方面，这基本上就是减小不努力利值的反面，但还有很重要的一点，那就是兴趣。培养了对历史这门课的兴趣，可以极大地增加动力。还有一点，减小努力难度。因为努力利值其实是努力的好处减去努力付出的代价。减小努力难度相当于减小努力付出的代价，也就使得努力利值变高了。想做到这一点需要一些心理学知识，我也不甚了解。我了解到的两点，其一，降低起始难度。就是一开始给自己定个很小的目标，比如写作文先随便写点框架，然后补充细节，这样比直接写要容易一些。其二，拆解大问题。把写作文拆成找素材、列提纲、粗写、细写、修改等步骤。</p>
+
+<p>通过上面的分析，我们就找到增加动力的主要方法了，关于这些方法，再多说一句，它们不一定要实物的，精神上的也非常重要，比如考好了之后老师的一句表扬，就有可能化为学生学习非常强大的动力。精神上的奖励可以是当众的表扬、奖状、上荣誉榜等，实物的奖励可以是礼物，可以是券或四叶币之类的。</p>
+
+<p>不难发现，上面的方法中就包含了我们常在讲座上听到的奖惩机制、培养兴趣等。</p>
+
+<p>在以上动力中，私以为奖励、兴趣、高分、内卷（自尊心）、减小难度是最有实质效果的。</p>
+
+<h1 id="设立目标">设立目标</h1>
+<p>我们努力，最终就是要达成目标。但这个目标是不一定的。</p>
+
+<p>最好的目标就是学好历史。这也是作为学生最重要的目标。
+还有一种目标，就是临时混过去。也可以称之为不定目标。通常症状为学而不思、抄作业等。据我所知，这是很多同学的状态。这通常是缺乏动力导致的。</p>
+
+<p>有了前面提到的动力提升方法，就可以解决没有目标的问题了。当然也有另一种方式，那就是防止“混过去”现象发生。比如防抄作业可以设举报有奖制。这是互相监督制的一种。但私以为这样是不好的。</p>
+
+<h1 id="从动力到效率">从动力到效率</h1>
+
+<p>1.提高时间利用率</p>
+<ul>
+  <li>做这件事时要专注，不要三心二意</li>
+  <li>真正的学习不在于刷多少题或者挑灯夜战，把知识尽可能吸收才是关键。</li>
+</ul>
+
+<p>2.增加时间</p>
+<ul>
+  <li>利用间隙时间</li>
+</ul>
+
+<p>3.专注的方法（网上找的）</p>
+<ul>
+  <li>利用痛感调节快感</li>
+  <li>抑制快感</li>
+  <li>设立提示</li>
+</ul>
+
+<p>$3\frac34$.专注的方法之设立提示</p>
+<ul>
+  <li>视听觉提示，如贴一个座右铭、定闹钟</li>
+  <li>规划时间，如定计划</li>
+  <li>调整环境。环境可以分人或物。人就是大家一起比如写作业，物就是整理桌面、清理杂物等。学校里就人、物环境兼备，所以学生效率高。</li>
+</ul>
+
+<h1 id="方法">方法</h1>
+
+<p>这个方法和前文的方法不同。这里指比较直接的达到目标的方法，比如答题技巧。积累答题技巧有几种途径：</p>
+
+<p>1.课上。认真听讲，不懂的问老师等
+2.课外。补课、网上找资料、自己悟等</p>
+
+<h1 id="总结">总结</h1>
+<p>根据我认为的达到目标的过程，我分析了其中每一步的提升方法。</p>
+
+<p>我们可以发现，达到目标的过程是环环相扣的。前一个没达到就没法完成后面的。所以，只有脚踏实地才能仰望星空。</p>]]></content><author><name>Samuelhzx</name></author><category term="分析问题" /><summary type="html"><![CDATA[达到目标的过程：动力 - 设立目标 - 效率 - 方法 - 进步 - 达到目标]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
 
 <p>先放上原证明：</p>
 
 <p><strong>Cauchy-Goursat 积分定理</strong><br />
-设  $f(z)$  是单连通区域 D 内的解析函数. 若  L  是  D  内任一条简单间曲线, 取逆时针方向, 则</p>
+设  $f(z)$  是单连通区域 $D$ 内的解析函数. 若 $L$ 是 $D$ 内任一条简单间曲线, 取逆时针方向, 则</p>
 
 \[\int_{L} f(z) \mathrm{d} z=0\]
 
@@ -26,10 +216,10 @@
 $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\delta’,pz_{k-1}\ge\delta’$ 。 由于三角形的顶点和对边不相交，因此得证。</p>
 
 <p>3.修改证明后半部分，即三步中的后两步。这部分可以说是完全换了个思路。<br />
-首先我们有任意的一条路径L，在L上取点 $z_0,z_1,z_2,\cdots ,z_{2^n}$，使每个弧段 $z_{k-1}z_k$ 长度小于 $\eta$ 。对于所有的a从0到n，连结所有下标为 $2^{a}m\,\,\,(m=0,1,2\cdots)$ 的点，得到的折线记为 $P_a$ 。
+首先我们有任意的一条路径 $L$ ，在 $L$ 上取点 $z_0,z_1,z_2,\cdots ,z_{2^n}$，使每个弧段 $z_{k-1}z_k$ 长度小于 $\eta$ 。对于所有的 $a$ 从0到n，连结所有下标为 $2^{n-a}m\,\,\,(m=0,1,2\cdots)$ 的点，得到的折线记为 $P_a$ 。
 <img src="https://pic4.zhimg.com/80/v2-5507a7d74263e3cacd431efeaf61f4fb.png" alt="示意图" /></p>
 
-<p><strong>注意</strong> 以上这一步不再对所有区域D有效了。比较保守的话，可以让D是凸的或为全集。我初想到这以一点的时候也很惋惜，不过，接下来我要去做的东西都是对于整个空间的，相当于这里的整个复数域，所以问题不大。</p>
+<p><strong>注意</strong> 以上这一步不再对所有区域 $D$ 有效了。比较保守的话，可以让 $D$ 是有界凸集或者全集。我初想到这以一点的时候也很惋惜，不过，接下来我要去做的东西都是对于整个空间的，相当于这里的整个复数域，所以问题不大。</p>
 
 <p>对于每个相邻的 $P_{k-1},P_k$ ，它们组成了一组三角形的边界。一看到三角形，自然想到第一步里的结论。于是如果让积分方向为顺下标方向（如z0-z1-z2-z0），那么易知</p>
 
@@ -55,4 +245,4 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
 
 \[\int_{L} f(z) \mathrm{d} z=\int_{P_0} f(z) \mathrm{d} z\]
 
-<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的Cauchy-Goursat 积分定理。</p>]]></content><author><name>Samuelhzx</name></author><category term="math" /><summary type="html"><![CDATA[最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。]]></summary></entry></feed>
+<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>]]></content><author><name>Samuelhzx</name></author><category term="analysis" /><summary type="html"><![CDATA[最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。]]></summary></entry></feed>
