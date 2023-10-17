@@ -1,13 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-10-17T22:15:31+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>Samuelhzx</name></author><entry><title type="html">形式幂级数与一元方程的系数</title><link href="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html" rel="alternate" type="text/html" title="形式幂级数与一元方程的系数" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html"><![CDATA[<p>先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-10-17T23:27:00+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>Samuelhzx</name></author><entry><title type="html">形式幂级数与一元方程的系数</title><link href="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html" rel="alternate" type="text/html" title="形式幂级数与一元方程的系数" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html"><![CDATA[<p>先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。</p>
 
-<p>最近在学一元二次方程，就经常遇到这种题。当然可以拆括号整理来算，但我注意到这里的x并不是一个很重要的东西，而更像一个形式，这让我想起来了形式幂级数。如果我们把 $ax^2+bx+c$ 写作 $\begin{bmatrix}
-a<br />
-b<br />
-c
-\end{bmatrix}$ , 把 $bx+c$ 写作 $\begin{bmatrix}
-b<br />
-c
-\end{bmatrix}$ 的话，那么题目里的式子就可以写成</p>
+<p>最近在学一元二次方程，就经常遇到这种题。当然可以拆括号整理来算，但我注意到这里的x并不是一个很重要的东西，而更像一个形式，这让我想起来了形式幂级数。如果我们把 $ax^2+bx+c$ 写作 $\begin{bmatrix}a\b\c\end{bmatrix}$ , 把 $bx+c$ 写作 $\begin{bmatrix}b\c\end{bmatrix}$ 的话，那么题目里的式子就可以写成</p>
 
 \[\begin{bmatrix}
 

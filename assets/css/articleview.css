@@ -6,7 +6,7 @@
 	margin: 10px;
 	border-radius: 5px;
 	box-shadow: 2px 2px 5px gray;
-	transition: transform 0.2s, box-shadow 0.2s, background-color 0.4s;
+	transition: /*transform 0.2s, box-shadow 0.2s,*/ background-color 0.4s;
 }
 
 .article:hover{
@@ -28,7 +28,7 @@
 	height: 100%;
 }
 .article h1{
-	font-size: 20px;
+	/*font-size: 20px;*/
 	font-weight: bold;
 	display: inline-block; 
 	color: black;
