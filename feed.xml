@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-10-18T21:21:04+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>Samuelhzx</name></author><entry><title type="html">形式幂级数与一元方程的系数</title><link href="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html" rel="alternate" type="text/html" title="形式幂级数与一元方程的系数" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html"><![CDATA[<p>先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-10-20T22:46:00+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>Samuelhzx</name></author><entry><title type="html">形式幂级数与一元方程的系数</title><link href="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html" rel="alternate" type="text/html" title="形式幂级数与一元方程的系数" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html"><![CDATA[<p>先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。</p>
 
 <p>最近在学一元二次方程，就经常遇到这种题。当然可以拆括号整理来算，但我注意到这里的x并不是一个很重要的东西，而更像一个形式，这让我想起来了形式幂级数。如果我们把 $ax^2+bx+c$ 写作 \(\begin{bmatrix}a\\b\\c\end{bmatrix}\) , 把 $bx+c$ 写作 \(\begin{bmatrix}b\\c\end{bmatrix}\) 的话，那么题目里的式子就可以写成</p>
 
@@ -95,7 +95,9 @@ c+f
 
 <p>这样做其实没什么好处，就图一乐罢了。</p>
 
-<p>另外，注意到二次项系数只和每个单项式的二次项系数、相乘的话还有一次项系数有关。所以题目要求二次项系数就可以直接看这些。比如上面一题，就是 $1(-2)-1=0+2(-3)$ ，结果是3。</p>]]></content><author><name>Samuelhzx</name></author><category term="algebra" /><summary type="html"><![CDATA[先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
+<p>另外，注意到二次项系数只和每个单项式的二次项系数、相乘的话还有一次项系数有关。所以题目要求二次项系数就可以直接看这些。比如上面一题，就是（形式上） $1(-2)-1=0+2(-3)$ ，结果是3。</p>]]></content><author><name>Samuelhzx</name></author><category term="algebra" /><summary type="html"><![CDATA[先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
+
+<p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have</p>
 
 \[f(z_i)=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}\]
@@ -110,7 +112,7 @@ c+f
 =&amp;F(z_{n})-F(z_0)\\
 \end{align*}\]
 
-<p>Q.E.D.</p>]]></content><author><name>Samuelhzx</name></author><category term="analysis" /><summary type="html"><![CDATA[任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have]]></summary></entry><entry><title type="html">浅谈达到目标的方法</title><link href="https://samuelhzx.github.io/2023/10/09/17-about-dream.html" rel="alternate" type="text/html" title="浅谈达到目标的方法" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/09/17-about-dream</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/09/17-about-dream.html"><![CDATA[<p><strong>达到目标的过程：动力 - 设立目标 - 效率 - 方法 - 进步 - 达到目标</strong></p>
+<p>Q.E.D.</p>]]></content><author><name>Samuelhzx</name></author><category term="analysis" /><summary type="html"><![CDATA[本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。]]></summary></entry><entry><title type="html">浅谈达到目标的方法</title><link href="https://samuelhzx.github.io/2023/10/09/17-about-dream.html" rel="alternate" type="text/html" title="浅谈达到目标的方法" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/09/17-about-dream</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/09/17-about-dream.html"><![CDATA[<p><strong>达到目标的过程：动力 - 设立目标 - 效率 - 习惯 - 内容 - 进步 - 达到目标</strong></p>
 
 <p>这篇文章以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。</p>
 
@@ -146,10 +148,16 @@ c+f
 
 <h1 id="从动力到效率">从动力到效率</h1>
 
+<p>同样的任务量，要做得更快。</p>
+
 <p>1.提高时间利用率</p>
 <ul>
-  <li>做这件事时要专注，不要三心二意</li>
-  <li>真正的学习不在于刷多少题或者挑灯夜战，把知识尽可能吸收才是关键。</li>
+  <li>
+    <p>做这件事时要专注，不要三心二意</p>
+  </li>
+  <li>
+    <p>重要不紧急的事要有计划地做等</p>
+  </li>
 </ul>
 
 <p>2.增加时间</p>
@@ -171,20 +179,33 @@ c+f
   <li>调整环境。环境可以分人或物。人就是大家一起比如写作业，物就是整理桌面、清理杂物等。学校里就人、物环境兼备，所以学生效率高。</li>
 </ul>
 
-<h1 id="方法">方法</h1>
+<h1 id="学习习惯">学习习惯</h1>
+<p>同样的任务量，要做得更好。</p>
 
-<p>这个方法和前文的方法不同。这里指比较直接的达到目标的方法，比如学习历史学科的方法（不一定都好）：</p>
-
-<ol>
+<p>包括但不限于：</p>
+<ul>
   <li>课前预习</li>
   <li>课上认真听讲，不懂的问老师等</li>
   <li>课外补课、网上找资料、自己悟等</li>
-</ol>
+  <li>勤于积累</li>
+  <li>找不足，及时反思</li>
+  <li>真正的学习不在于刷多少题或者挑灯夜战，把知识尽可能吸收才是关键。做错题本的原件因就是这个。</li>
+</ul>
+
+<h1 id="内容">内容</h1>
+
+<p>比如历史学科的学习内容：</p>
+<ul>
+  <li>历史知识</li>
+  <li>答题技巧</li>
+</ul>
+
+<p>前面的习惯都有助于提升这两点。</p>
 
 <h1 id="总结">总结</h1>
-<p>根据我认为的达到目标的过程，我分析了其中每一步的提升方法。</p>
+<p>根据我认为的达到目标的过程，我分析了其中每一步的提升方法，并且得出了平时经常听到的一些方法的原理，比如在学校效率高是因为人和物环境。</p>
 
-<p>我们可以发现，达到目标的过程是环环相扣的。前一个没达到就没法完成后面的。所以，只有脚踏实地才能仰望星空。</p>]]></content><author><name>Samuelhzx</name></author><category term="分析问题" /><summary type="html"><![CDATA[达到目标的过程：动力 - 设立目标 - 效率 - 方法 - 进步 - 达到目标]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
+<p>我们可以发现，达到目标的过程是环环相扣的。前一个没达到就没法完成后面的。所以，只有脚踏实地才能仰望星空。</p>]]></content><author><name>Samuelhzx</name></author><category term="分析问题" /><summary type="html"><![CDATA[达到目标的过程：动力 - 设立目标 - 效率 - 习惯 - 内容 - 进步 - 达到目标]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
 
 <p>先放上原证明：</p>
 

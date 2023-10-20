@@ -11,13 +11,13 @@
 
 .article:hover{
 	/*box-shadow: 1px 1px 8px gray;*/
-	background-color: lightcyan;
+	background-color: blanchedalmond/*lightcyan*/;
 	/*transform: translateY(-5px);*/
-}
+}/*
 .article:active{
-	/*transform: translateY(-2px);*/
+	transform: translateY(-2px);
 	background-color: rgb(156, 215, 255);
-}
+}*/
 .article a {
 	position: absolute;
 	top: 0;
@@ -34,6 +34,10 @@
 	color: black;
 }
 
+body{
+	user-select:none;
+}
+/*
 h2{
 	font-size: 21px;
 }
@@ -48,7 +52,7 @@ h2{
 }
 .article h6{
 	font-size: 13px;
-}
+}*/
 .article p{
 	margin-top: 8px;
 	color: #585858;

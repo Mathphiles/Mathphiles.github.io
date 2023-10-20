@@ -64,8 +64,8 @@
 <meta property="og:title" content="牛莱公式的新证明" />
 <meta name="author" content="Samuelhzx" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have" />
-<meta property="og:description" content="任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have" />
+<meta name="description" content="本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。" />
+<meta property="og:description" content="本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。" />
 <link rel="canonical" href="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" />
 <meta property="og:url" content="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" />
 <meta property="og:site_name" content="Home" />
@@ -74,7 +74,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="牛莱公式的新证明" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Samuelhzx"},"dateModified":"2023-10-14T00:00:00+08:00","datePublished":"2023-10-14T00:00:00+08:00","description":"任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have","headline":"牛莱公式的新证明","mainEntityOfPage":{"@type":"WebPage","@id":"https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"},"url":"https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Samuelhzx"},"dateModified":"2023-10-14T00:00:00+08:00","datePublished":"2023-10-14T00:00:00+08:00","description":"本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。","headline":"牛莱公式的新证明","mainEntityOfPage":{"@type":"WebPage","@id":"https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"},"url":"https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/navbar.css"><link type="application/atom+xml" rel="alternate" href="https://samuelhzx.github.io/feed.xml" title="Home" /></head><body><header class="site-header" role="banner">
@@ -120,7 +120,9 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
+    <p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
+
+<p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have</p>
 
 \[f(z_i)=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}\]
