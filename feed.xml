@@ -1,4 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-10-20T22:46:00+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>Samuelhzx</name></author><entry><title type="html">形式幂级数与一元方程的系数</title><link href="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html" rel="alternate" type="text/html" title="形式幂级数与一元方程的系数" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html"><![CDATA[<p>先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-10-28T17:41:48+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>HZX</name></author><entry><title type="html">我的仿费马猜想</title><link href="https://samuelhzx.github.io/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
+
+<p>2022年6月1号，去年的六一儿童节，正好也是疫情期间，呆在家里没什么作业，就开始想数学。想到费马大定理，忽然有了个灵感——如果把指数和底数互换会怎么样？如果把左边的项增多会怎么样？</p>
+
+<p>晚上做核酸排队的时候，我考虑了一个特殊情况：</p>
+<blockquote>
+  <p>先想到这个式子，然后想到了他的特殊解1+(n-1)n⁰+(n-1)n¹+…+(n-1)nʸ⁻¹=nʸ,就猜想这个式子的所有解都满足(K-1)÷(N-1)余0。</p>
+</blockquote>
+
+<p>（摘自2022.6.30跟数学老师的对话记录）</p>
+
+<p>然后做出了这个猜想：</p>
+
+<p>若方程 $n^{x_0}+n^{x_1}+\cdots+n^{x_k}=n^y$ 中，$n,x,y$ 有自然数解时，$(n-1) |k.$</p>
+
+<p>（改进了一下当时的表述）</p>
+
+<p>之后的四天里，我都在写它的证明。当时拟的题目就是“我的仿费马猜想”，于是沿用到这里。下面是当时写的证明。其中证法一是我想出来的，证法二是姑父想出来的。
+<img src="https://pic4.zhimg.com/80/v2-4964ebbe1bb41eb8f60a282a04a42aaa.jpg" alt="" />
+<img src="https://pic4.zhimg.com/80/v2-3ddc705732afe675083f995c2f1cb657.jpg" alt="" />
+<img src="https://pic4.zhimg.com/80/v2-b1966320a7ade07a62953f75dd33a87c.jpg" alt="" />
+<img src="https://pic4.zhimg.com/80/v2-ca133dadc42252f4198d4d9991a3890f.jpg" alt="" /></p>
+
+<p>前段时间，我又试着用mathgpt帮我证了一遍，没想到的是，证明是对的！</p>
+
+<p>以下是删改过的它的回答：</p>
+
+<p>$n^{x_{0}}+n^{x_{1}}+\cdots+n^{x_{k}}=n^{y}$，两边都对 $n-1$ 取模，得到：</p>
+
+\[n^{x_{0}} \bmod (n-1) + n^{x_{1}} \bmod (n-1) + \cdots + n^{x_{k}} \bmod (n-1) = n^{y} \bmod (n-1)\]
+
+<p>由于 $n \equiv 1 \pmod{n-1}$，所以 $n^{a} \equiv 1^{a} = 1 \pmod{n-1}$，对于任意的 $a$。因此，上面的等式可以简化为 $k+1 \equiv 1\bmod (n-1)$ ，即 $(n-1) |k$ 。证毕。</p>
+
+<p>比我的证明简单多了qwq。</p>]]></content><author><name>HZX</name></author><category term="algebra" /><summary type="html"><![CDATA[这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。]]></summary></entry><entry><title type="html">Simpletext_zhihu</title><link href="https://samuelhzx.github.io/2023/10/28/simpletext_zhihu.html" rel="alternate" type="text/html" title="Simpletext_zhihu" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/28/simpletext_zhihu</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/28/simpletext_zhihu.html"><![CDATA[<p>由于 zhihu on vscode 对于公式的解析不够理想，我开发了一个简易（陋）的工具，让知乎文章写起来更轻松。</p>
+
+<p>已经在github上开源，网址 <a href="https://github.com/Samuelhzx/Simpletext_zhihu">Simpletext_zhihu</a>。
+README里没写到的，这里补充一下</p>
+<ol>
+  <li>我是搭配code runner一起用的</li>
+  <li>bug很多，而且写了很多大概是废弃的feature，但都留在代码里</li>
+  <li>我最近没什么空，所以不太维护了</li>
+  <li>我自己也不怎么用其实</li>
+</ol>]]></content><author><name>HZX</name></author><category term="想法" /><summary type="html"><![CDATA[由于 zhihu on vscode 对于公式的解析不够理想，我开发了一个简易（陋）的工具，让知乎文章写起来更轻松。]]></summary></entry><entry><title type="html">改进大O记号</title><link href="https://samuelhzx.github.io/2023/10/28/about-the-big-oh-notation.html" rel="alternate" type="text/html" title="改进大O记号" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/28/about-the-big-oh-notation</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/28/about-the-big-oh-notation.html"><![CDATA[<p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
+
+<p>首先，它严重破坏了等于号的传递性。</p>
+
+\[\begin{array}{c}
+1= \mathcal O(1)\\
+1= \mathcal O(x)\\
+\not\Rightarrow \mathcal O(1)= \mathcal O(x)
+\end{array}\]
+
+<p>对于这一点，我想到了一种解决方案：把等于号改成 $\lesssim$ 。
+若 $\exists M&gt;0,\forall x&gt;a,|f(x)|&lt;Mg(x)$，则称
+$f(x)\lesssim \mathcal{O}(g(x)). $
+ $\lesssim$ 具有和 $\le$ 类似的性质。</p>
+
+<p>其次，它不能进行乘除法。不过可以证明这种替代：</p>
+
+\[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]]]></content><author><name>HZX</name></author><category term="number-theory" /><summary type="html"><![CDATA[大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。]]></summary></entry><entry><title type="html">一些随感</title><link href="https://samuelhzx.github.io/2023/10/22/some-thoughts.html" rel="alternate" type="text/html" title="一些随感" /><published>2023-10-22T00:00:00+08:00</published><updated>2023-10-22T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/22/some-thoughts</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/22/some-thoughts.html"><![CDATA[<ol>
+  <li>
+    <p>如果把努力程度画成横坐标，成绩画成纵坐标，那我想成绩的期望应该是类似于 $\arctan x$  那样。有的同学付出的努力不多却能考得和努力的同学差不多也许就因为此吧。</p>
+  </li>
+  <li>
+    <p>绘画中，轮廓是个很抽象的东西，我们生活中的东西是没有轮廓线的。但我们似乎从小就能接受轮廓这个概念。</p>
+  </li>
+  <li>
+    <p>很多时候，一句话看上去没问题却出了些问题，或者同一句话有好几种理解（产生意见的分歧）时，大抵就是名词的定义模糊造成的。经常会在辩论赛中见到这种情况：双方对于题目的解读不同。比如“人之初，性本善”，对于善字可以有许多种理解。不同的理解可能会造成立场或意见的不同。</p>
+  </li>
+  <li>
+    <p>应该可以证明，二维平面上任意两个全等的图形都可以通过至多2次翻转来重合。</p>
+  </li>
+  <li>
+    <p>在看知友烈风光翼的一篇证明时，我想到要证明同余乘法下的素数的缩系一定是循环群。证明中遇到了这个问题： $\varphi(m)$ 一定是 $a^x\equiv 1 \pmod m$ 的最小正整数解吗？我在群里提了这个问题，然后一个群友跟我说原根。我一查，竟然真是！</p>
+  </li>
+</ol>]]></content><author><name>HZX</name></author><category term="想法" /><summary type="html"><![CDATA[如果把努力程度画成横坐标，成绩画成纵坐标，那我想成绩的期望应该是类似于 $\arctan x$ 那样。有的同学付出的努力不多却能考得和努力的同学差不多也许就因为此吧。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
+
+<p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
+设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have</p>
+
+\[f(z_i)=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}\]
+
+<p>Hence</p>
+
+\[\begin{align*}
+\int_{L}f(z)\mathrm dz
+=&amp;\int_{z_0}^{z_n}f(z)\mathrm dz\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}(z_{i+1}-z_i)\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}F(z_{i+1})-F(z_i)\\
+=&amp;F(z_{n})-F(z_0)\\
+\end{align*}\]
+
+<p>Q.E.D.</p>]]></content><author><name>HZX</name></author><category term="analysis" /><summary type="html"><![CDATA[本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。]]></summary></entry><entry><title type="html">形式幂级数与一元方程的系数</title><link href="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html" rel="alternate" type="text/html" title="形式幂级数与一元方程的系数" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html"><![CDATA[<p>先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。</p>
 
 <p>最近在学一元二次方程，就经常遇到这种题。当然可以拆括号整理来算，但我注意到这里的x并不是一个很重要的东西，而更像一个形式，这让我想起来了形式幂级数。如果我们把 $ax^2+bx+c$ 写作 \(\begin{bmatrix}a\\b\\c\end{bmatrix}\) , 把 $bx+c$ 写作 \(\begin{bmatrix}b\\c\end{bmatrix}\) 的话，那么题目里的式子就可以写成</p>
 
@@ -95,28 +187,13 @@ c+f
 
 <p>这样做其实没什么好处，就图一乐罢了。</p>
 
-<p>另外，注意到二次项系数只和每个单项式的二次项系数、相乘的话还有一次项系数有关。所以题目要求二次项系数就可以直接看这些。比如上面一题，就是（形式上） $1(-2)-1=0+2(-3)$ ，结果是3。</p>]]></content><author><name>Samuelhzx</name></author><category term="algebra" /><summary type="html"><![CDATA[先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
-
-<p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
-设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have</p>
-
-\[f(z_i)=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}\]
-
-<p>Hence</p>
-
-\[\begin{align*}
-\int_{L}f(z)\mathrm dz
-=&amp;\int_{z_0}^{z_n}f(z)\mathrm dz\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}F(z_{i+1})-F(z_i)\\
-=&amp;F(z_{n})-F(z_0)\\
-\end{align*}\]
-
-<p>Q.E.D.</p>]]></content><author><name>Samuelhzx</name></author><category term="analysis" /><summary type="html"><![CDATA[本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。]]></summary></entry><entry><title type="html">浅谈达到目标的方法</title><link href="https://samuelhzx.github.io/2023/10/09/17-about-dream.html" rel="alternate" type="text/html" title="浅谈达到目标的方法" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/09/17-about-dream</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/09/17-about-dream.html"><![CDATA[<p><strong>达到目标的过程：动力 - 设立目标 - 效率 - 习惯 - 内容 - 进步 - 达到目标</strong></p>
+<p>另外，注意到二次项系数只和每个单项式的二次项系数、相乘的话还有一次项系数有关。所以题目要求二次项系数就可以直接看这些。比如上面一题，就是（形式上） $1(-2)-1=0+2(-3)$ ，结果是3。</p>]]></content><author><name>HZX</name></author><category term="algebra" /><summary type="html"><![CDATA[先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。]]></summary></entry><entry><title type="html">浅谈达到目标的方法</title><link href="https://samuelhzx.github.io/2023/10/09/about-dream.html" rel="alternate" type="text/html" title="浅谈达到目标的方法" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/09/about-dream</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/09/about-dream.html"><![CDATA[<p><strong>达到目标的过程：动力 - 设立目标 - 效率 - 质量 - 内容 - 进步 - 达到目标</strong></p>
 
 <p>这篇文章以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。</p>
 
-<h1 id="动力的产生">动力的产生</h1>
+<h1 id="动力">动力</h1>
+
+<h2 id="动力的产生">动力的产生</h2>
 
 <p>人在面对选择时，会选择对自己最有利的一个选择执行。我们可以对“选择对我们的有利程度”进行一个量化，就称这个量为利值吧。</p>
 
@@ -126,13 +203,13 @@ c+f
 
 <p>有了上面的铺垫，我们就可以思考如何增加动力了。</p>
 
-<h1 id="动力的提升">动力的提升</h1>
+<h2 id="动力的提升">动力的提升</h2>
 
 <p>先来看看减少不努力利值方面。不努力会有哪些不好的结果？一个最重要的后果就是中考考不好，还有就是自尊心会受挫，老师批评等。这些是原本就有的。对于这些，我们可以让它加大力度或增加频率，比如宣传中考的重要性和危机程度等。还有原本没有的，我能想到的就是惩罚。</p>
 
-<p>接下来是增加努力利值方面，这基本上就是减小不努力利值的反面，但还有很重要的一点，那就是兴趣。培养了对历史这门课的兴趣，可以极大地增加动力。还有一点，减小努力难度。因为努力利值其实是努力的好处减去努力付出的代价。减小努力难度相当于减小努力付出的代价，也就使得努力利值变高了。想做到这一点需要一些心理学知识，我也不甚了解。我了解到的两点，其一，降低起始难度。就是一开始给自己定个很小的目标，比如写作文先随便写点框架，然后补充细节，这样比直接写要容易一些。其二，拆解大问题。把写作文拆成找素材、列提纲、粗写、细写、修改等步骤。</p>
+<p>接下来是增加努力利值方面，换种说法，就是增加正反馈。这基本上就是减小不努力利值的反面，但还有很重要的一点，那就是兴趣。培养了对历史这门课的兴趣，可以极大地增加动力。还有一点，减小努力难度。因为努力利值其实是努力的好处减去努力付出的代价。减小努力难度相当于减小努力付出的代价，也就使得努力利值变高了。想做到这一点需要一些心理学知识，我也不甚了解。我所知到的有两点，其一，<strong>降低起始难度</strong>。就是一开始给自己定个很小的目标，比如写作文先随便写点框架，然后补充细节，这样比直接写要容易一些。其二，<strong>拆解大问题</strong>。把写作文拆成找素材、列提纲、粗写、细写、修改等步骤。</p>
 
-<p>通过上面的分析，我们就找到增加动力的主要方法了，关于这些方法，再多说一句，它们不一定要实物的，精神上的也非常重要，比如考好了之后老师的一句表扬，就有可能化为学生学习非常强大的动力。精神上的奖励可以是当众的表扬、奖状、上荣誉榜等，实物的奖励可以是礼物，可以是券或四叶币之类的。</p>
+<p>通过上面的分析，我们就找到增加动力的主要方法了，关于这些方法，再多说一句，它们不一定要实物的，<strong>精神上的</strong>也非常重要，比如考好了之后老师的一句表扬，就有可能化为学生学习非常强大的动力。精神上的奖励可以是当众的表扬、奖状、上荣誉榜等，实物的奖励可以是礼物，可以是券或四叶币之类的。</p>
 
 <p>不难发现，上面的方法中就包含了我们常在讲座上听到的奖惩机制、培养兴趣等。</p>
 
@@ -146,14 +223,14 @@ c+f
 
 <p>有了前面提到的动力提升方法，就可以解决没有目标的问题了。当然也有另一种方式，那就是防止“混过去”现象发生。比如防抄作业可以设举报有奖制。这是互相监督制的一种。但私以为这样是不好的。</p>
 
-<h1 id="从动力到效率">从动力到效率</h1>
+<h1 id="效率">效率</h1>
 
 <p>同样的任务量，要做得更快。</p>
 
 <p>1.提高时间利用率</p>
 <ul>
   <li>
-    <p>做这件事时要专注，不要三心二意</p>
+    <p>做一件事时要专注，不要三心二意</p>
   </li>
   <li>
     <p>重要不紧急的事要有计划地做等</p>
@@ -165,7 +242,7 @@ c+f
   <li>利用间隙时间</li>
 </ul>
 
-<p>3.专注的方法（网上找的）</p>
+<p>3.专注的方法（网上找的，偏心理学）</p>
 <ul>
   <li>利用痛感调节快感</li>
   <li>抑制快感</li>
@@ -175,11 +252,17 @@ c+f
 <p>$3\frac34$.专注的方法之设立提示</p>
 <ul>
   <li>视听觉提示，如贴一个座右铭、定闹钟</li>
-  <li>规划时间，如定计划</li>
-  <li>调整环境。环境可以分人或物。人就是大家一起比如写作业，物就是整理桌面、清理杂物等。学校里就人、物环境兼备，所以学生效率高。</li>
+  <li><strong>规划时间</strong>，如定计划</li>
+  <li>调整环境。环境可以分人或物。人就是有别人在旁边对你起到心理上的作用，比如大家一起写作业；物就是整理桌面、清理杂物等。私以为学校里学生效率高，原因就是人、物环境兼备。</li>
 </ul>
 
-<h1 id="学习习惯">学习习惯</h1>
+<p>另外有两点我自己总结的，也可以归在第三条里：</p>
+<ul>
+  <li>写字用一支好用的笔</li>
+  <li>书房要通风，不然缺氧会让效率大大降低。我前两天有一次就是这样，闷了俩小时只写了一张英语报纸，开窗之后半小时就结束战斗。</li>
+</ul>
+
+<h1 id="学习质量">学习质量</h1>
 <p>同样的任务量，要做得更好。</p>
 
 <p>包括但不限于：</p>
@@ -190,6 +273,7 @@ c+f
   <li>勤于积累</li>
   <li>找不足，及时反思</li>
   <li>真正的学习不在于刷多少题或者挑灯夜战，把知识尽可能吸收才是关键。做错题本的原件因就是这个。</li>
+  <li>勤复习</li>
 </ul>
 
 <h1 id="内容">内容</h1>
@@ -197,15 +281,16 @@ c+f
 <p>比如历史学科的学习内容：</p>
 <ul>
   <li>历史知识</li>
-  <li>答题技巧</li>
+  <li>历史思维</li>
+  <li>历史价值观</li>
 </ul>
-
-<p>前面的习惯都有助于提升这两点。</p>
 
 <h1 id="总结">总结</h1>
 <p>根据我认为的达到目标的过程，我分析了其中每一步的提升方法，并且得出了平时经常听到的一些方法的原理，比如在学校效率高是因为人和物环境。</p>
 
-<p>我们可以发现，达到目标的过程是环环相扣的。前一个没达到就没法完成后面的。所以，只有脚踏实地才能仰望星空。</p>]]></content><author><name>Samuelhzx</name></author><category term="分析问题" /><summary type="html"><![CDATA[达到目标的过程：动力 - 设立目标 - 效率 - 习惯 - 内容 - 进步 - 达到目标]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
+<p>我们可以发现，达到目标的过程是环环相扣的。前一个没达到就没法完成后面的。所以，只有脚踏实地才能仰望星空。</p>
+
+<p>2023年10月28日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[达到目标的过程：动力 - 设立目标 - 效率 - 质量 - 内容 - 进步 - 达到目标]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
 
 <p>先放上原证明：</p>
 
@@ -262,4 +347,4 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
 
 \[\int_{L} f(z) \mathrm{d} z=\int_{P_0} f(z) \mathrm{d} z\]
 
-<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>]]></content><author><name>Samuelhzx</name></author><category term="analysis" /><summary type="html"><![CDATA[最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。]]></summary></entry></feed>
+<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>]]></content><author><name>HZX</name></author><category term="analysis" /><summary type="html"><![CDATA[最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。]]></summary></entry></feed>
