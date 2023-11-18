@@ -1,24 +1,31 @@
-h1{
+h1 {
 	font-size: 35px;
 }
-h2{
+
+h2 {
 	font-size: 30px;
 }
-h3{
+
+h3 {
 	font-size: 26px;
 }
-h4{
+
+h4 {
 	font-size: 23px;
 }
-h5{
+
+h5 {
 	font-size: 21px;
 }
-h6{
+
+h6 {
 	font-size: 20px;
 }
 
-header, footer, img {
-	user-select:none;
+header,
+footer,
+img {
+	user-select: none;
 }
 
 .view-times {
@@ -26,4 +33,13 @@ header, footer, img {
 	margin-top: 35px;
 	text-align: right;
 	color: gray;
+}
+
+blockquote {
+	font-style: normal;
+	font-size: medium;
+}
+
+p {
+	letter-spacing: 0.5px;
 }

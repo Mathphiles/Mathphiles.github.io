@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://samuelhzx.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samuelhzx.github.io/" rel="alternate" type="text/html" /><updated>2023-10-29T00:01:14+08:00</updated><id>https://samuelhzx.github.io/feed.xml</id><title type="html">Home</title><subtitle>HZX&apos;s personal blog </subtitle><author><name>HZX</name></author><entry><title type="html">我的仿费马猜想</title><link href="https://samuelhzx.github.io/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-11-18T11:51:13+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>HZX的个人博客</subtitle><author><name>HZX</name></author><entry><title type="html">我的仿费马猜想</title><link href="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
 
 <p>2022年6月1号，去年的六一儿童节，正好也是疫情期间，呆在家里没什么作业，就开始想数学。想到费马大定理，忽然有了个灵感——如果把指数和底数互换会怎么样？如果把左边的项增多会怎么样？</p>
 
@@ -31,7 +31,7 @@
 
 <p>由于 $n \equiv 1 \pmod{n-1}$，所以 $n^{a} \equiv 1^{a} = 1 \pmod{n-1}$，对于任意的 $a$。因此，上面的等式可以简化为 $k+1 \equiv 1\bmod (n-1)$ ，即 $(n-1) |k$ 。证毕。</p>
 
-<p>比我的证明简单多了qwq。</p>]]></content><author><name>HZX</name></author><category term="algebra" /><summary type="html"><![CDATA[这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。]]></summary></entry><entry><title type="html">Simpletext_zhihu</title><link href="https://samuelhzx.github.io/2023/10/28/simpletext_zhihu.html" rel="alternate" type="text/html" title="Simpletext_zhihu" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/28/simpletext_zhihu</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/28/simpletext_zhihu.html"><![CDATA[<p>由于 zhihu on vscode 对于公式的解析不够理想，我开发了一个简易（陋）的工具，让知乎文章写起来更轻松。</p>
+<p>比我的证明简单多了qwq。</p>]]></content><author><name>HZX</name></author><category term="algebra" /><summary type="html"><![CDATA[这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。]]></summary></entry><entry><title type="html">Simpletext_zhihu</title><link href="/2023/10/28/simpletext_zhihu.html" rel="alternate" type="text/html" title="Simpletext_zhihu" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/simpletext_zhihu</id><content type="html" xml:base="/2023/10/28/simpletext_zhihu.html"><![CDATA[<p>由于 zhihu on vscode 对于公式的解析不够理想，我开发了一个简易（陋）的工具，让知乎文章写起来更轻松。</p>
 
 <p>已经在github上开源，网址 <a href="https://github.com/Samuelhzx/Simpletext_zhihu">Simpletext_zhihu</a>。
 README里没写到的，这里补充一下</p>
@@ -40,7 +40,7 @@ README里没写到的，这里补充一下</p>
   <li>bug很多，而且写了很多大概是废弃的feature，但都留在代码里</li>
   <li>我最近没什么空，所以不太维护了</li>
   <li>我自己也不怎么用其实</li>
-</ol>]]></content><author><name>HZX</name></author><category term="想法" /><summary type="html"><![CDATA[由于 zhihu on vscode 对于公式的解析不够理想，我开发了一个简易（陋）的工具，让知乎文章写起来更轻松。]]></summary></entry><entry><title type="html">改进大O记号</title><link href="https://samuelhzx.github.io/2023/10/28/about-the-big-oh-notation.html" rel="alternate" type="text/html" title="改进大O记号" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/28/about-the-big-oh-notation</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/28/about-the-big-oh-notation.html"><![CDATA[<p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
+</ol>]]></content><author><name>HZX</name></author><category term="想法" /><summary type="html"><![CDATA[由于 zhihu on vscode 对于公式的解析不够理想，我开发了一个简易（陋）的工具，让知乎文章写起来更轻松。]]></summary></entry><entry><title type="html">改进大O记号</title><link href="/2023/10/28/about-the-big-oh-notation.html" rel="alternate" type="text/html" title="改进大O记号" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/about-the-big-oh-notation</id><content type="html" xml:base="/2023/10/28/about-the-big-oh-notation.html"><![CDATA[<p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
 
 <p>首先，它严重破坏了等于号的传递性。</p>
 
@@ -57,7 +57,7 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 
 <p>其次，它不能进行乘除法。不过可以证明这种替代：</p>
 
-\[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]]]></content><author><name>HZX</name></author><category term="number-theory" /><summary type="html"><![CDATA[大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。]]></summary></entry><entry><title type="html">一些随感</title><link href="https://samuelhzx.github.io/2023/10/22/some-thoughts.html" rel="alternate" type="text/html" title="一些随感" /><published>2023-10-22T00:00:00+08:00</published><updated>2023-10-22T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/22/some-thoughts</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/22/some-thoughts.html"><![CDATA[<ol>
+\[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]]]></content><author><name>HZX</name></author><category term="number-theory" /><summary type="html"><![CDATA[大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。]]></summary></entry><entry><title type="html">一些随感</title><link href="/2023/10/22/some-thoughts.html" rel="alternate" type="text/html" title="一些随感" /><published>2023-10-22T00:00:00+08:00</published><updated>2023-10-22T00:00:00+08:00</updated><id>/2023/10/22/some-thoughts</id><content type="html" xml:base="/2023/10/22/some-thoughts.html"><![CDATA[<ol>
   <li>
     <p>如果把努力程度画成横坐标，成绩画成纵坐标，那我想成绩的期望应该是类似于 $\arctan x$  那样。有的同学付出的努力不多却能考得和努力的同学差不多也许就因为此吧。</p>
   </li>
@@ -73,7 +73,7 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
   <li>
     <p>在看知友烈风光翼的一篇证明时，我想到要证明同余乘法下的素数的缩系一定是循环群。证明中遇到了这个问题： $\varphi(m)$ 一定是 $a^x\equiv 1 \pmod m$ 的最小正整数解吗？我在群里提了这个问题，然后一个群友跟我说原根。我一查，竟然真是！</p>
   </li>
-</ol>]]></content><author><name>HZX</name></author><category term="想法" /><summary type="html"><![CDATA[如果把努力程度画成横坐标，成绩画成纵坐标，那我想成绩的期望应该是类似于 $\arctan x$ 那样。有的同学付出的努力不多却能考得和努力的同学差不多也许就因为此吧。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
+</ol>]]></content><author><name>HZX</name></author><category term="想法" /><summary type="html"><![CDATA[如果把努力程度画成横坐标，成绩画成纵坐标，那我想成绩的期望应该是类似于 $\arctan x$ 那样。有的同学付出的努力不多却能考得和努力的同学差不多也许就因为此吧。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
 
 <p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have</p>
@@ -90,106 +90,10 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 =&amp;F(z_{n})-F(z_0)\\
 \end{align*}\]
 
-<p>Q.E.D.</p>]]></content><author><name>HZX</name></author><category term="analysis" /><summary type="html"><![CDATA[本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。]]></summary></entry><entry><title type="html">形式幂级数与一元方程的系数</title><link href="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html" rel="alternate" type="text/html" title="形式幂级数与一元方程的系数" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/14/%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%8E%E4%B8%80%E5%85%83%E6%96%B9%E7%A8%8B.html"><![CDATA[<p>先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。</p>
+<p>Q.E.D.</p>]]></content><author><name>HZX</name></author><category term="analysis" /><summary type="html"><![CDATA[本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。]]></summary></entry><entry><title type="html">浅谈自主达到目标的方法</title><link href="/2023/10/09/about-dream.html" rel="alternate" type="text/html" title="浅谈自主达到目标的方法" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>/2023/10/09/about-dream</id><content type="html" xml:base="/2023/10/09/about-dream.html"><![CDATA[<p>如何自主达到目标？这是我们努力奋斗的生活中必须回答的问题。作为学生，我们的主要目标就是学习好，说得“狭隘”一点就是得高分。对于实现这个目标，除了个体差异外，就是要回答本问题并付诸行动。个体差异是与生俱来的，这点无法改变，也就无需多想，因此足见本问题的重要性。本文试图通过分解达到目标的过程并逐一击破的方式，分析出全面的达到目标的方法。本文以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。</p>
 
-<p>最近在学一元二次方程，就经常遇到这种题。当然可以拆括号整理来算，但我注意到这里的x并不是一个很重要的东西，而更像一个形式，这让我想起来了形式幂级数。如果我们把 $ax^2+bx+c$ 写作 \(\begin{bmatrix}a\\b\\c\end{bmatrix}\) , 把 $bx+c$ 写作 \(\begin{bmatrix}b\\c\end{bmatrix}\) 的话，那么题目里的式子就可以写成</p>
-
-\[\begin{bmatrix}
-
-1\\
-2
-\end{bmatrix}
-\begin{bmatrix}
-
--2\\
-5
-\end{bmatrix}
--
-\begin{bmatrix}
-1\\
-0\\
-0
-\end{bmatrix}
-=
-\begin{bmatrix}
-
-0\\
-1
-\end{bmatrix}
-+
-\begin{bmatrix}
-
-2\\
-0
-\end{bmatrix}
-\begin{bmatrix}
-
--3\\
-2
-\end{bmatrix}\]
-
-<p>容易发现</p>
-
-\[\begin{bmatrix}
-a\\
-b
-\end{bmatrix}\begin{bmatrix}
-c\\
-d
-\end{bmatrix}
-=
-\begin{bmatrix}
-ac\\
-ad+bc\\
-bd
-\end{bmatrix}\]
-
-\[\begin{bmatrix}
-a\\
-b\\
-c
-\end{bmatrix}+\begin{bmatrix}
-d\\
-e\\
-f
-\end{bmatrix}
-=
-\begin{bmatrix}
-a+d\\
-b+e\\
-c+f
-\end{bmatrix}\]
-
-<p>于是原式可化为</p>
-
-\[\begin{align*}
-\begin{bmatrix}
--3\\
-1\\
-10
-\end{bmatrix}
-&amp;=
-
-\begin{bmatrix}
--6\\
-4\\
-1
-\end{bmatrix}\\
-\begin{bmatrix}
-3\\
--3\\
-9
-\end{bmatrix}
-&amp;=0
-\end{align*}\]
-
-<p>化简完成，题目答案为 3，-3，9。</p>
-
-<p>这样做其实没什么好处，就图一乐罢了。</p>
-
-<p>另外，注意到二次项系数只和每个单项式的二次项系数、相乘的话还有一次项系数有关。所以题目要求二次项系数就可以直接看这些。比如上面一题，就是（形式上） $1(-2)-1=0+2(-3)$ ，结果是3。</p>]]></content><author><name>HZX</name></author><category term="algebra" /><summary type="html"><![CDATA[先看一道题：$(x+2)(5-2x)-x^2=1+2x(2-3x)$，求二次项系数、一次项系数和常数项。]]></summary></entry><entry><title type="html">浅谈达到目标的方法</title><link href="https://samuelhzx.github.io/2023/10/09/about-dream.html" rel="alternate" type="text/html" title="浅谈达到目标的方法" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/10/09/about-dream</id><content type="html" xml:base="https://samuelhzx.github.io/2023/10/09/about-dream.html"><![CDATA[<p><strong>达到目标的过程：动力 - 设立目标 - 效率 - 质量 - 内容 - 进步 - 达到目标</strong></p>
-
-<p>这篇文章以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。</p>
+<h1 id="达到目标的过程">达到目标的过程</h1>
+<p>动力 $\to$ 设立目标 $\to$ 效率 $\to$ 习惯 $\to$ 内容 $\to$ 达到目标</p>
 
 <h1 id="动力">动力</h1>
 
@@ -197,23 +101,23 @@ c+f
 
 <p>人在面对选择时，会选择对自己最有利的一个选择执行。我们可以对“选择对我们的有利程度”进行一个量化，就称这个量为利值吧。</p>
 
-<p>我们可以发现一个公式：利值 $=$ 好处 $-$ 代价</p>
+<p>我们可以发现一个公式：利值 $=$ 价值 $-$ 代价</p>
 
 <p>接下来我们就可以研究动力的来源了。人为何会产生动力？一开始我认为，是因为“努力”、“不努力”这两个选择中，努力这种选择的利值更大。但后来我发现这是有一点问题的，因为努力和不努力并不是两个离散的变量，而是有一个过渡的，也就是努力的程度也会有变化。然而经过几番努力后发现这样实在太复杂了，因此还是只考虑两种选择的吧。要使得这样就有这两种方式：增加努力利值、减少不努利值（或同时）。</p>
 
-<p>有了上面的铺垫，我们就可以思考如何增加动力了。</p>
+<p>于是我们可以思考如何提升动力了。</p>
 
 <h2 id="动力的提升">动力的提升</h2>
 
 <p>先来看看减少不努力利值方面。不努力会有哪些不好的结果？一个最重要的后果就是中考考不好，还有就是自尊心会受挫，老师批评等。这些是原本就有的。对于这些，我们可以让它加大力度或增加频率，比如宣传中考的重要性和危机程度等。还有原本没有的，我能想到的就是惩罚。</p>
 
-<p>接下来是增加努力利值方面，换种说法，就是增加正反馈。这基本上就是减小不努力利值的反面，但还有很重要的一点，那就是兴趣。培养了对历史这门课的兴趣，可以极大地增加动力。还有一点，减小努力难度。因为努力利值其实是努力的好处减去努力付出的代价。减小努力难度相当于减小努力付出的代价，也就使得努力利值变高了。想做到这一点需要一些心理学知识，我也不甚了解。我所知到的有两点，其一，<strong>降低起始难度</strong>。就是一开始给自己定个很小的目标，比如写作文先随便写点框架，然后补充细节，这样比直接写要容易一些。其二，<strong>拆解大问题</strong>。把写作文拆成找素材、列提纲、粗写、细写、修改等步骤。</p>
+<p>接下来是增加努力利值方面，换种说法，就是增加正反馈。这基本上就是减小不努力利值的反面，但还有很重要的一点，那就是<strong>兴趣</strong>。培养了对历史这门课的兴趣，可以极大地增加动力。还有一点，减小努力难度，也就是上文提到的代价。减小努力难度相当于减小努力付出的代价，也就使得努力利值变高了。想做到这一点需要一些心理学知识，我也不甚了解。我所知到的有两点，其一，<strong>降低起始难度</strong>。就是一开始给自己定个很小的目标，比如写作文先随便写点框架，然后补充细节，这样比直接写要容易一些。其二，<strong>拆解大问题</strong>。把写作文拆成找素材、列提纲、粗写、细写、修改等步骤。</p>
 
 <p>通过上面的分析，我们就找到增加动力的主要方法了，关于这些方法，再多说一句，它们不一定要实物的，<strong>精神上的</strong>也非常重要，比如考好了之后老师的一句表扬，就有可能化为学生学习非常强大的动力。精神上的奖励可以是当众的表扬、奖状、上荣誉榜等，实物的奖励可以是礼物，可以是券或四叶币之类的。</p>
 
 <p>不难发现，上面的方法中就包含了我们常在讲座上听到的奖惩机制、培养兴趣等。</p>
 
-<p>在以上动力中，私以为奖励、兴趣、高分、内卷（自尊心）、减小难度是最有实质效果的。</p>
+<p>在以上动力中，私以为奖励、兴趣、高分、自尊心、减小难度是最有实质效果的。</p>
 
 <h1 id="设立目标">设立目标</h1>
 <p>我们努力，最终就是要达成目标。但这个目标是不一定的。</p>
@@ -225,9 +129,9 @@ c+f
 
 <h1 id="效率">效率</h1>
 
-<p>同样的任务量，要做得更快。</p>
+<p>同样的内容，要做得更快。</p>
 
-<p>1.提高时间利用率</p>
+<h2 id="提高时间利用率">提高时间利用率</h2>
 <ul>
   <li>
     <p>做一件事时要专注，不要三心二意</p>
@@ -237,44 +141,51 @@ c+f
   </li>
 </ul>
 
-<p>2.增加时间</p>
+<h2 id="增加时间">增加时间</h2>
 <ul>
   <li>利用间隙时间</li>
+  <li>减少无效时间，包括减少玩或对学习帮助不大的事的时间、</li>
 </ul>
 
-<p>3.专注的方法（网上找的，偏心理学）</p>
+<h2 id="专注的方法">专注的方法</h2>
+
+<h3 id="控制快感网上找的偏心理学">控制快感（网上找的，偏心理学）</h3>
 <ul>
-  <li>利用痛感调节快感</li>
   <li>抑制快感</li>
-  <li>设立提示</li>
+  <li>利用痛感调节快感</li>
 </ul>
 
-<p>$3\frac34$.专注的方法之设立提示</p>
+<h3 id="防止分心">防止分心</h3>
 <ul>
-  <li>视听觉提示，如贴一个座右铭、定闹钟</li>
-  <li><strong>规划时间</strong>，如定计划</li>
-  <li>调整环境。环境可以分人或物。人就是有别人在旁边对你起到心理上的作用，比如大家一起写作业；物就是整理桌面、清理杂物等。私以为学校里学生效率高，原因就是人、物环境兼备。</li>
-</ul>
-
-<p>另外有两点我自己总结的，也可以归在第三条里：</p>
-<ul>
+  <li>设置视听觉提示，如贴一个座右铭、定闹钟</li>
+  <li>心理上的提示：<strong>规划时间</strong>，如定计划</li>
+  <li>调整环境。环境可以分人或物。人就是有别人在旁边对你起到心理上的作用，比如大家一起写作业；物就是整理桌面、清理杂物等。私以为学校里学生效率高，主要原因就是人、物环境兼备。</li>
   <li>写字用一支好用的笔</li>
-  <li>书房要通风，不然缺氧会让效率大大降低。我前两天有一次就是这样，闷了俩小时只写了一张英语报纸，开窗之后半小时就结束战斗。</li>
+  <li>内在的，控制自己不要想别的事，如果有重要的事就记下来。</li>
 </ul>
 
-<h1 id="学习质量">学习质量</h1>
-<p>同样的任务量，要做得更好。</p>
+<h3 id="保持清醒">保持清醒</h3>
+<ul>
+  <li>书房要通风，不然缺氧会让效率大大降低。我前两天有一次就是这样，闷了俩小时只写了一张英语报纸，开窗之后半小时就结束战斗。</li>
+  <li>早睡早起</li>
+  <li>补充能量，如多喝水</li>
+</ul>
 
-<p>包括但不限于：</p>
+<h1 id="学习习惯">学习习惯</h1>
+<p>好的学习习惯让我们做事更有效果。</p>
+
+<p>不一定包括且不限于：</p>
 <ul>
   <li>课前预习</li>
-  <li>课上认真听讲，不懂的问老师等</li>
-  <li>课外补课、网上找资料、自己悟等</li>
+  <li>课上认真听讲，记笔记，不懂的问老师等</li>
+  <li>课外网上找资料、自己悟等</li>
   <li>勤于积累</li>
   <li>找不足，及时反思</li>
-  <li>真正的学习不在于刷多少题或者挑灯夜战，把知识尽可能吸收才是关键。做错题本的原件因就是这个。</li>
+  <li>真正的学习不在于刷多少题或者挑灯夜战，把知识尽可能吸收才是关键。做错题本的主要原因就是这个。</li>
   <li>勤复习</li>
 </ul>
+
+<p>学而不思则罔，思而不学则殆。我们要做到努力学习、积极思考。</p>
 
 <h1 id="内容">内容</h1>
 
@@ -282,15 +193,87 @@ c+f
 <ul>
   <li>历史知识</li>
   <li>历史思维</li>
-  <li>历史价值观</li>
 </ul>
 
+<p>内容也是有方法的。反映在题目上就是答题技巧和公式。</p>
 <h1 id="总结">总结</h1>
-<p>根据我认为的达到目标的过程，我分析了其中每一步的提升方法，并且得出了平时经常听到的一些方法的原理，比如在学校效率高是因为人和物环境。</p>
+<p>根据我认为的达到目标的过程，我分析了其中每一步的提升方法，并且得出了平时经常听到的一些方法的原理，比如在学校效率高是因为人和物环境。另外，也包含了各种讲座之类的上提到的方法，如“课前准备要做好”“培养孩子兴趣”“高效学习”。在本文中，这些方法不再是零星的毫无关联的经验，而是系统的，更有逻辑的。</p>
+
+<p>本文所提到的是对“达到目标”的拆解，还并不能直接执行。想要落实到实际生活，还需对本文继续拆解，得到执行方案。</p>
 
 <p>我们可以发现，达到目标的过程是环环相扣的。前一个没达到就没法完成后面的。所以，只有脚踏实地才能仰望星空。</p>
 
-<p>2023年10月28日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[达到目标的过程：动力 - 设立目标 - 效率 - 质量 - 内容 - 进步 - 达到目标]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="https://samuelhzx.github.io/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
+<p>2023年11月13日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[如何自主达到目标？这是我们努力奋斗的生活中必须回答的问题。作为学生，我们的主要目标就是学习好，说得“狭隘”一点就是得高分。对于实现这个目标，除了个体差异外，就是要回答本问题并付诸行动。个体差异是与生俱来的，这点无法改变，也就无需多想，因此足见本问题的重要性。本文试图通过分解达到目标的过程并逐一击破的方式，分析出全面的达到目标的方法。本文以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。]]></summary></entry><entry><title type="html">关于历史课改革的一点拙见</title><link href="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html" rel="alternate" type="text/html" title="关于历史课改革的一点拙见" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81</id><content type="html" xml:base="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html"><![CDATA[<blockquote>
+  <p>这篇文章写得有点晚了，不过我还是想表达一下看法。</p>
+</blockquote>
+
+<p>这次历史课改革，我们的目标是什么？如何达到目标？这是我们要解决的问题。第一个问题很好回答，我们的总目标就是中考考出好成绩，也就是提分。第二个问题就是改革的重点了。</p>
+
+<p>考试考好主要需要两个能力：解题能力和考场时间把握能力。解题能力又包括历史思维、历史知识。</p>
+
+<p>解题能力是成绩的主要影响因素，也是提高成绩的关键。要想提分，就要提高解题能力。</p>
+
+<p>在我的另一篇文章里，写到了达到目标的过程：</p>
+
+<blockquote>
+  <p>动力 $\to$ 设立目标 $\to$ 效率 $\to$ 习惯 $\to$ 内容 $\to$ 达到目标</p>
+</blockquote>
+
+<p>解题能力算是内容，在内容前，提高动力和改善习惯是必须的。我们的改革也要在这几方面展开。效率和本次改革无关，就不考虑了。</p>
+
+<p>我们首先要提高动力。我在那篇文章已经分析过动力的问题了，这里不再赘述。其中一小部分可以用于这次改革。习惯方面，我们要上课认真听讲、积极发言，要让作业、试卷等做得更有意义、有效果。错题本是最常用的方案，也可以进行归纳总结。</p>
+
+<p>说完了理论之后，就要看看怎么制定计划了。</p>
+
+<h1 id="动力">动力</h1>
+
+<p>先来看看我们亲爱的历史课代表是怎么说的。</p>
+<blockquote>
+  <p>9.17<br />
+同学们，我是历史课代表XX。我想跟大家讲一些事情。<br />
+      我真心希望班级的学习氛围会越来越好，所以我才会采取分历史学习小组的方式来带动这个氛围。我希望2班每一次的历史作业都能交齐，不会落下任何人。<br />
+      我恳请各位组长进行监督与检查，各位组员积极配合。让每一个人都行动起来，不让小组成为摆设。<br />
+      我更要请各位同学不要抄作业！！！这真的很重要，不会的题先空着，让组长或老师来解答。<br />
+      从现在起，不要抄作业，谁也不例外，发现了便上报给历史老师和班主任，进行思想教育和批评处罚。<br />
+      我想在历史这一科中做出这些改变，不管对于任何人来说，这都是一个振奋人心的事情。我希望能够得到大家的支持和信任。
+      相信大家，我们会一起向充满期望的未来前进</p>
+</blockquote>
+
+<p>他主要提到了学习氛围、学习小组、不要抄作业这几点。并且他希望通过学习小组、不要抄作业的方式改善学习氛围。归根结底，这是在解决动力不足的问题。</p>
+
+<blockquote>
+  <p>9.20<br />
+      同学们，我们班已经签完了历史学习公约，那么就要向目标进发。
+     请各位同学签了公约以后，就遵守这个公约，不要对此产生蔑视的想法。
+     我无法调动班中每一位同学的积极性，但我一定会做到最好。这些事情，我会一直坚持下去，哪怕会有人不理解。
+     “团结一致，重回巅峰”不会仅仅只是一句口号。</p>
+</blockquote>
+
+<p>公约的内容主要是惩罚制度。这也是在解决动力不足的问题。</p>
+
+<p>分析材料可以得出，课代表也意识到了提升动力的根本性和必要性。从后来我们班成绩的视角来看，这几点确实起到了作用。但我想说的是，提升动力也许还有更好的方法。</p>
+
+<p>我的那篇文章提到的提升动力的方法全都可以用在这里。另有一点：那篇是关于自主学习的，然而在这个班级体中，我们还有一个方法，那就是外界力量。这主要包括同学之间的较量和竞争、他人的敦促等。对于前者，我们可以设法让同学之间有一个方面拉开差距，如按成绩发奖品，这样就可以提升同学之间的较量，从而提升动力。对于后者，课代表提到的学习小组就是很好的方案。所以课代表第一次说的总体上没什么问题。</p>
+
+<p>然而第二次的公约就引起了一些意见。</p>
+
+<blockquote>
+  <p>37号：关于奖惩制度这件事我想说明一下，就是每个人能力不同，不能在短时间内一下子要求人家及格，超过年级平均分，我知道你是想让班级历史成绩变好，但是还是要讲究一下这个奖惩制度的适应性对吧，能不能提出一个更合理的，普适的一个制度，比如说每个人进步多少分，达到自己能力能够达到的分数就可以了。有些同学基础不好的确实没有办法让他们在短时间内提高到一个超越年级平均的水平。还有就是一个积极性的问题，我希望不要以惩罚来逼迫他人被动积极，没有对学科的自主认真是没办法达到主动积极的。奖惩奖惩那么也要有相对应的奖励吧。对于抄试卷这个我是比较不赞同的，试卷中的题目类型是不一样的，每套卷子考的题也不一样，我更希望能够抄写考题相关的知识，帮助巩固记忆。而且就是你所做的是团结了民心，但可能是我太浅薄了啊，我觉得没有实质性的能帮助同学们提高成绩的方法和一个成效对吧，大多是一些鼓励的话语，希望能在今后从实质性方面多出出点子，这比目前的喊口号啥的要实用多了。我也不是一个人的想法啊，历史老师自己也说了要勇于发表自己的言论嘛，所以我就来说一下一些我能触及到的同学们的新声，望我们X历史课代表谅解一下，如果冒犯到了属实不好意思，本无意冒犯的@XXXX</p>
+</blockquote>
+
+<p>主要说惩罚要切合实际、不要被迫积极，也提出了一些新方法。对于改革要切合实际这一点我也是认同的。其实切合实际是有效果的必要条件。</p>
+
+<h1 id="习惯">习惯</h1>
+
+<p>主要就是那篇文章里提到的方法了。在这个方面，我们的历史老师已经做了很多。我们还可以做错题本，也可以进行一个归纳总结。练习册也不要做完就过，最好是“压榨”它的所有价值，吃透这些题目。</p>
+
+<h1 id="总结">总结</h1>
+
+<p>我们要改革，就进行动力和习惯两方面的改革。动力方面，学习小组、按成绩（的提升）给奖励（或处罚）、宣传中考的重要性等。习惯方面，错题本、归纳总结、“压榨”作业等。改革的方案需要满足切合实际、有效果。</p>
+
+<p><strong>我们班将会，也必定会重回巅峰！</strong></p>
+
+<p>2023年11月13日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[这篇文章写得有点晚了，不过我还是想表达一下看法。]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
 
 <p>先放上原证明：</p>
 
