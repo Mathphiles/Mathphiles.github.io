@@ -43,3 +43,25 @@ blockquote {
 p {
 	letter-spacing: 0.5px;
 }
+
+article {
+	background-color: blanchedalmond;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+	animation: fadeIn ease-in 0.5s;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.preface {
+	color:royalblue;
+	user-select: text;
+}

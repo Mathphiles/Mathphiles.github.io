@@ -1,11 +1,11 @@
 .article{
 	display: block;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 	position: relative;
 	padding: 10px 20px;
 	margin: 10px;
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px gray;
+	border-radius: 4px;
+	/*box-shadow: 2px 2px 5px gray;*/
 	transition: /*transform 0.2s, box-shadow 0.2s,*/ background-color 0.4s;
 }
 
@@ -67,3 +67,29 @@ h2{
 .hidden {
 	display: none;
 }
+
+
+article {
+	/*background-color: blanchedalmond;*/
+	/*padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border-radius: 5px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);*/
+	animation: fadeIn ease-in 0.5s;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+/*
+.bottom {
+	text-align: center;
+}*/

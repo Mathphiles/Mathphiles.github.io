@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-11-18T11:51:13+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>HZX的个人博客</subtitle><author><name>HZX</name></author><entry><title type="html">我的仿费马猜想</title><link href="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-11-25T18:11:16+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>HZX的个人博客</subtitle><author><name>HZX</name></author><entry><title type="html">参加少代会有感</title><link href="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html" rel="alternate" type="text/html" title="参加少代会有感" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F</id><content type="html" xml:base="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html"><![CDATA[<h1 id="大队委选举">大队委选举</h1>
+<p>对于陌生的竞选者，让人想给他投票的几个点：</p>
+
+<p>演讲基本功：流利，自信，少读PPT</p>
+
+<p>内容：表明目标，不偏题，展现个人优势</p>
+
+<p>新颖：风格（因人而异）</p>
+
+<h1 id="其他">其他</h1>
+
+<p>代表提案很快就落实了，运动器材，可能食堂的辣椒酱也是</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[大队委选举 对于陌生的竞选者，让人想给他投票的几个点：]]></summary></entry><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
+
+<p>假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。</p>
+
+<p>怎么计算交点呢？让计算机去试肯定行不通，那肯定就要用到数学了。</p>
+
+<p>首先，我们设定眼睛和物体都位于三维空间中，那么我们就可以用一个三维向量来表示这些东西。射线是已知的，设它为 $\vec e+p\vec v$ 。设物体表面是一个二维平面，用三角形可以唯一确定一个平面，所以用三角形作为物体表面。设三个顶点为 $\vec a ,\vec a +\vec b,\vec a +\vec c$ ，平面则可以表示为 $\vec a +n\vec b+m\vec c$ 。联立，可得 $\vec a+n\vec b+m\vec c=\vec e+p\vec v$ 。运用一点线代知识可知</p>
+
+\[\begin{bmatrix}-n\\-m\\p\end{bmatrix}=\begin{pmatrix}
+\vec b  &amp;\vec c  &amp;\vec v
+\end{pmatrix}^{-1}\left(\vec a-\vec e\right)\\\]
+
+<p>另外，我们还要知道这个点是否在三角形内。</p>
+
+<p>注意到，如果把平面上的点都用[n,m]两个坐标表示（n,m是已求出的），a+b的坐标变成[1,0]，a+c的坐标变成[0,1]，a的坐标变成[0,0]。容易证明，变换后一个点在三角形内等价于变换前这个点在三角形内。这样就方便判断了。</p>
+
+<p>满足上述两条的点就是交点。还需要进行距离的排序，就好了。</p>
+
+<p>然后就是编程部分了。我先用python写了一遍，速度堪忧，就让那个老朋友帮忙改成了c++，用到opencv又配置了一番。暂时不开源了，我的代码也没什么可借鉴之处。</p>
+
+<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>]]></content><author><name>HZX</name></author><category term="linear-algebra" /><category term="coding" /><summary type="html"><![CDATA[前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。]]></summary></entry><entry><title type="html">关于内容</title><link href="/2023/11/05/%E5%85%B3%E4%BA%8E%E5%86%85%E5%AE%B9.html" rel="alternate" type="text/html" title="关于内容" /><published>2023-11-05T00:00:00+08:00</published><updated>2023-11-05T00:00:00+08:00</updated><id>/2023/11/05/%E5%85%B3%E4%BA%8E%E5%86%85%E5%AE%B9</id><content type="html" xml:base="/2023/11/05/%E5%85%B3%E4%BA%8E%E5%86%85%E5%AE%B9.html"><![CDATA[<h1 id="分类">分类</h1>
+
+<p>对于我们目前的情况来说，内容就是指向学习。学习吸收量 $=$ 学习内容 $\times$ 内容吸收率，所以学习又分学习内容和内容吸收率。内容吸收率的提升又可以细分为学习方法和学习习惯。</p>
+
+<h1 id="学习内容">学习内容</h1>
+
+<h2 id="分类-1">分类</h2>
+
+<p><strong>知识体系</strong>和<strong>学科思维</strong></p>
+
+<p>学习思维的一大体现就是做题思路。</p>
+
+<h2 id="知识体系">知识体系</h2>
+<p>待写</p>
+
+<h2 id="做题思路">做题思路</h2>
+
+<h3 id="文科">文科</h3>
+
+<p>问题转化成：如何提高做题思路？我想有两种途径。其一，像训练神经网络那样，通过大量训练让大脑自己学会怎样答题，即题海战术。其二，通过总结、推导或任何方法，找到解题的方法或框架。</p>
+
+<h4 id="题海战术">题海战术</h4>
+
+<p>这一块研究纯粹题海战术，即丝毫不用思考地做题。这也要讲究一个内化率，即做过的题能吸收多少。题海战术的重点在于提高内化率。这种内化，表现为记忆。这不算思考，因为只要记题目和参考答案怎么写。</p>
+
+<h4 id="找方法">找方法</h4>
+<p>私以为这是更好的，因为它需投入时间精力少，因此更容易有效。</p>
+
+<p>要怎样“找方法”呢？</p>
+
+<p>我们希望这些内容是<strong>万变不离其宗</strong>的。因此我们不论通过总结、推导或任何方法，最终目的都是找到一个<strong>通用的方法或框架</strong>，它可以解决所有的问题。然而这不一定能实现。所以有的书上会将这些内容进行分类，再对每个部分提炼一个通用方法。比如有一本阅读公式的书，就是分成了很多的题型，对每个题型给出一个公式。然而按照题型的分类，不一定是最优的。</p>
+
+<p>所以好的分类是找到方法的基础。</p>
+
+<p>另一方面是效率。在做题后，要把做题的思路内化，这种内化，表现为思考。不能单单记住答案是什么，要分析、理解他写了哪些方面、为什么这样写、对以后做题有什么可借鉴之处、能否用一个框架得出这个答案等。</p>
+
+<p>无论是哪种方法，都离不开做题。</p>
+
+<p>我们要增加刷题的效率。要筛选有用的题目。</p>
+
+<h1 id="内容吸收率">内容吸收率</h1>
+
+<h2 id="分类-2">分类</h2>
+
+<p>学习方法就是学习者如何学习。其中和具体学习关系不大的是学习习惯。另外就是和具体学习关系大的，是学习的<strong>策略</strong>。</p>
+<h2 id="学习方法">学习方法</h2>
+
+<p>主要实践都是由同学问我问题产生的。我发现如下现象：
+经常会有同学能把单词背出来却不会读。这就是策略的问题。</p>
+
+<p>先攻薄弱
+学而不思则罔，思而不学则殆。我们要做到努力学习、积极思考。</p>
+
+<h2 id="学习习惯">学习习惯</h2>
+<p>好的学习习惯让我们做事更有效果。</p>
+
+<p>不一定包括且不限于：</p>
+<ul>
+  <li>课前预习</li>
+  <li>课上认真听讲，记笔记，不懂的问老师等</li>
+  <li>课外网上找资料、自己悟等</li>
+  <li>勤于积累</li>
+  <li>找不足，及时反思</li>
+  <li>真正的学习不在于刷多少题或者挑灯夜战，把知识尽可能吸收才是关键。做错题本的主要原因就是这个。</li>
+  <li>勤复习</li>
+</ul>
+
+<p>2023年11月20日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[分类]]></summary></entry><entry><title type="html">我的仿费马猜想</title><link href="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
 
 <p>2022年6月1号，去年的六一儿童节，正好也是疫情期间，呆在家里没什么作业，就开始想数学。想到费马大定理，忽然有了个灵感——如果把指数和底数互换会怎么样？如果把左边的项增多会怎么样？</p>
 
@@ -93,7 +191,13 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 <p>Q.E.D.</p>]]></content><author><name>HZX</name></author><category term="analysis" /><summary type="html"><![CDATA[本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。]]></summary></entry><entry><title type="html">浅谈自主达到目标的方法</title><link href="/2023/10/09/about-dream.html" rel="alternate" type="text/html" title="浅谈自主达到目标的方法" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>/2023/10/09/about-dream</id><content type="html" xml:base="/2023/10/09/about-dream.html"><![CDATA[<p>如何自主达到目标？这是我们努力奋斗的生活中必须回答的问题。作为学生，我们的主要目标就是学习好，说得“狭隘”一点就是得高分。对于实现这个目标，除了个体差异外，就是要回答本问题并付诸行动。个体差异是与生俱来的，这点无法改变，也就无需多想，因此足见本问题的重要性。本文试图通过分解达到目标的过程并逐一击破的方式，分析出全面的达到目标的方法。本文以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。</p>
 
 <h1 id="达到目标的过程">达到目标的过程</h1>
-<p>动力 $\to$ 设立目标 $\to$ 效率 $\to$ 习惯 $\to$ 内容 $\to$ 达到目标</p>
+<p>设立目标 $\to$ 动力 $\to$ 效率 $\to$ 内容 $\to$ 坚持 $\to$ 达到目标</p>
+
+<h1 id="设立目标">设立目标</h1>
+<p>我们努力，最终就是要达成目标。但这个目标是不一定的。</p>
+
+<p>最好的目标就是学好历史。这也是作为学生最重要的目标。
+还有一种目标，就是临时混过去。也可以称之为不定目标。通常症状为学而不思、抄作业等。据我所知，这是很多同学的状态。这通常是缺乏<strong>原始动力</strong>导致的。原始动力要和长久动力（简称动力）区分开来。</p>
 
 <h1 id="动力">动力</h1>
 
@@ -109,7 +213,7 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 
 <h2 id="动力的提升">动力的提升</h2>
 
-<p>先来看看减少不努力利值方面。不努力会有哪些不好的结果？一个最重要的后果就是中考考不好，还有就是自尊心会受挫，老师批评等。这些是原本就有的。对于这些，我们可以让它加大力度或增加频率，比如宣传中考的重要性和危机程度等。还有原本没有的，我能想到的就是惩罚。</p>
+<p>先来看看减少不努力利值方面。不努力会有哪些不好的结果？一个最重要的后果就是中考考不好，还有就是自尊心会受挫，老师批评等。这些是原本就有的。对于这些，我们可以让它加大力度或增加频率，比如多听听中考的重要性和危机程度等。还有原本没有的，我能想到的就是惩罚。</p>
 
 <p>接下来是增加努力利值方面，换种说法，就是增加正反馈。这基本上就是减小不努力利值的反面，但还有很重要的一点，那就是<strong>兴趣</strong>。培养了对历史这门课的兴趣，可以极大地增加动力。还有一点，减小努力难度，也就是上文提到的代价。减小努力难度相当于减小努力付出的代价，也就使得努力利值变高了。想做到这一点需要一些心理学知识，我也不甚了解。我所知到的有两点，其一，<strong>降低起始难度</strong>。就是一开始给自己定个很小的目标，比如写作文先随便写点框架，然后补充细节，这样比直接写要容易一些。其二，<strong>拆解大问题</strong>。把写作文拆成找素材、列提纲、粗写、细写、修改等步骤。</p>
 
@@ -118,14 +222,6 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 <p>不难发现，上面的方法中就包含了我们常在讲座上听到的奖惩机制、培养兴趣等。</p>
 
 <p>在以上动力中，私以为奖励、兴趣、高分、自尊心、减小难度是最有实质效果的。</p>
-
-<h1 id="设立目标">设立目标</h1>
-<p>我们努力，最终就是要达成目标。但这个目标是不一定的。</p>
-
-<p>最好的目标就是学好历史。这也是作为学生最重要的目标。
-还有一种目标，就是临时混过去。也可以称之为不定目标。通常症状为学而不思、抄作业等。据我所知，这是很多同学的状态。这通常是缺乏动力导致的。</p>
-
-<p>有了前面提到的动力提升方法，就可以解决没有目标的问题了。当然也有另一种方式，那就是防止“混过去”现象发生。比如防抄作业可以设举报有奖制。这是互相监督制的一种。但私以为这样是不好的。</p>
 
 <h1 id="效率">效率</h1>
 
@@ -144,8 +240,11 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 <h2 id="增加时间">增加时间</h2>
 <ul>
   <li>利用间隙时间</li>
-  <li>减少无效时间，包括减少玩或对学习帮助不大的事的时间、</li>
+  <li>减少无效时间，包括减少玩或对学习帮助不大的事的时间。</li>
 </ul>
+
+<h2 id="增加精力">*增加精力</h2>
+<p>要意识到学习能量有限，主要是减少不必要精力消耗，如人际关系、环境压力、精神内耗、娱乐等。生活简洁单纯，能量高度集中，控制学习以外的能量消耗对于增加精力很有帮助。在日记本上列出各种待办的事和干了的事，仔细分析自己的时间花在了哪些地方。其中对“达到目标和其他有用事情”价值极小的事，应当果断戒。</p>
 
 <h2 id="专注的方法">专注的方法</h2>
 
@@ -171,39 +270,17 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
   <li>补充能量，如多喝水</li>
 </ul>
 
-<h1 id="学习习惯">学习习惯</h1>
-<p>好的学习习惯让我们做事更有效果。</p>
-
-<p>不一定包括且不限于：</p>
-<ul>
-  <li>课前预习</li>
-  <li>课上认真听讲，记笔记，不懂的问老师等</li>
-  <li>课外网上找资料、自己悟等</li>
-  <li>勤于积累</li>
-  <li>找不足，及时反思</li>
-  <li>真正的学习不在于刷多少题或者挑灯夜战，把知识尽可能吸收才是关键。做错题本的主要原因就是这个。</li>
-  <li>勤复习</li>
-</ul>
-
-<p>学而不思则罔，思而不学则殆。我们要做到努力学习、积极思考。</p>
-
 <h1 id="内容">内容</h1>
 
-<p>比如历史学科的学习内容：</p>
-<ul>
-  <li>历史知识</li>
-  <li>历史思维</li>
-</ul>
-
-<p>内容也是有方法的。反映在题目上就是答题技巧和公式。</p>
+<p>另一篇文章里有详细讲述。</p>
 <h1 id="总结">总结</h1>
 <p>根据我认为的达到目标的过程，我分析了其中每一步的提升方法，并且得出了平时经常听到的一些方法的原理，比如在学校效率高是因为人和物环境。另外，也包含了各种讲座之类的上提到的方法，如“课前准备要做好”“培养孩子兴趣”“高效学习”。在本文中，这些方法不再是零星的毫无关联的经验，而是系统的，更有逻辑的。</p>
 
-<p>本文所提到的是对“达到目标”的拆解，还并不能直接执行。想要落实到实际生活，还需对本文继续拆解，得到执行方案。</p>
+<p>本文所提到的是对“达到目标”的拆解，还并不能直接执行。想要落实到实际生活，还需对本文继续拆解，得到执行方案。强调一句，执行方案要遵循“两个切合”：切合实际、切合目标。</p>
 
 <p>我们可以发现，达到目标的过程是环环相扣的。前一个没达到就没法完成后面的。所以，只有脚踏实地才能仰望星空。</p>
 
-<p>2023年11月13日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[如何自主达到目标？这是我们努力奋斗的生活中必须回答的问题。作为学生，我们的主要目标就是学习好，说得“狭隘”一点就是得高分。对于实现这个目标，除了个体差异外，就是要回答本问题并付诸行动。个体差异是与生俱来的，这点无法改变，也就无需多想，因此足见本问题的重要性。本文试图通过分解达到目标的过程并逐一击破的方式，分析出全面的达到目标的方法。本文以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。]]></summary></entry><entry><title type="html">关于历史课改革的一点拙见</title><link href="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html" rel="alternate" type="text/html" title="关于历史课改革的一点拙见" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81</id><content type="html" xml:base="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html"><![CDATA[<blockquote>
+<p>2023年11月20日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[如何自主达到目标？这是我们努力奋斗的生活中必须回答的问题。作为学生，我们的主要目标就是学习好，说得“狭隘”一点就是得高分。对于实现这个目标，除了个体差异外，就是要回答本问题并付诸行动。个体差异是与生俱来的，这点无法改变，也就无需多想，因此足见本问题的重要性。本文试图通过分解达到目标的过程并逐一击破的方式，分析出全面的达到目标的方法。本文以学习历史这门学科为例。当然，这些方法对于其他学科也是适用的。]]></summary></entry><entry><title type="html">关于历史课改革的一点拙见</title><link href="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html" rel="alternate" type="text/html" title="关于历史课改革的一点拙见" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81</id><content type="html" xml:base="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html"><![CDATA[<blockquote>
   <p>这篇文章写得有点晚了，不过我还是想表达一下看法。</p>
 </blockquote>
 
@@ -263,6 +340,8 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 
 <p>主要说惩罚要切合实际、不要被迫积极，也提出了一些新方法。对于改革要切合实际这一点我也是认同的。其实切合实际是有效果的必要条件。</p>
 
+<p>为了防止在那文章里设立目标部分提到的“混过去”现象发生，可以采用互相监督的方式。这是通过外部力量来解决没有目标的问题。</p>
+
 <h1 id="习惯">习惯</h1>
 
 <p>主要就是那篇文章里提到的方法了。在这个方面，我们的历史老师已经做了很多。我们还可以做错题本，也可以进行一个归纳总结。练习册也不要做完就过，最好是“压榨”它的所有价值，吃透这些题目。</p>
@@ -273,61 +352,4 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 
 <p><strong>我们班将会，也必定会重回巅峰！</strong></p>
 
-<p>2023年11月13日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[这篇文章写得有点晚了，不过我还是想表达一下看法。]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
-
-<p>先放上原证明：</p>
-
-<p><strong>Cauchy-Goursat 积分定理</strong><br />
-设  $f(z)$  是单连通区域 $D$ 内的解析函数. 若 $L$ 是 $D$ 内任一条简单间曲线, 取逆时针方向, 则</p>
-
-\[\int_{L} f(z) \mathrm{d} z=0\]
-
-<p><img src="https://pic4.zhimg.com/80/v2-1de52cf0aa9aa6d20f978a153638e8cb.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-2f455cd5077aff510dc5a4d26d7df700.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-d8dbd544939f5c096f903c64a1d02e9d.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-b711e5552e5d8c4181ca17db4aa10aff.jpg" alt="" /></p>
-
-<p>修改：</p>
-
-<p>1.把引理中 $\eta$ 的定义换成 $0&lt;\eta\le\min{\delta,\delta’}$ ，于是让 $\eta$ 趋于0——即n趋于无穷——也有</p>
-
-\[\left|\int_{L} f(z) \mathrm{d} z-\int_{P} f(z) \mathrm{d} z\right|&lt;\varepsilon\]
-
-<p>即</p>
-
-\[\int_{L} f(z) \mathrm{d} z=\int_{P} f(z) \mathrm{d} z\]
-
-<p>2.补充一下引理证明第一段里最后一句“完全在G内”的证明。<br />
-$\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\delta’,pz_{k-1}\ge\delta’$ 。 由于三角形的顶点和对边不相交，因此得证。</p>
-
-<p>3.修改证明后半部分，即三步中的后两步。这部分可以说是完全换了个思路。<br />
-首先我们有任意的一条路径 $L$ ，在 $L$ 上取点 $z_0,z_1,z_2,\cdots ,z_{2^n}$，使每个弧段 $z_{k-1}z_k$ 长度小于 $\eta$ 。对于所有的 $a$ 从0到n，连结所有下标为 $2^{n-a}m\,\,\,(m=0,1,2\cdots)$ 的点，得到的折线记为 $P_a$ 。
-<img src="https://pic4.zhimg.com/80/v2-5507a7d74263e3cacd431efeaf61f4fb.png" alt="示意图" /></p>
-
-<p><strong>注意</strong> 以上这一步不再对所有区域 $D$ 有效了。比较保守的话，可以让 $D$ 是有界凸集或者全集。我初想到这以一点的时候也很惋惜，不过，接下来我要去做的东西都是对于整个空间的，相当于这里的整个复数域，所以问题不大。</p>
-
-<p>对于每个相邻的 $P_{k-1},P_k$ ，它们组成了一组三角形的边界。一看到三角形，自然想到第一步里的结论。于是如果让积分方向为顺下标方向（如z0-z1-z2-z0），那么易知</p>
-
-\[\int_{P_k} f(z) \mathrm{d} z=\sum_{\bigtriangleup }\int_{\partial \bigtriangleup } f(z) \mathrm{d} z+\int_{P_{k-1}} f(z) \mathrm{d} z\]
-
-<p>由第一步里的结论已知</p>
-
-\[\int_{\partial \bigtriangleup } f(z) \mathrm{d} z=0\]
-
-<p>于是</p>
-
-\[\int_{P_k} f(z) \mathrm{d} z=\int_{P_{k-1}} f(z) \mathrm{d} z\]
-
-<p>进而对于任意两个 $P_{i},P_j$ ，有</p>
-
-\[\int_{P_i} f(z) \mathrm{d} z=\int_{P_{j}} f(z) \mathrm{d} z\]
-
-<p>而在修改1里已证明</p>
-
-\[\int_{L} f(z) \mathrm{d} z=\lim_{i\to\infty}\int_{P_i} f(z) \mathrm{d} z\]
-
-<p>所以</p>
-
-\[\int_{L} f(z) \mathrm{d} z=\int_{P_0} f(z) \mathrm{d} z\]
-
-<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>]]></content><author><name>HZX</name></author><category term="analysis" /><summary type="html"><![CDATA[最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。]]></summary></entry></feed>
+<p>2023年11月13日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[这篇文章写得有点晚了，不过我还是想表达一下看法。]]></summary></entry></feed>
