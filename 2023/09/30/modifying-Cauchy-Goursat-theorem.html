@@ -100,7 +100,8 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <link rel="stylesheet" href="/assets/css/tag.css"/>
+        <body>
+<link rel="stylesheet" href="/assets/css/tag.css"/>
 <link rel="stylesheet" href="/assets/css/content.css"/>
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
@@ -110,11 +111,11 @@
     <p class="post-meta">
       <time class="dt-published" datetime="2023-09-30T00:00:00+08:00" itemprop="datePublished">Sep 30, 2023
       </time>
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span class="view-times">   |   <span id="busuanzi_value_page_pv"></span> views</span>
       
       
       <a class="post-tag" href="/tags.html?tagName=analysis" style="display: inline-block;">analysis</a>
-      
-      
       
       
       
@@ -189,14 +190,43 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
 <p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>
 
   </div>
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <div class="view-times">viewed <span id="busuanzi_value_page_pv"></span> times</div>
+  
   <!-- giscus comment
   <div class="giscus">
     <p style="color:red">[Failed to load comment section]</p>
   </div>--><a class="u-url" href="/2023/09/30/modifying-Cauchy-Goursat-theorem.html" hidden></a>
 </article>
 
+<div id="toc_list">
+</div>
+
+<script>
+  // 通过 JavaScript 动态生成文章目录
+  document.addEventListener('DOMContentLoaded', function() {
+    var headings = document.querySelectorAll('.post h1, .post h2, .post h3');
+
+    var tocList = document.getElementById('toc_list');
+    var tocHTML = '';
+
+    for (var i = 1; i < headings.length; i++) {
+      var heading = headings[i];
+      var headingId = heading.getAttribute('id');
+      var headingQuery = heading.localName;
+      var headingText = heading.textContent;
+
+      var linkHTML = '<a href="#' + headingId + '">' + headingText + '</a>';
+      var listItemHTML = '<'+headingQuery+'>' + linkHTML + '</'+headingQuery+'>';
+
+      tocHTML += listItemHTML;
+    }
+
+    if (tocList) {
+      tocList.innerHTML = tocHTML;
+    }
+  });
+</script>
+
+</body>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>

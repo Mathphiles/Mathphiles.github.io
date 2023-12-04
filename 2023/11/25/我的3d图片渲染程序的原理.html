@@ -100,7 +100,8 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <link rel="stylesheet" href="/assets/css/tag.css"/>
+        <body>
+<link rel="stylesheet" href="/assets/css/tag.css"/>
 <link rel="stylesheet" href="/assets/css/content.css"/>
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
@@ -110,8 +111,8 @@
     <p class="post-meta">
       <time class="dt-published" datetime="2023-11-25T00:00:00+08:00" itemprop="datePublished">Nov 25, 2023
       </time>
-      
-      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span class="view-times">   |   <span id="busuanzi_value_page_pv"></span> views</span>
       
       
       
@@ -154,14 +155,43 @@
 <p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>
 
   </div>
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <div class="view-times">viewed <span id="busuanzi_value_page_pv"></span> times</div>
+  
   <!-- giscus comment
   <div class="giscus">
     <p style="color:red">[Failed to load comment section]</p>
   </div>--><a class="u-url" href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" hidden></a>
 </article>
 
+<div id="toc_list">
+</div>
+
+<script>
+  // 通过 JavaScript 动态生成文章目录
+  document.addEventListener('DOMContentLoaded', function() {
+    var headings = document.querySelectorAll('.post h1, .post h2, .post h3');
+
+    var tocList = document.getElementById('toc_list');
+    var tocHTML = '';
+
+    for (var i = 1; i < headings.length; i++) {
+      var heading = headings[i];
+      var headingId = heading.getAttribute('id');
+      var headingQuery = heading.localName;
+      var headingText = heading.textContent;
+
+      var linkHTML = '<a href="#' + headingId + '">' + headingText + '</a>';
+      var listItemHTML = '<'+headingQuery+'>' + linkHTML + '</'+headingQuery+'>';
+
+      tocHTML += listItemHTML;
+    }
+
+    if (tocList) {
+      tocList.innerHTML = tocHTML;
+    }
+  });
+</script>
+
+</body>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
