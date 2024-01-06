@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-12-04T20:38:20+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>HZX的个人博客</subtitle><author><name>HZX</name></author><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-01-06T12:42:37+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>HZX的个人博客</subtitle><author><name>HZX</name></author><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
 
 <p>假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。</p>
 
@@ -18,7 +18,7 @@
 
 <p>然后就是编程部分了。我先用python写了一遍，速度堪忧，就让那个老朋友帮忙改成了c++，用到opencv又配置了一番。暂时不开源了，我的代码也没什么可借鉴之处。</p>
 
-<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>]]></content><author><name>HZX</name></author><category term="linear-algebra" /><category term="coding" /><summary type="html"><![CDATA[前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。]]></summary></entry><entry><title type="html">我的仿费马猜想</title><link href="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
+<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>]]></content><author><name>HZX</name></author><category term="coding" /><summary type="html"><![CDATA[前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。]]></summary></entry><entry><title type="html">我的仿费马猜想</title><link href="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
 
 <p>2022年6月1号，去年的六一儿童节，正好也是疫情期间，呆在家里没什么作业，就开始想数学。想到费马大定理，忽然有了个灵感——如果把指数和底数互换会怎么样？如果把左边的项增多会怎么样？</p>
 
@@ -68,7 +68,30 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 
 <p>其次，它不能进行乘除法。不过可以证明这种替代：</p>
 
-\[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]]]></content><author><name>HZX</name></author><category term="number-theory" /><summary type="html"><![CDATA[大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
+\[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]
+
+<p>利用大O记号的这个问题，我构造出了一个超级加强版Cauchy-Goursat积分定理的伪证，直接干翻留数理论：</p>
+
+<p>Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L.<br />
+Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
+
+\[\begin{align*}
+\int_{L}f(z)\mathrm dz
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i)\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n}f(z_i)(z_{i+1}-z_i)\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=1}^{n+1}f(z_{i-1})z_{i}-\sum_{k=0}^{n}f(z_i)z_{i}\\
+=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))z_{i}\\
+=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\mathcal O(1)\\
+=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\\
+=&amp;f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)(f(z_{0})-f(z_n))\\
+=&amp;\mathcal O(f(z_n)-f(z_{0}))
+\end{align*}\]
+
+<p>Take $z_0=z_n$ , and we get</p>
+
+\[\int_{L}f(z)\mathrm dz=0\]
+
+<p>Q.E.D.</p>]]></content><author><name>HZX</name></author><category term="number-theory" /><summary type="html"><![CDATA[大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。]]></summary></entry><entry><title type="html">牛莱公式的新证明</title><link href="/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" rel="alternate" type="text/html" title="牛莱公式的新证明" /><published>2023-10-14T00:00:00+08:00</published><updated>2023-10-14T00:00:00+08:00</updated><id>/2023/10/14/a-new-proof-to-newton-leibniz-formula</id><content type="html" xml:base="/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"><![CDATA[<p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
 
 <p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
 设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have</p>

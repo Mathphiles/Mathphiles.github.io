@@ -111,8 +111,8 @@
     <p class="post-meta">
       <time class="dt-published" datetime="2023-10-28T00:00:00+08:00" itemprop="datePublished">Oct 28, 2023
       </time>
-      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <span class="view-times">   |   <span id="busuanzi_value_page_pv"></span> views</span>
+      <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span class="view-times">   |   <span id="busuanzi_value_page_pv"></span> views</span> -->
       
       
       
@@ -120,8 +120,6 @@
       
       
       <a class="post-tag" href="/tags.html?tagName=number-theory" style="display: inline-block;">number-theory</a>
-      
-      
       
       
       
@@ -149,6 +147,28 @@ $f(x)\lesssim \mathcal{O}(g(x)). $
 
 \[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]
 
+<p>利用大O记号的这个问题，我构造出了一个超级加强版Cauchy-Goursat积分定理的伪证，直接干翻留数理论：</p>
+
+<p>Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L.<br />
+Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
+
+\[\begin{align*}
+\int_{L}f(z)\mathrm dz
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i)\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n}f(z_i)(z_{i+1}-z_i)\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=1}^{n+1}f(z_{i-1})z_{i}-\sum_{k=0}^{n}f(z_i)z_{i}\\
+=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))z_{i}\\
+=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\mathcal O(1)\\
+=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\\
+=&amp;f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)(f(z_{0})-f(z_n))\\
+=&amp;\mathcal O(f(z_n)-f(z_{0}))
+\end{align*}\]
+
+<p>Take $z_0=z_n$ , and we get</p>
+
+\[\int_{L}f(z)\mathrm dz=0\]
+
+<p>Q.E.D.</p>
 
   </div>
   
