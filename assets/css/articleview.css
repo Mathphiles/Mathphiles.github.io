@@ -14,7 +14,7 @@
 	/* background-color: rgba(255, 235, 205, 0.5) *//*lightcyan*/
 	/*transform: translateY(-5px);*/
 	.post_title {
-		text-decoration: underline
+		text-decoration: underline;
 	}
 }/*
 .article:active{
