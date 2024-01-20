@@ -7,10 +7,10 @@
 
   <!-- Twitter link descriptions
   
-  <meta name="twitter:title" content="牛莱公式的新证明">
+  <meta name="twitter:title" content="向量分析">
   
   
-  <meta name="twitter:description" content="复分析里的Newton-Leibniz公式">
+  <meta name="twitter:description" content="当向量遇见分析，会碰撞出怎样的火花？">
   
   <meta name="twitter:image" content="/avatar.jpg"> -->
   
@@ -60,20 +60,20 @@
     });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>--><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>牛莱公式的新证明 | Home</title>
+<title>向量分析 | Home</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="牛莱公式的新证明" />
+<meta property="og:title" content="向量分析" />
 <meta name="author" content="HZX" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。" />
-<meta property="og:description" content="本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。" />
+<meta name="description" content="Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L. Let $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$" />
+<meta property="og:description" content="Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L. Let $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$" />
 <meta property="og:site_name" content="Home" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-10-14T00:00:00+08:00" />
+<meta property="article:published_time" content="2024-01-13T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="牛莱公式的新证明" />
+<meta property="twitter:title" content="向量分析" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"HZX"},"dateModified":"2023-10-14T00:00:00+08:00","datePublished":"2023-10-14T00:00:00+08:00","description":"本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。","headline":"牛莱公式的新证明","mainEntityOfPage":{"@type":"WebPage","@id":"/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"},"url":"/2023/10/14/a-new-proof-to-newton-leibniz-formula.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"HZX"},"dateModified":"2024-01-13T00:00:00+08:00","datePublished":"2024-01-13T00:00:00+08:00","description":"Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L. Let $f:\\mathbb{C}\\to\\mathbb{R}^n,g:\\mathbb{C}\\to\\mathbb{C}.$","headline":"向量分析","mainEntityOfPage":{"@type":"WebPage","@id":"/2024/01/13/%E7%9F%A9%E9%98%B5%E5%88%86%E6%9E%90.html"},"url":"/2024/01/13/%E7%9F%A9%E9%98%B5%E5%88%86%E6%9E%90.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/navbar.css">
@@ -108,9 +108,9 @@
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">牛莱公式的新证明</h1>
+    <h1 class="post-title p-name" itemprop="name headline">向量分析</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2023-10-14T00:00:00+08:00" itemprop="datePublished">Oct 14, 2023
+      <time class="dt-published" datetime="2024-01-13T00:00:00+08:00" itemprop="datePublished">Jan 13, 2024
       </time>
       <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <span class="view-times">   |   <span id="busuanzi_value_page_pv"></span> views</span> -->
@@ -128,37 +128,90 @@
       
       
       
+      <a class="post-tag" href="/tags.html?tagName=linear-algebra" style="display: inline-block;">linear-algebra</a>
       
       
       
       
-      </p></header>
+      
+      </p><span class="preface">some discovery on analysis</span></header>
 
   <div class="content">
-    <p>本想再证Cauchy-Goursat积分定理，写下来却发现漏洞，故作罢。然其中过程颇有趣，而后又偶见Abel求和公式之证明，忽灵感涌现，想出此证明。</p>
+    <p>Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L. Let
+$f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
 
-<p>任取区域 $D$ 内一条简单曲线 $L$ ，在 $L$ 上取分点 $z_0,z_1\cdots z_n$ ，其中 $z_0$ 是 $L$ 的起点而 $z_n$ 是 $L$ 的终点. 
-设 $F(z)$ 是 $D$ 上的解析函数，并且在 $D$ 内有 $F’(z)=f(z)$ . So we have</p>
+<p><strong>definition</strong> let $\displaystyle{F(z)= \left[ \begin{array}{c} F_1(z )\ F_2(z )\\cdots \end{array} \right].}$ define</p>
 
-\[f(z_i)=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}\]
+\[F'(z_i)=\frac{\mathrm d F}{\mathrm dx}=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}= \left[ \begin{array}{c} F_1'(z )\\ F_2'(z )\\\cdots \end{array} \right].\]
 
-<p>Hence</p>
+\[\int_{L}f(z)\mathrm dz
+=\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i).\]
 
-\[\begin{align*}
+<p>let $\displaystyle{f(z)= \left[ \begin{array}{c} z \ z ^{ 2 } \end{array} \right],g(z)=z }$ , we have</p>
+
+\[\displaystyle
+\begin{align*}
 \int_{L}f(z)\mathrm dz
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}F(z_{i+1})-F(z_i)\\
-=&amp;F(z_{n})-F(z_0)\\
+=&amp;\int_{L}\left[ \begin{array}{c} z \\ z ^{ 2 } \end{array} \right]\mathrm dz\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\left[ \begin{array}{c} z_i \\ z_i ^{ 2 } \end{array} \right](z_{i+1}-z_i)\\
+=&amp;\left[ \begin{array}{c}\lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n-1} z_i (z_{i+1}-z_i)\\ \lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n-1}z_i ^{ 2 }(z_{i+1}-z_i) \end{array} \right]\\
+=&amp;\left[ \begin{array}{c} \int_{L}z\mathrm dz \\ \int_{L}z ^{ 2 } \mathrm dz\end{array} \right].\\
+
 \end{align*}\]
 
-<p>Q.E.D.</p>
+<p>generally, we have</p>
+
+<p><strong>theorem 1</strong> let $\displaystyle{f(z)= \left[ \begin{array}{c} f_1(z )\ f_2(z )\\cdots \end{array} \right]}$ . then</p>
+
+\[\displaystyle
+\begin{align*}
+\int_{L}f(z)\mathrm dz
+
+=&amp;\left[ \begin{array}{c} \int_{L} f_1(z )\mathrm dz \\ \int_{L} f_2(z )\mathrm dz\\\cdots\end{array} \right].\\
+
+\end{align*}\tag1\]
+
+<p>which implies the Newton-Leibniz formula.</p>
+
+<p><strong>theorem 2 (Newton-Leibniz formula)</strong>  let $\displaystyle{f(z)= \left[ \begin{array}{c} f_1(z )\ f_2(z )\\cdots \end{array} \right]}$ , $F’(z)=f(z)$. then</p>
+
+<p>$$
+\displaystyle
+\begin{align*}
+\int_{L}f(z)\mathrm dz</p>
+
+<p>=&amp;F(b)-F(a).\</p>
+
+<p>\end{align*}\tag2
+$$
+<strong>proof</strong>  from theorem 1 we have</p>
+
+\[\displaystyle
+\begin{align*}
+\int_{L}f(z)\mathrm dz
+
+=&amp;\left[ \begin{array}{c} \int_{L} f_1(z )\mathrm dz \\ \int_{L} f_2(z )\mathrm dz\\\cdots\end{array} \right]\\
+=&amp;\left[ \begin{array}{c} F_1(b)-F_1(a) \\ F_2(b)-F_2(a)\\\cdots\end{array} \right]\tag{Newton-Leibniz}\\
+=&amp;F(b)-F(a).
+\end{align*}\]
+
+<p><strong>example</strong> let $\displaystyle{f(z)= \left[ \begin{array}{c} z \ z ^{ 2 } \end{array} \right],g(z)=z }$ . then</p>
+
+\[\displaystyle
+\begin{align*}
+\int_{0}^1f(z)\mathrm dz
+=&amp;F(1)-F(0)\\
+=&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right]-\left[ \begin{array}{c} 0 \\0\end{array} \right]\\
+
+=&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right].\\
+\end{align*}\]
 
   </div>
   
   <!-- giscus comment
   <div class="giscus">
     <p style="color:red">[Failed to load comment section]</p>
-  </div>--><a class="u-url" href="/2023/10/14/a-new-proof-to-newton-leibniz-formula.html" hidden></a>
+  </div>--><a class="u-url" href="/2024/01/13/%E7%9F%A9%E9%98%B5%E5%88%86%E6%9E%90.html" hidden></a>
 </article>
 
 <div id="toc_list">

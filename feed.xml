@@ -1,4 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-01-10T21:15:03+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>HZX的个人博客</subtitle><author><name>HZX</name></author><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-01-20T14:49:23+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>HZX的博客</subtitle><author><name>HZX</name></author><entry><title type="html">文科神套路</title><link href="/2024/01/17/%E6%96%87%E7%A7%91%E7%A5%9E%E5%A5%97%E8%B7%AF.html" rel="alternate" type="text/html" title="文科神套路" /><published>2024-01-17T00:00:00+08:00</published><updated>2024-01-17T00:00:00+08:00</updated><id>/2024/01/17/%E6%96%87%E7%A7%91%E7%A5%9E%E5%A5%97%E8%B7%AF</id><content type="html" xml:base="/2024/01/17/%E6%96%87%E7%A7%91%E7%A5%9E%E5%A5%97%E8%B7%AF.html"><![CDATA[<p>材料的二重见地：信息、价值</p>
+
+<p>关键点：
+合理、视角</p>]]></content><author><name>HZX</name></author><category term="study" /><summary type="html"><![CDATA[材料的二重见地：信息、价值]]></summary></entry><entry><title type="html">新经济学原理</title><link href="/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="新经济学原理" /><published>2024-01-15T00:00:00+08:00</published><updated>2024-01-15T00:00:00+08:00</updated><id>/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html"><![CDATA[<h1 id="引言">引言</h1>
+
+<p>这篇文章的内容是我建构出的一套经济学原理，肯定有诸多不妥之处。本文中使用价值的定义和《资本论》中一致。</p>
+
+<h1 id="商品产生的二因素资源和劳动">商品产生的二因素——资源和劳动</h1>
+<p>首先要明确资源的意义。资源是一个蕴含于生产原料当中的量，代表生产原料能产生商品的多少。举个例子，开垦的土地是一种生产原料，从种植的角度看，它的资源就是它能给农作物提供的东西的量。</p>
+
+<p>一切可给予他人之物都可以叫商品。可以是物、权、知识、劳动等等。商品应当是一个人无法或不想通过自己得到的东西。不然就不会交换，也就不会有商品。
+现在来看商品产生依赖什么。</p>
+
+<p>会消耗资源的：
+如果是作为物的商品，那就一定要有原料和利用资源将原料加工成商品的劳动。还有不需要劳动的，比如权力，这个商品就只有使用价值。</p>
+
+<p>不会消耗资源的：比如传授知识，或者劳动。</p>
+
+<h2 id="合成商品的材料">合成商品的材料</h2>
+
+<p>通过上面的分析，不难总结出：资源+劳动合成了物，资源合成了权力，劳动合成了劳动，而知识的合成方式不一。这些就是商品的合成。</p>
+
+<h1 id="商品的成本">商品的成本</h1>
+<p>现在我们考察一个过程：</p>
+<blockquote>
+  <p>张三是个农场主，拥有一片开垦过的土地，他雇佣农民在这片土地上种水稻并丰收了。</p>
+</blockquote>
+
+<p>其中，经过劳动，产生了使用价值为10元的商品，同时，土地的资源消耗了一部分，这是因为土地里的养分减少了。当然，阳光也为水稻提供了资源。其他还有很多因素，这里暂不考虑了。</p>
+
+<p>水稻的成本：土地、阳光的资源，劳动</p>
+
+<p><strong>资本家会利用劳动和资源来合成商品。无产者会把劳动作为商品。</strong>
+资源会随着物商品的产生而被消耗，所以资本家会进行殖民掠夺。</p>]]></content><author><name>HZX</name></author><category term="economics" /><summary type="html"><![CDATA[引言]]></summary></entry><entry><title type="html">向量分析</title><link href="/2024/01/13/%E7%9F%A9%E9%98%B5%E5%88%86%E6%9E%90.html" rel="alternate" type="text/html" title="向量分析" /><published>2024-01-13T00:00:00+08:00</published><updated>2024-01-13T00:00:00+08:00</updated><id>/2024/01/13/%E7%9F%A9%E9%98%B5%E5%88%86%E6%9E%90</id><content type="html" xml:base="/2024/01/13/%E7%9F%A9%E9%98%B5%E5%88%86%E6%9E%90.html"><![CDATA[<p>Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L. Let
+$f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
+
+<p><strong>definition</strong> let $\displaystyle{F(z)= \left[ \begin{array}{c} F_1(z )\ F_2(z )\\cdots \end{array} \right].}$ define</p>
+
+\[F'(z_i)=\frac{\mathrm d F}{\mathrm dx}=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}= \left[ \begin{array}{c} F_1'(z )\\ F_2'(z )\\\cdots \end{array} \right].\]
+
+\[\int_{L}f(z)\mathrm dz
+=\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i).\]
+
+<p>let $\displaystyle{f(z)= \left[ \begin{array}{c} z \ z ^{ 2 } \end{array} \right],g(z)=z }$ , we have</p>
+
+\[\displaystyle
+\begin{align*}
+\int_{L}f(z)\mathrm dz
+=&amp;\int_{L}\left[ \begin{array}{c} z \\ z ^{ 2 } \end{array} \right]\mathrm dz\\
+=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\left[ \begin{array}{c} z_i \\ z_i ^{ 2 } \end{array} \right](z_{i+1}-z_i)\\
+=&amp;\left[ \begin{array}{c}\lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n-1} z_i (z_{i+1}-z_i)\\ \lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n-1}z_i ^{ 2 }(z_{i+1}-z_i) \end{array} \right]\\
+=&amp;\left[ \begin{array}{c} \int_{L}z\mathrm dz \\ \int_{L}z ^{ 2 } \mathrm dz\end{array} \right].\\
+
+\end{align*}\]
+
+<p>generally, we have</p>
+
+<p><strong>theorem 1</strong> let $\displaystyle{f(z)= \left[ \begin{array}{c} f_1(z )\ f_2(z )\\cdots \end{array} \right]}$ . then</p>
+
+\[\displaystyle
+\begin{align*}
+\int_{L}f(z)\mathrm dz
+
+=&amp;\left[ \begin{array}{c} \int_{L} f_1(z )\mathrm dz \\ \int_{L} f_2(z )\mathrm dz\\\cdots\end{array} \right].\\
+
+\end{align*}\tag1\]
+
+<p>which implies the Newton-Leibniz formula.</p>
+
+<p><strong>theorem 2 (Newton-Leibniz formula)</strong>  let $\displaystyle{f(z)= \left[ \begin{array}{c} f_1(z )\ f_2(z )\\cdots \end{array} \right]}$ , $F’(z)=f(z)$. then</p>
+
+<p>$$
+\displaystyle
+\begin{align*}
+\int_{L}f(z)\mathrm dz</p>
+
+<p>=&amp;F(b)-F(a).\</p>
+
+<p>\end{align*}\tag2
+$$
+<strong>proof</strong>  from theorem 1 we have</p>
+
+\[\displaystyle
+\begin{align*}
+\int_{L}f(z)\mathrm dz
+
+=&amp;\left[ \begin{array}{c} \int_{L} f_1(z )\mathrm dz \\ \int_{L} f_2(z )\mathrm dz\\\cdots\end{array} \right]\\
+=&amp;\left[ \begin{array}{c} F_1(b)-F_1(a) \\ F_2(b)-F_2(a)\\\cdots\end{array} \right]\tag{Newton-Leibniz}\\
+=&amp;F(b)-F(a).
+\end{align*}\]
+
+<p><strong>example</strong> let $\displaystyle{f(z)= \left[ \begin{array}{c} z \ z ^{ 2 } \end{array} \right],g(z)=z }$ . then</p>
+
+\[\displaystyle
+\begin{align*}
+\int_{0}^1f(z)\mathrm dz
+=&amp;F(1)-F(0)\\
+=&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right]-\left[ \begin{array}{c} 0 \\0\end{array} \right]\\
+
+=&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right].\\
+\end{align*}\]]]></content><author><name>HZX</name></author><category term="linear-algebra" /><category term="analysis" /><summary type="html"><![CDATA[Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L. Let $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$]]></summary></entry><entry><title type="html">参加少代会有感</title><link href="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html" rel="alternate" type="text/html" title="参加少代会有感" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F</id><content type="html" xml:base="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html"><![CDATA[<h1 id="大队委选举">大队委选举</h1>
+<p>对于陌生的竞选者，让人想给他投票的几个点：</p>
+
+<p>演讲基本功：流利，自信，少读PPT</p>
+
+<p>内容：表明目标，不偏题，展现个人优势</p>
+
+<p>新颖：风格（因人而异）</p>
+
+<h1 id="其他">其他</h1>
+
+<p>代表提案很快就落实了，运动器材，可能食堂的辣椒酱也是</p>
+
+<p>后来八年级和操场之间的小道也拓宽了</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[大队委选举 对于陌生的竞选者，让人想给他投票的几个点：]]></summary></entry><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
 
 <p>假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。</p>
 
@@ -102,7 +215,6 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
 
 \[\begin{align*}
 \int_{L}f(z)\mathrm dz
-=&amp;\int_{z_0}^{z_n}f(z)\mathrm dz\\
 =&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}(z_{i+1}-z_i)\\
 =&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}F(z_{i+1})-F(z_i)\\
 =&amp;F(z_{n})-F(z_0)\\
