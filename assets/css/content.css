@@ -65,15 +65,17 @@ article {
 }
 
 .preface {
-	color: royalblue;
+	color: rgb(0, 127, 212);
 	/*user-select: text;*/
 }
 
 #toc_list {
 	position: fixed;
-	top: 80px;
-	left: 10px;
-	color: gray;
+	top: 90px;
+	left: 20px;
+	/* color: gray; */
+	overflow-y: scroll;
+	max-height:85%;
 }
 
 #toc_list :visited {
@@ -117,4 +119,10 @@ html {
 
 .post-title {
 	letter-spacing: 1px;
+}
+
+#toc_list_visibility {
+	position: fixed;
+	top: 60px;
+	left: 20px;
 }

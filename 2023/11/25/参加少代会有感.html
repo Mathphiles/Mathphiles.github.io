@@ -130,8 +130,6 @@
       
       
       
-      
-      
       </p><span class="preface">大队委选举部分我参与投票，于是有一些体会</span></header>
 
   <div class="content">
@@ -159,8 +157,10 @@
 </article>
 
 <div id="toc_list">
-</div>
+</div><button id="toc_list_visibility">show/hide
+</button>
 
+<script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script>
 <script>
   // 通过 JavaScript 动态生成文章目录
   document.addEventListener('DOMContentLoaded', function() {
@@ -184,7 +184,16 @@
     if (tocList) {
       tocList.innerHTML = tocHTML;
     }
+    /* console.log($('#toc_list').val()) */
+  if ( $('#toc_list').html()=="") {
+    $('#toc_list_visibility').hide()
+  }
   });
+  
+  $('#toc_list_visibility').click(function(){
+    $('#toc_list').toggle()
+    /* $('#toc_list_visibility').text("show") */
+});
 </script>
 
 </body>

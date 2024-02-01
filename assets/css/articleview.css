@@ -5,6 +5,9 @@
 	padding: 10px 20px;
 	margin: 10px;
 	border-radius: 4px;
+	& .post_title {
+	border-bottom: 2px solid transparent;
+	}
 	/*box-shadow: 2px 2px 5px gray;*/
 	/* transition: background-color 0.2s; */
 }
@@ -13,8 +16,9 @@
 	/*box-shadow: 1px 1px 8px gray;*/
 	/* background-color: rgba(255, 235, 205, 0.5) *//*lightcyan*/
 	/*transform: translateY(-5px);*/
-	.post_title {
-		text-decoration: underline;
+	& .post_title {
+		/* text-decoration: underline; */
+		border-bottom: 2px solid;
 	}
 }/*
 .article:active{
@@ -64,7 +68,7 @@ h2{
 	position: absolute;
 	right: 10px;
 	bottom: 5px;
-	color: rgb(0, 140, 255);
+	color: /* rgb(0, 140, 255); */rgb(0, 127, 212);
 }
 
 .hidden {
