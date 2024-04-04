@@ -70,12 +70,17 @@ article {
 }
 
 #toc_list {
-	position: fixed;
+	position:sticky;
 	top: 90px;
-	left: 20px;
+	/* left: 20px; */
 	/* color: gray; */
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	max-height:85%;
+	border: 10px solid rgba(91, 214, 255, 0);
+	/* background-color: rgb(91, 214, 255);
+	border-radius: 5px;
+	scrollbar-color: #fff rgb(91, 214, 255); */
+	width: auto;
 }
 
 #toc_list :visited {
@@ -125,4 +130,18 @@ html {
 	position: fixed;
 	top: 60px;
 	left: 20px;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 0.5fr;
+	grid-gap: 10px;
+}
+
+main > .wrapper {
+	padding: 0;
+	max-width: fit-content;
+}
+.container {
+	margin: 0;
 }

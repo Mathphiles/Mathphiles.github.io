@@ -104,7 +104,9 @@
         <body>
 <link rel="stylesheet" href="/assets/css/tag.css"/>
 <link rel="stylesheet" href="/assets/css/content.css"/>
-
+<div id="container">
+<div id="toc"><div id="toc_list">
+</div></div>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -138,7 +140,7 @@
 <p>先放上原证明：</p>
 
 <p><strong>Cauchy-Goursat 积分定理</strong><br />
-设  $f(z)$  是单连通区域 $D$ 内的解析函数. 若 $L$ 是 $D$ 内任一条简单间曲线, 取逆时针方向, 则</p>
+设  $f(z)$  是单连通区域 $D$ 内的解析函数. 若 $L$ 是 $D$ 内任一条简单曲线, 取逆时针方向, 则</p>
 
 \[\int_{L} f(z) \mathrm{d} z=0\]
 
@@ -164,7 +166,7 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
 首先我们有任意的一条路径 $L$ ，在 $L$ 上取点 $z_0,z_1,z_2,\cdots ,z_{2^n}$，使每个弧段 $z_{k-1}z_k$ 长度小于 $\eta$ 。对于所有的 $a$ 从0到n，连结所有下标为 $2^{n-a}m\,\,\,(m=0,1,2\cdots)$ 的点，得到的折线记为 $P_a$ 。
 <img src="https://pic4.zhimg.com/80/v2-5507a7d74263e3cacd431efeaf61f4fb.png" alt="示意图" /></p>
 
-<p><strong>注意</strong> 以上这一步不再对所有区域 $D$ 有效了。比较保守的话，可以让 $D$ 是有界凸集或者全集。我初想到这以一点的时候也很惋惜，不过，接下来我要去做的东西都是对于整个空间的，相当于这里的整个复数域，所以问题不大。</p>
+<p><strong>注意</strong> 以上这一步不再对所有区域 $D$ 有效了。比较保守的话，可以让 $D$ 是有界凸集或者全集。我初想到这一点的时候也很惋惜。</p>
 
 <p>对于每个相邻的 $P_{k-1},P_k$ ，它们组成了一组三角形的边界。一看到三角形，自然想到第一步里的结论。于是如果让积分方向为顺下标方向（如z0-z1-z2-z0），那么易知</p>
 
@@ -198,10 +200,8 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
   <div class="giscus">
     <p style="color:red">[Failed to load comment section]</p>
   </div>--><a class="u-url" href="/2023/09/30/modifying-Cauchy-Goursat-theorem.html" hidden></a>
-</article>
-
-<div id="toc_list">
-</div><button id="toc_list_visibility">show/hide
+</article></div>
+<button id="toc_list_visibility">show/hide
 </button>
 
 <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script>

@@ -84,8 +84,8 @@ article {
 	border-radius: 5px;
 	border-left: 1px solid;
 	border-right: 1px solid;
-	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);*/
-	animation: fadeIn ease-in 0.4s;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+	animation: fadeIn ease-in 0.4s;*/
 }
 @keyframes fadeIn {
 	0% {
