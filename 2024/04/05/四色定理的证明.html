@@ -7,10 +7,10 @@
 
   <!-- Twitter link descriptions
   
-  <meta name="twitter:title" content="改进大O记号">
+  <meta name="twitter:title" content="四色定理的证明？">
   
   
-  <meta name="twitter:description" content="大O记号破坏了等于和一众运算的和平！">
+  <meta name="twitter:description" content="这个证明肯定是错的，恳请大家挑出错误来">
   
   <meta name="twitter:image" content="/avatar.jpg"> -->
   
@@ -60,20 +60,20 @@
     });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>--><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>改进大O记号 | Home</title>
+<title>四色定理的证明？ | Home</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="改进大O记号" />
+<meta property="og:title" content="四色定理的证明？" />
 <meta name="author" content="good day" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。" />
-<meta property="og:description" content="大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。" />
+<meta name="description" content="可以先把地图转换成点与点相连的图。" />
+<meta property="og:description" content="可以先把地图转换成点与点相连的图。" />
 <meta property="og:site_name" content="Home" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-10-28T00:00:00+08:00" />
+<meta property="article:published_time" content="2024-04-05T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="改进大O记号" />
+<meta property="twitter:title" content="四色定理的证明？" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"good day"},"dateModified":"2023-10-28T00:00:00+08:00","datePublished":"2023-10-28T00:00:00+08:00","description":"大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。","headline":"改进大O记号","mainEntityOfPage":{"@type":"WebPage","@id":"/2023/10/28/about-the-big-oh-notation.html"},"url":"/2023/10/28/about-the-big-oh-notation.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"good day"},"dateModified":"2024-04-05T00:00:00+08:00","datePublished":"2024-04-05T00:00:00+08:00","description":"可以先把地图转换成点与点相连的图。","headline":"四色定理的证明？","mainEntityOfPage":{"@type":"WebPage","@id":"/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E.html"},"url":"/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/navbar.css">
@@ -110,9 +110,9 @@
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">改进大O记号</h1>
+    <h1 class="post-title p-name" itemprop="name headline">四色定理的证明？</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2023-10-28T00:00:00+08:00" itemprop="datePublished">Oct 28, 2023
+      <time class="dt-published" datetime="2024-04-05T00:00:00+08:00" itemprop="datePublished">Apr 5, 2024
       </time>
       <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <span class="view-times">   |   <span id="busuanzi_value_page_pv"></span> views</span> -->
@@ -122,7 +122,6 @@
       
       
       
-      <a class="post-tag" href="/tags.html?tagName=number-theory" style="display: inline-block;">number-theory</a>
       
       
       
@@ -133,58 +132,36 @@
       
       
       
+      <a class="post-tag" href="/tags.html?tagName=math" style="display: inline-block;">math</a>
       
       </p></header>
 
   <div class="content">
-    <p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
+    <p>可以先把地图转换成点与点相连的图。
+<img src="https://pic4.zhimg.com/80/v2-e9f46d97666d51f8d288f825ffc66b89.png" alt="Image" /></p>
 
-<p>首先，它严重破坏了等于号的传递性。</p>
+<p>显然，对于每一个地图都有一个它对应的点图，但不是每一个点图都对应一个地图。如果一个点图能对应一个或多个地图，那么我称之为这个图存在。</p>
 
-\[\begin{array}{c}
-1= \mathcal O(1)\\
-1= \mathcal O(x)\\
-\not\Rightarrow \mathcal O(1)= \mathcal O(x)
-\end{array}\]
+<p>引理1. 两块地图必须不同颜色，等价于对应的子图中它们对应的两个点相连<br />
+引理2. n块必须互不相同，等价于子图中它们对应的n个点两两相连</p>
 
-<p>对于这一点，我想到了一种解决方案：把等于号改成 $\lesssim$ 。
-若 $\exists M&gt;0,\forall x&gt;a,|f(x)|&lt;Mg(x)$，则称
-$f(x)\lesssim \mathcal{O}(g(x)). $
- $\lesssim$ 具有和 $\le$ 类似的性质。</p>
+<p>四色定理不成立可以推出，一定存在一个图，使得可以有大于等于5块互不相同颜色，根据引理2可得等价于可以有5个点两两相连的图存在。取逆否命题即得：如果5个点两两相连的图不存在，则四色定理成立。</p>
 
-<p>其次，它不能进行乘除法。不过可以证明这种替代：</p>
+<p>接下来证明这个命题。注意到一个地图一定有唯一的一个轮廓（如果有多个轮廓，那必然至少有2个点不相连）。那么接下来分类讨论：</p>
 
-\[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]
+<p>1.如果只有一个国家独占整个轮廓
+不妨说 这个国家名字叫1，那么一就一定可以拓扑成一个环形（如果里面还有环的话，那这个环内和这个环外的国家就不能相连了）其他4个国家要和1有接壤。所以它们分别与1的内壁接触。这4个国家与1的接触只能有一段，不然就会在1里面形成一个柱子，把其他国家隔开。因此，它们一定位居环内的四方。但是当这4个国家中对角的两组相连，就会发现它们永远没法都连上。因此一个国家独占整个轮廓的情况不可能。</p>
 
-<p>利用大O记号的这个问题，我构造出了一个超级加强版Cauchy-Goursat积分定理的伪证，直接干翻留数理论：</p>
-
-<p>Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L.<br />
-Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
-
-\[\begin{align*}
-\int_{L}f(z)\mathrm dz
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n}f(z_i)(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=1}^{n+1}f(z_{i-1})z_{i}-\sum_{k=0}^{n}f(z_i)z_{i}\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))z_{i}\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\mathcal O(1)\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\\
-=&amp;f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)(f(z_{0})-f(z_n))\\
-=&amp;\mathcal O(f(z_n)-f(z_{0}))
-\end{align*}\]
-
-<p>Take $z_0=z_n$ , and we get</p>
-
-\[\int_{L}f(z)\mathrm dz=0\]
-
-<p>Q.E.D.</p>
+<p>依此类推，分析2个、3个、4个、5个国家分摊整个轮廓的情况，发现都不可能。
+因此证明了5个点两两相连的点图不存在。
+因此四色定理成立。</p>
 
   </div>
   
   <!-- giscus comment
   <div class="giscus">
     <p style="color:red">[Failed to load comment section]</p>
-  </div>--><a class="u-url" href="/2023/10/28/about-the-big-oh-notation.html" hidden></a>
+  </div>--><a class="u-url" href="/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E.html" hidden></a>
 </article></div>
 <button id="toc_list_visibility">switch
 </button>

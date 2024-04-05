@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-04-05T09:49:17+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>这里是我的博客，存着一些我的文章</subtitle><author><name>good day</name></author><entry><title type="html">About Crypto</title><link href="/2024/02/24/about-crypto.html" rel="alternate" type="text/html" title="About Crypto" /><published>2024-02-24T00:00:00+08:00</published><updated>2024-02-24T00:00:00+08:00</updated><id>/2024/02/24/about-crypto</id><content type="html" xml:base="/2024/02/24/about-crypto.html"><![CDATA[<p>鉴于有人还不会些加密的方法（无针对），这里写几个</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-04-05T16:16:23+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>这里是我的博客，存着一些我的文章</subtitle><author><name>good day</name></author><entry><title type="html">四色定理的证明？</title><link href="/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E.html" rel="alternate" type="text/html" title="四色定理的证明？" /><published>2024-04-05T00:00:00+08:00</published><updated>2024-04-05T00:00:00+08:00</updated><id>/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E</id><content type="html" xml:base="/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E.html"><![CDATA[<p>可以先把地图转换成点与点相连的图。
+<img src="https://pic4.zhimg.com/80/v2-e9f46d97666d51f8d288f825ffc66b89.png" alt="Image" /></p>
+
+<p>显然，对于每一个地图都有一个它对应的点图，但不是每一个点图都对应一个地图。如果一个点图能对应一个或多个地图，那么我称之为这个图存在。</p>
+
+<p>引理1. 两块地图必须不同颜色，等价于对应的子图中它们对应的两个点相连<br />
+引理2. n块必须互不相同，等价于子图中它们对应的n个点两两相连</p>
+
+<p>四色定理不成立可以推出，一定存在一个图，使得可以有大于等于5块互不相同颜色，根据引理2可得等价于可以有5个点两两相连的图存在。取逆否命题即得：如果5个点两两相连的图不存在，则四色定理成立。</p>
+
+<p>接下来证明这个命题。注意到一个地图一定有唯一的一个轮廓（如果有多个轮廓，那必然至少有2个点不相连）。那么接下来分类讨论：</p>
+
+<p>1.如果只有一个国家独占整个轮廓
+不妨说 这个国家名字叫1，那么一就一定可以拓扑成一个环形（如果里面还有环的话，那这个环内和这个环外的国家就不能相连了）其他4个国家要和1有接壤。所以它们分别与1的内壁接触。这4个国家与1的接触只能有一段，不然就会在1里面形成一个柱子，把其他国家隔开。因此，它们一定位居环内的四方。但是当这4个国家中对角的两组相连，就会发现它们永远没法都连上。因此一个国家独占整个轮廓的情况不可能。</p>
+
+<p>依此类推，分析2个、3个、4个、5个国家分摊整个轮廓的情况，发现都不可能。
+因此证明了5个点两两相连的点图不存在。
+因此四色定理成立。</p>]]></content><author><name>good day</name></author><category term="math" /><summary type="html"><![CDATA[可以先把地图转换成点与点相连的图。]]></summary></entry><entry><title type="html">About Crypto</title><link href="/2024/02/24/about-crypto.html" rel="alternate" type="text/html" title="About Crypto" /><published>2024-02-24T00:00:00+08:00</published><updated>2024-02-24T00:00:00+08:00</updated><id>/2024/02/24/about-crypto</id><content type="html" xml:base="/2024/02/24/about-crypto.html"><![CDATA[<p>鉴于有人还不会些加密的方法（无针对），这里写几个</p>
 <h1 id="base64">base64</h1>
 <p>可以解密，没有安全性。</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">base64</span>
@@ -150,20 +167,7 @@ $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
 =&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right]-\left[ \begin{array}{c} 0 \\0\end{array} \right]\\
 
 =&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right].\\
-\end{align*}\]]]></content><author><name>good day</name></author><category term="analysis" /><summary type="html"><![CDATA[Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$]]></summary></entry><entry><title type="html">参加少代会有感</title><link href="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html" rel="alternate" type="text/html" title="参加少代会有感" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F</id><content type="html" xml:base="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html"><![CDATA[<h1 id="大队委选举">大队委选举</h1>
-<p>对于陌生的竞选者，让人想给他投票的几个点：</p>
-
-<p>演讲基本功：流利，自信，少读PPT</p>
-
-<p>内容：表明目标，不偏题，展现个人优势</p>
-
-<p>新颖：风格（因人而异）</p>
-
-<h1 id="其他">其他</h1>
-
-<p>代表提案很快就落实了，运动器材，可能食堂的辣椒酱也是</p>
-
-<p>后来八年级和操场之间的小道也拓宽了</p>]]></content><author><name>good day</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[大队委选举 对于陌生的竞选者，让人想给他投票的几个点：]]></summary></entry><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
+\end{align*}\]]]></content><author><name>good day</name></author><category term="analysis" /><summary type="html"><![CDATA[Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$]]></summary></entry><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
 
 <p>假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。</p>
 
@@ -183,7 +187,20 @@ $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
 
 <p>然后就是编程部分了。我先用python写了一遍，速度堪忧，就让那个老朋友帮忙改成了c++，用到opencv又配置了一番。暂时不开源了，我的代码也没什么可借鉴之处。</p>
 
-<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>]]></content><author><name>good day</name></author><category term="algorithm" /><summary type="html"><![CDATA[前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。]]></summary></entry><entry><title type="html">改进大O记号</title><link href="/2023/10/28/about-the-big-oh-notation.html" rel="alternate" type="text/html" title="改进大O记号" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/about-the-big-oh-notation</id><content type="html" xml:base="/2023/10/28/about-the-big-oh-notation.html"><![CDATA[<p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
+<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>]]></content><author><name>good day</name></author><category term="algorithm" /><summary type="html"><![CDATA[前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。]]></summary></entry><entry><title type="html">参加少代会有感</title><link href="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html" rel="alternate" type="text/html" title="参加少代会有感" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F</id><content type="html" xml:base="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html"><![CDATA[<h1 id="大队委选举">大队委选举</h1>
+<p>对于陌生的竞选者，让人想给他投票的几个点：</p>
+
+<p>演讲基本功：流利，自信，少读PPT</p>
+
+<p>内容：表明目标，不偏题，展现个人优势</p>
+
+<p>新颖：风格（因人而异）</p>
+
+<h1 id="其他">其他</h1>
+
+<p>代表提案很快就落实了，运动器材，可能食堂的辣椒酱也是</p>
+
+<p>后来八年级和操场之间的小道也拓宽了</p>]]></content><author><name>good day</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[大队委选举 对于陌生的竞选者，让人想给他投票的几个点：]]></summary></entry><entry><title type="html">改进大O记号</title><link href="/2023/10/28/about-the-big-oh-notation.html" rel="alternate" type="text/html" title="改进大O记号" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/about-the-big-oh-notation</id><content type="html" xml:base="/2023/10/28/about-the-big-oh-notation.html"><![CDATA[<p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
 
 <p>首先，它严重破坏了等于号的传递性。</p>
 
@@ -328,61 +345,4 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
 
 <p><strong>我们班将会，也必定会重回巅峰！</strong></p>
 
-<p>2023年12月4日。</p>]]></content><author><name>good day</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[这篇文章写得有点晚了，不过我还是想表达一下看法。]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
-
-<p>先放上原证明：</p>
-
-<p><strong>Cauchy-Goursat 积分定理</strong><br />
-设  $f(z)$  是单连通区域 $D$ 内的解析函数. 若 $L$ 是 $D$ 内任一条简单曲线, 取逆时针方向, 则</p>
-
-\[\int_{L} f(z) \mathrm{d} z=0\]
-
-<p><img src="https://pic4.zhimg.com/80/v2-1de52cf0aa9aa6d20f978a153638e8cb.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-2f455cd5077aff510dc5a4d26d7df700.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-d8dbd544939f5c096f903c64a1d02e9d.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-b711e5552e5d8c4181ca17db4aa10aff.jpg" alt="" /></p>
-
-<p>修改：</p>
-
-<p>1.把引理中 $\eta$ 的定义换成 $0&lt;\eta\le\min{\delta,\delta’}$ ，于是让 $\eta$ 趋于0——即n趋于无穷——也有</p>
-
-\[\left|\int_{L} f(z) \mathrm{d} z-\int_{P} f(z) \mathrm{d} z\right|&lt;\varepsilon\]
-
-<p>即</p>
-
-\[\int_{L} f(z) \mathrm{d} z=\int_{P} f(z) \mathrm{d} z\]
-
-<p>2.补充一下引理证明第一段里最后一句“完全在G内”的证明。<br />
-$\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\delta’,pz_{k-1}\ge\delta’$ 。 由于三角形的顶点和对边不相交，因此得证。</p>
-
-<p>3.修改证明后半部分，即三步中的后两步。这部分可以说是完全换了个思路。<br />
-首先我们有任意的一条路径 $L$ ，在 $L$ 上取点 $z_0,z_1,z_2,\cdots ,z_{2^n}$，使每个弧段 $z_{k-1}z_k$ 长度小于 $\eta$ 。对于所有的 $a$ 从0到n，连结所有下标为 $2^{n-a}m\,\,\,(m=0,1,2\cdots)$ 的点，得到的折线记为 $P_a$ 。
-<img src="https://pic4.zhimg.com/80/v2-5507a7d74263e3cacd431efeaf61f4fb.png" alt="示意图" /></p>
-
-<p><strong>注意</strong> 以上这一步不再对所有区域 $D$ 有效了。比较保守的话，可以让 $D$ 是有界凸集或者全集。我初想到这一点的时候也很惋惜。</p>
-
-<p>对于每个相邻的 $P_{k-1},P_k$ ，它们组成了一组三角形的边界。一看到三角形，自然想到第一步里的结论。于是如果让积分方向为顺下标方向（如z0-z1-z2-z0），那么易知</p>
-
-\[\int_{P_k} f(z) \mathrm{d} z=\sum_{\bigtriangleup }\int_{\partial \bigtriangleup } f(z) \mathrm{d} z+\int_{P_{k-1}} f(z) \mathrm{d} z\]
-
-<p>由第一步里的结论已知</p>
-
-\[\int_{\partial \bigtriangleup } f(z) \mathrm{d} z=0\]
-
-<p>于是</p>
-
-\[\int_{P_k} f(z) \mathrm{d} z=\int_{P_{k-1}} f(z) \mathrm{d} z\]
-
-<p>进而对于任意两个 $P_{i},P_j$ ，有</p>
-
-\[\int_{P_i} f(z) \mathrm{d} z=\int_{P_{j}} f(z) \mathrm{d} z\]
-
-<p>而在修改1里已证明</p>
-
-\[\int_{L} f(z) \mathrm{d} z=\lim_{i\to\infty}\int_{P_i} f(z) \mathrm{d} z\]
-
-<p>所以</p>
-
-\[\int_{L} f(z) \mathrm{d} z=\int_{P_0} f(z) \mathrm{d} z\]
-
-<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>]]></content><author><name>good day</name></author><category term="analysis" /><summary type="html"><![CDATA[最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。]]></summary></entry></feed>
+<p>2023年12月4日。</p>]]></content><author><name>good day</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[这篇文章写得有点晚了，不过我还是想表达一下看法。]]></summary></entry></feed>

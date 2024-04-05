@@ -132,6 +132,8 @@
       
       
       
+      
+      
       </p></header>
 
   <div class="content">
@@ -192,7 +194,7 @@
       tocList.innerHTML = tocHTML;
     }
     $('#toc_list_visibility').attr("display", "true")
-    $('#container').css("grid-template-columns", "1fr 3fr 1fr");
+    $('#container').css("grid-template-columns", "1fr 2fr 1fr");
     /* console.log($('#toc_list').val()) */
   /* if ( $('#toc_list').html()=="") {
     $('#toc_list_visibility').css("display", "none")
@@ -204,7 +206,7 @@
     console.log($("#toc_list").attr("display")) */
     if ($("#toc_list_visibility").attr("display")=="none") {
       $('#toc_list_visibility').attr("display", "true")
-      $('#container').css("grid-template-columns", "1fr 3fr 1fr");
+      $('#container').css("grid-template-columns", "1fr 2fr 1fr");
     } else {
       $('#toc_list_visibility').attr("display", "none")
       $('#container').css("grid-template-columns", "");
