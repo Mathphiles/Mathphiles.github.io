@@ -47,8 +47,8 @@ p {
 }
 
 article {
-	/*background-color: blanchedalmond;
 	padding: 20px;
+	/*background-color: blanchedalmond;
 	border-radius: 5px;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
 	animation: fadeIn ease-in 0.5s;*/
@@ -134,8 +134,9 @@ html {
 
 #container {
 	display: grid;
-	grid-template-columns: 0.5fr 1fr 0.5fr;
+	/* grid-template-columns: 0.5fr 1fr 0.5fr; */
 	grid-gap: 10px;
+	justify-items: center;
 }
 
 main > .wrapper {

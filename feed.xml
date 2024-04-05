@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-04-04T21:23:53+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>HZX的博客</subtitle><author><name>HZX</name></author><entry><title type="html">About Crypto</title><link href="/2024/02/24/about-crypto.html" rel="alternate" type="text/html" title="About Crypto" /><published>2024-02-24T00:00:00+08:00</published><updated>2024-02-24T00:00:00+08:00</updated><id>/2024/02/24/about-crypto</id><content type="html" xml:base="/2024/02/24/about-crypto.html"><![CDATA[<p>鉴于有人还不会些加密的方法（无针对），这里写几个</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-04-05T09:49:17+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>这里是我的博客，存着一些我的文章</subtitle><author><name>good day</name></author><entry><title type="html">About Crypto</title><link href="/2024/02/24/about-crypto.html" rel="alternate" type="text/html" title="About Crypto" /><published>2024-02-24T00:00:00+08:00</published><updated>2024-02-24T00:00:00+08:00</updated><id>/2024/02/24/about-crypto</id><content type="html" xml:base="/2024/02/24/about-crypto.html"><![CDATA[<p>鉴于有人还不会些加密的方法（无针对），这里写几个</p>
 <h1 id="base64">base64</h1>
 <p>可以解密，没有安全性。</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">base64</span>
@@ -39,13 +39,13 @@ f(正确密码)×p=c，存c<br />
 
 <p><a href="https://samuelhzx.github.io">我的网站</a> 就用了这个算法。</p>
 
-<p>另外，欢迎破解我的网站的密码！如果破解成功，请联系我。</p>]]></content><author><name>HZX</name></author><category term="algorithm" /><summary type="html"><![CDATA[鉴于有人还不会些加密的方法（无针对），这里写几个 base64 可以解密，没有安全性。 import base64 r = "yourpassword".encode("utf-8") s = base64.b64encode(r) print(s) hash 不能解密，但是可以验证。也就导致可以被彩虹表破解。 from hashlib import sha256 r = "yourpassword".encode("utf-8") s = sha256() # Get the hash algorithm. for i in range(1000000): # prevent rainbow table. s.update(r) # Hash the data. b = s.hexdigest() # Get he hash value. print(b) AES 对称加密。]]></summary></entry><entry><title type="html">考试</title><link href="/2024/01/20/%E8%80%83%E8%AF%95.html" rel="alternate" type="text/html" title="考试" /><published>2024-01-20T00:00:00+08:00</published><updated>2024-01-20T00:00:00+08:00</updated><id>/2024/01/20/%E8%80%83%E8%AF%95</id><content type="html" xml:base="/2024/01/20/%E8%80%83%E8%AF%95.html"><![CDATA[<p>平时训练</p>
+<p>另外，欢迎破解我的网站的密码！如果破解成功，请联系我。</p>]]></content><author><name>good day</name></author><category term="algorithm" /><summary type="html"><![CDATA[鉴于有人还不会些加密的方法（无针对），这里写几个 base64 可以解密，没有安全性。 import base64 r = "yourpassword".encode("utf-8") s = base64.b64encode(r) print(s) hash 不能解密，但是可以验证。也就导致可以被彩虹表破解。 from hashlib import sha256 r = "yourpassword".encode("utf-8") s = sha256() # Get the hash algorithm. for i in range(1000000): # prevent rainbow table. s.update(r) # Hash the data. b = s.hexdigest() # Get he hash value. print(b) AES 对称加密。]]></summary></entry><entry><title type="html">考试</title><link href="/2024/01/20/%E8%80%83%E8%AF%95.html" rel="alternate" type="text/html" title="考试" /><published>2024-01-20T00:00:00+08:00</published><updated>2024-01-20T00:00:00+08:00</updated><id>/2024/01/20/%E8%80%83%E8%AF%95</id><content type="html" xml:base="/2024/01/20/%E8%80%83%E8%AF%95.html"><![CDATA[<p>平时训练</p>
 
 <p>平时总结</p>
 
 <p>状态</p>
 
-<p>策略</p>]]></content><author><name>HZX</name></author><category term="study" /><summary type="html"><![CDATA[平时训练]]></summary></entry><entry><title type="html">新经济学原理</title><link href="/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="新经济学原理" /><published>2024-01-15T00:00:00+08:00</published><updated>2024-01-15T00:00:00+08:00</updated><id>/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html"><![CDATA[<h1 id="引言">引言</h1>
+<p>策略</p>]]></content><author><name>good day</name></author><category term="study" /><summary type="html"><![CDATA[平时训练]]></summary></entry><entry><title type="html">新经济学原理</title><link href="/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="新经济学原理" /><published>2024-01-15T00:00:00+08:00</published><updated>2024-01-15T00:00:00+08:00</updated><id>/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html"><![CDATA[<h1 id="引言">引言</h1>
 
 <p>这篇文章的内容是我建构出的一套经济学原理，肯定有诸多不妥之处。本文中使用价值的定义和《资本论》中一致。</p>
 
@@ -75,7 +75,7 @@ f(正确密码)×p=c，存c<br />
 <p>水稻的成本：土地、阳光的资源，劳动</p>
 
 <p><strong>资本家会利用劳动和资源来合成商品。无产者会把劳动作为商品。</strong>
-资源会随着物商品的产生而被消耗，所以资本家会进行殖民掠夺。</p>]]></content><author><name>HZX</name></author><category term="economics" /><summary type="html"><![CDATA[引言]]></summary></entry><entry><title type="html">向量分析</title><link href="/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90.html" rel="alternate" type="text/html" title="向量分析" /><published>2024-01-13T00:00:00+08:00</published><updated>2024-01-13T00:00:00+08:00</updated><id>/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90</id><content type="html" xml:base="/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90.html"><![CDATA[<p>Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let
+资源会随着物商品的产生而被消耗，所以资本家会进行殖民掠夺。</p>]]></content><author><name>good day</name></author><category term="economics" /><summary type="html"><![CDATA[引言]]></summary></entry><entry><title type="html">向量分析</title><link href="/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90.html" rel="alternate" type="text/html" title="向量分析" /><published>2024-01-13T00:00:00+08:00</published><updated>2024-01-13T00:00:00+08:00</updated><id>/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90</id><content type="html" xml:base="/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90.html"><![CDATA[<p>Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let
 $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
 
 <p><strong>definition</strong> Let \(F(z)= \left[ \begin{array}{c} F_1(z )\\ F_2(z )\\\cdots \end{array} \right].\) Define</p>
@@ -150,7 +150,7 @@ $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
 =&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right]-\left[ \begin{array}{c} 0 \\0\end{array} \right]\\
 
 =&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right].\\
-\end{align*}\]]]></content><author><name>HZX</name></author><category term="analysis" /><summary type="html"><![CDATA[Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$]]></summary></entry><entry><title type="html">参加少代会有感</title><link href="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html" rel="alternate" type="text/html" title="参加少代会有感" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F</id><content type="html" xml:base="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html"><![CDATA[<h1 id="大队委选举">大队委选举</h1>
+\end{align*}\]]]></content><author><name>good day</name></author><category term="analysis" /><summary type="html"><![CDATA[Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$]]></summary></entry><entry><title type="html">参加少代会有感</title><link href="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html" rel="alternate" type="text/html" title="参加少代会有感" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F</id><content type="html" xml:base="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html"><![CDATA[<h1 id="大队委选举">大队委选举</h1>
 <p>对于陌生的竞选者，让人想给他投票的几个点：</p>
 
 <p>演讲基本功：流利，自信，少读PPT</p>
@@ -163,7 +163,7 @@ $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
 
 <p>代表提案很快就落实了，运动器材，可能食堂的辣椒酱也是</p>
 
-<p>后来八年级和操场之间的小道也拓宽了</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[大队委选举 对于陌生的竞选者，让人想给他投票的几个点：]]></summary></entry><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
+<p>后来八年级和操场之间的小道也拓宽了</p>]]></content><author><name>good day</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[大队委选举 对于陌生的竞选者，让人想给他投票的几个点：]]></summary></entry><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
 
 <p>假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。</p>
 
@@ -183,7 +183,7 @@ $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
 
 <p>然后就是编程部分了。我先用python写了一遍，速度堪忧，就让那个老朋友帮忙改成了c++，用到opencv又配置了一番。暂时不开源了，我的代码也没什么可借鉴之处。</p>
 
-<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>]]></content><author><name>HZX</name></author><category term="algorithm" /><summary type="html"><![CDATA[前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。]]></summary></entry><entry><title type="html">改进大O记号</title><link href="/2023/10/28/about-the-big-oh-notation.html" rel="alternate" type="text/html" title="改进大O记号" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/about-the-big-oh-notation</id><content type="html" xml:base="/2023/10/28/about-the-big-oh-notation.html"><![CDATA[<p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
+<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>]]></content><author><name>good day</name></author><category term="algorithm" /><summary type="html"><![CDATA[前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。]]></summary></entry><entry><title type="html">改进大O记号</title><link href="/2023/10/28/about-the-big-oh-notation.html" rel="alternate" type="text/html" title="改进大O记号" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/about-the-big-oh-notation</id><content type="html" xml:base="/2023/10/28/about-the-big-oh-notation.html"><![CDATA[<p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
 
 <p>首先，它严重破坏了等于号的传递性。</p>
 
@@ -223,7 +223,7 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
 
 \[\int_{L}f(z)\mathrm dz=0\]
 
-<p>Q.E.D.</p>]]></content><author><name>HZX</name></author><category term="number-theory" /><summary type="html"><![CDATA[大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。]]></summary></entry><entry><title type="html">我的仿费马猜想</title><link href="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
+<p>Q.E.D.</p>]]></content><author><name>good day</name></author><category term="number-theory" /><summary type="html"><![CDATA[大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。]]></summary></entry><entry><title type="html">我的仿费马猜想</title><link href="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
 
 <p>2022年6月1号，去年的六一儿童节，正好也是疫情期间，呆在家里没什么作业，就开始想数学。想到费马大定理，忽然有了个灵感——如果把指数和底数互换会怎么样？如果把左边的项增多会怎么样？</p>
 
@@ -256,7 +256,7 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
 
 <p>由于 $n \equiv 1 \pmod{n-1}$，所以 $n^{a} \equiv 1^{a} = 1 \pmod{n-1}$，对于任意的 $a$。因此，上面的等式可以简化为 $k+1 \equiv 1\bmod (n-1)$ ，即 $(n-1) |k$ 。证毕。</p>
 
-<p>比我的证明简单多了qwq。</p>]]></content><author><name>HZX</name></author><category term="algebra" /><summary type="html"><![CDATA[这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。]]></summary></entry><entry><title type="html">关于历史课改革的一点拙见</title><link href="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html" rel="alternate" type="text/html" title="关于历史课改革的一点拙见" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81</id><content type="html" xml:base="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html"><![CDATA[<blockquote>
+<p>比我的证明简单多了qwq。</p>]]></content><author><name>good day</name></author><category term="algebra" /><summary type="html"><![CDATA[这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。]]></summary></entry><entry><title type="html">关于历史课改革的一点拙见</title><link href="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html" rel="alternate" type="text/html" title="关于历史课改革的一点拙见" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81</id><content type="html" xml:base="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html"><![CDATA[<blockquote>
   <p>这篇文章写得有点晚了，不过我还是想表达一下看法。</p>
 </blockquote>
 
@@ -328,7 +328,7 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
 
 <p><strong>我们班将会，也必定会重回巅峰！</strong></p>
 
-<p>2023年12月4日。</p>]]></content><author><name>HZX</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[这篇文章写得有点晚了，不过我还是想表达一下看法。]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
+<p>2023年12月4日。</p>]]></content><author><name>good day</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[这篇文章写得有点晚了，不过我还是想表达一下看法。]]></summary></entry><entry><title type="html">修改Cauchy-Goursat定理的证明</title><link href="/2023/09/30/modifying-Cauchy-Goursat-theorem.html" rel="alternate" type="text/html" title="修改Cauchy-Goursat定理的证明" /><published>2023-09-30T00:00:00+08:00</published><updated>2023-09-30T00:00:00+08:00</updated><id>/2023/09/30/modifying-Cauchy-Goursat-theorem</id><content type="html" xml:base="/2023/09/30/modifying-Cauchy-Goursat-theorem.html"><![CDATA[<p>最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。</p>
 
 <p>先放上原证明：</p>
 
@@ -385,4 +385,4 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
 
 \[\int_{L} f(z) \mathrm{d} z=\int_{P_0} f(z) \mathrm{d} z\]
 
-<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>]]></content><author><name>HZX</name></author><category term="analysis" /><summary type="html"><![CDATA[最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。]]></summary></entry></feed>
+<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>]]></content><author><name>good day</name></author><category term="analysis" /><summary type="html"><![CDATA[最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。]]></summary></entry></feed>

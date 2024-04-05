@@ -63,7 +63,7 @@
 <title>我的3d图片渲染程序的原理 | Home</title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="我的3d图片渲染程序的原理" />
-<meta name="author" content="HZX" />
+<meta name="author" content="good day" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。" />
 <meta property="og:description" content="前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。" />
@@ -73,7 +73,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="我的3d图片渲染程序的原理" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"HZX"},"dateModified":"2023-11-25T00:00:00+08:00","datePublished":"2023-11-25T00:00:00+08:00","description":"前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。","headline":"我的3d图片渲染程序的原理","mainEntityOfPage":{"@type":"WebPage","@id":"/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"},"url":"/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"good day"},"dateModified":"2023-11-25T00:00:00+08:00","datePublished":"2023-11-25T00:00:00+08:00","description":"前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。","headline":"我的3d图片渲染程序的原理","mainEntityOfPage":{"@type":"WebPage","@id":"/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"},"url":"/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/navbar.css">
@@ -164,13 +164,13 @@
     <p style="color:red">[Failed to load comment section]</p>
   </div>--><a class="u-url" href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" hidden></a>
 </article></div>
-<button id="toc_list_visibility">show/hide
+<button id="toc_list_visibility">switch
 </button>
 
 <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script>
 <script>
   // 通过 JavaScript 动态生成文章目录
-  document.addEventListener('DOMContentLoaded', function() {
+  $(function(){
     var headings = document.querySelectorAll('.post h1, .post h2, .post h3');
 
     var tocList = document.getElementById('toc_list');
@@ -191,14 +191,25 @@
     if (tocList) {
       tocList.innerHTML = tocHTML;
     }
+    $('#toc_list_visibility').attr("display", "true")
+    $('#container').css("grid-template-columns", "1fr 3fr 1fr");
     /* console.log($('#toc_list').val()) */
-  if ( $('#toc_list').html()=="") {
-    $('#toc_list_visibility').hide()
-  }
+  /* if ( $('#toc_list').html()=="") {
+    $('#toc_list_visibility').css("display", "none")
+  } */
   });
   
   $('#toc_list_visibility').click(function(){
-    $('#toc_list').toggle()
+    /* $('#toc_list').toggle()
+    console.log($("#toc_list").attr("display")) */
+    if ($("#toc_list_visibility").attr("display")=="none") {
+      $('#toc_list_visibility').attr("display", "true")
+      $('#container').css("grid-template-columns", "1fr 3fr 1fr");
+    } else {
+      $('#toc_list_visibility').attr("display", "none")
+      $('#container').css("grid-template-columns", "");
+    }
+    
     /* $('#toc_list_visibility').text("show") */
 });
 </script>
@@ -215,14 +226,14 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">HZX</li></ul>
+          <li class="p-name">good day</li></ul>
       </div>
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Samuelhzx"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Samuelhzx</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>HZX的博客</p>
+        <p>这里是我的博客，存着一些我的文章</p>
       </div>
     </div>
 

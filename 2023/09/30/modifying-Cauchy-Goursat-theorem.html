@@ -63,7 +63,7 @@
 <title>修改Cauchy-Goursat定理的证明 | Home</title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="修改Cauchy-Goursat定理的证明" />
-<meta name="author" content="HZX" />
+<meta name="author" content="good day" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。" />
 <meta property="og:description" content="最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。" />
@@ -73,7 +73,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="修改Cauchy-Goursat定理的证明" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"HZX"},"dateModified":"2023-09-30T00:00:00+08:00","datePublished":"2023-09-30T00:00:00+08:00","description":"最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。","headline":"修改Cauchy-Goursat定理的证明","mainEntityOfPage":{"@type":"WebPage","@id":"/2023/09/30/modifying-Cauchy-Goursat-theorem.html"},"url":"/2023/09/30/modifying-Cauchy-Goursat-theorem.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"good day"},"dateModified":"2023-09-30T00:00:00+08:00","datePublished":"2023-09-30T00:00:00+08:00","description":"最近冒出个点子，需要把复分析里的一些结论做一个推广。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明，算是之后关于这个点子的文章的小铺垫吧。","headline":"修改Cauchy-Goursat定理的证明","mainEntityOfPage":{"@type":"WebPage","@id":"/2023/09/30/modifying-Cauchy-Goursat-theorem.html"},"url":"/2023/09/30/modifying-Cauchy-Goursat-theorem.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/navbar.css">
@@ -201,13 +201,13 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     <p style="color:red">[Failed to load comment section]</p>
   </div>--><a class="u-url" href="/2023/09/30/modifying-Cauchy-Goursat-theorem.html" hidden></a>
 </article></div>
-<button id="toc_list_visibility">show/hide
+<button id="toc_list_visibility">switch
 </button>
 
 <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script>
 <script>
   // 通过 JavaScript 动态生成文章目录
-  document.addEventListener('DOMContentLoaded', function() {
+  $(function(){
     var headings = document.querySelectorAll('.post h1, .post h2, .post h3');
 
     var tocList = document.getElementById('toc_list');
@@ -228,14 +228,25 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     if (tocList) {
       tocList.innerHTML = tocHTML;
     }
+    $('#toc_list_visibility').attr("display", "true")
+    $('#container').css("grid-template-columns", "1fr 3fr 1fr");
     /* console.log($('#toc_list').val()) */
-  if ( $('#toc_list').html()=="") {
-    $('#toc_list_visibility').hide()
-  }
+  /* if ( $('#toc_list').html()=="") {
+    $('#toc_list_visibility').css("display", "none")
+  } */
   });
   
   $('#toc_list_visibility').click(function(){
-    $('#toc_list').toggle()
+    /* $('#toc_list').toggle()
+    console.log($("#toc_list").attr("display")) */
+    if ($("#toc_list_visibility").attr("display")=="none") {
+      $('#toc_list_visibility').attr("display", "true")
+      $('#container').css("grid-template-columns", "1fr 3fr 1fr");
+    } else {
+      $('#toc_list_visibility').attr("display", "none")
+      $('#container').css("grid-template-columns", "");
+    }
+    
     /* $('#toc_list_visibility').text("show") */
 });
 </script>
@@ -252,14 +263,14 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">HZX</li></ul>
+          <li class="p-name">good day</li></ul>
       </div>
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Samuelhzx"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Samuelhzx</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>HZX的博客</p>
+        <p>这里是我的博客，存着一些我的文章</p>
       </div>
     </div>
 
