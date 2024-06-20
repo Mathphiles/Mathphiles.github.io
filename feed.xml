@@ -1,348 +1,108 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-04-05T16:16:23+08:00</updated><id>/feed.xml</id><title type="html">Home</title><subtitle>这里是我的博客，存着一些我的文章</subtitle><author><name>good day</name></author><entry><title type="html">四色定理的证明？</title><link href="/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E.html" rel="alternate" type="text/html" title="四色定理的证明？" /><published>2024-04-05T00:00:00+08:00</published><updated>2024-04-05T00:00:00+08:00</updated><id>/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E</id><content type="html" xml:base="/2024/04/05/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E.html"><![CDATA[<p>可以先把地图转换成点与点相连的图。
-<img src="https://pic4.zhimg.com/80/v2-e9f46d97666d51f8d288f825ffc66b89.png" alt="Image" /></p>
 
-<p>显然，对于每一个地图都有一个它对应的点图，但不是每一个点图都对应一个地图。如果一个点图能对应一个或多个地图，那么我称之为这个图存在。</p>
 
-<p>引理1. 两块地图必须不同颜色，等价于对应的子图中它们对应的两个点相连<br />
-引理2. n块必须互不相同，等价于子图中它们对应的n个点两两相连</p>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/</id>
+  <title>Charlie</title>
+  <subtitle>I'm a student in grade 8 who is keen on mathematics recently.</subtitle>
+  <updated>2024-06-21T00:31:24+08:00</updated>
+  <author>
+    <name>Charlie</name>
+    <uri>/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 Charlie </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>游记第一 · 烟雨桂林</title>
+    <link href="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/" rel="alternate" type="text/html" title="游记第一 · 烟雨桂林" />
+    <published>2024-05-16T00:00:00+08:00</published>
+  
+    <updated>2024-05-16T00:00:00+08:00</updated>
+  
+    <id>/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/</id>
+    <content src="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="游记" />
+    
+  
+
+  <summary>一想到旅游，往昔游历山水的画卷便在脑海中悠然展开。八达岭长城沐浴在落日余晖中，霞光为其披上绯红纱衣之景跃然眼前；杭州的桂花糕，甜美软糯仿佛仍萦绕舌尖；而济南清澈的泉水，如同明镜环绕，历历在目。在默默里算着，已然四个春秋未出过这座城市了。岁月悠悠，这些旅行断想都在时间的冲刷下逐渐沉淀，深埋在了儿时的回忆中。我常有一种感觉：随着时光的流逝，过往的每一刻似乎都被镀上了一层温柔的光辉，愈发显得美好而珍贵。或许，这正是诸多文人墨客钟情于描绘童年时光的原因吧。每当这些景象在心头重现，一股暖流携带着喜悦油然而生，不禁叹于生活的美好一面。
+
+放了寒假，我那渴望远行的心扉再也无法禁锢。于是我怀着激动的心情，踏上了往桂林的火车。旅游，当然要有头有尾。这头便是坐火车。在我的旅游印象中，来往的过程也是其中的重要一环。每当我置身机场或者火车站，心中总充满旅游的期待。对旅游的憧憬总是充满梦幻色彩，而火车站的片刻...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>向量分析</title>
+    <link href="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" rel="alternate" type="text/html" title="向量分析" />
+    <published>2024-01-13T00:00:00+08:00</published>
+  
+    <updated>2024-01-13T00:00:00+08:00</updated>
+  
+    <id>/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/</id>
+    <content src="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="maths" />
+    
+  
+
+  <summary>前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。
+
+Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let
+$f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$
+
+definition Let \(F(z)= \left[ \begin{array}{c} F_1(z )\\ F_2(z )\\\cdots \end{array} \right].\) Define
+
+[F’(z_i)=\frac{\mathrm d F}{\mathrm dx}=\lim...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>我的3d图片渲染程序的原理</title>
+    <link href="/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" />
+    <published>2023-11-25T00:00:00+08:00</published>
+  
+    <updated>2023-11-25T00:00:00+08:00</updated>
+  
+    <id>/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/</id>
+    <content src="/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+  
+
+  <summary>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。
+
+假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。
+
+怎么计算交点呢？让计算机去试肯定行不通，那肯定就要用到数学了。
+
+首先，我们设定眼睛和物体都位于三维空间中，那么我们就可以用一个三维向量来表示这些东西。射线是已知的，设它为 $\vec e+p\vec v$ 。设物体表面是一个二维平面，用三角形可以唯一确定一个平面，所以用三角形作为物体表面。设三个顶点为 $\vec a ,\vec a +\vec b,\vec a +\vec c$ ，平面则可以表示为 $\vec a +n\vec b+m\vec c$ 。联立，可得 $\vec ...</summary>
 
-<p>四色定理不成立可以推出，一定存在一个图，使得可以有大于等于5块互不相同颜色，根据引理2可得等价于可以有5个点两两相连的图存在。取逆否命题即得：如果5个点两两相连的图不存在，则四色定理成立。</p>
+  </entry>
 
-<p>接下来证明这个命题。注意到一个地图一定有唯一的一个轮廓（如果有多个轮廓，那必然至少有2个点不相连）。那么接下来分类讨论：</p>
+</feed>
 
-<p>1.如果只有一个国家独占整个轮廓
-不妨说 这个国家名字叫1，那么一就一定可以拓扑成一个环形（如果里面还有环的话，那这个环内和这个环外的国家就不能相连了）其他4个国家要和1有接壤。所以它们分别与1的内壁接触。这4个国家与1的接触只能有一段，不然就会在1里面形成一个柱子，把其他国家隔开。因此，它们一定位居环内的四方。但是当这4个国家中对角的两组相连，就会发现它们永远没法都连上。因此一个国家独占整个轮廓的情况不可能。</p>
 
-<p>依此类推，分析2个、3个、4个、5个国家分摊整个轮廓的情况，发现都不可能。
-因此证明了5个点两两相连的点图不存在。
-因此四色定理成立。</p>]]></content><author><name>good day</name></author><category term="math" /><summary type="html"><![CDATA[可以先把地图转换成点与点相连的图。]]></summary></entry><entry><title type="html">About Crypto</title><link href="/2024/02/24/about-crypto.html" rel="alternate" type="text/html" title="About Crypto" /><published>2024-02-24T00:00:00+08:00</published><updated>2024-02-24T00:00:00+08:00</updated><id>/2024/02/24/about-crypto</id><content type="html" xml:base="/2024/02/24/about-crypto.html"><![CDATA[<p>鉴于有人还不会些加密的方法（无针对），这里写几个</p>
-<h1 id="base64">base64</h1>
-<p>可以解密，没有安全性。</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">base64</span>
-<span class="n">r</span> <span class="o">=</span> <span class="sh">"</span><span class="s">yourpassword</span><span class="sh">"</span><span class="p">.</span><span class="nf">encode</span><span class="p">(</span><span class="sh">"</span><span class="s">utf-8</span><span class="sh">"</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">base64</span><span class="p">.</span><span class="nf">b64encode</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-</code></pre></div></div>
-<h1 id="hash">hash</h1>
-<p>不能解密，但是可以验证。也就导致可以被彩虹表破解。</p>
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">hashlib</span> <span class="kn">import</span> <span class="n">sha256</span>
-<span class="n">r</span> <span class="o">=</span> <span class="sh">"</span><span class="s">yourpassword</span><span class="sh">"</span><span class="p">.</span><span class="nf">encode</span><span class="p">(</span><span class="sh">"</span><span class="s">utf-8</span><span class="sh">"</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">=</span> <span class="nf">sha256</span><span class="p">()</span>    <span class="c1"># Get the hash algorithm.
-</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">):</span> <span class="c1"># prevent rainbow table.
-</span>    <span class="n">s</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>    <span class="c1"># Hash the data.
-</span><span class="n">b</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="nf">hexdigest</span><span class="p">()</span>       <span class="c1"># Get he hash value.
-</span><span class="nf">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</code></pre></div></div>
-<h1 id="aes">AES</h1>
-<p>对称加密。</p>
-
-<h1 id="rsa">RSA</h1>
-<p>非对称加密。可以根据密钥解密，也可以验证。
-用法：</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>原文+公钥=a
-公布a，公钥
-对方由密钥得到原文
-</code></pre></div></div>
-
-<hr />
-
-<p>以上都是常用的加密方法，接下来要介绍的是我想到的不能解密可以验证的加密方法。</p>
-
-<p>设密码为k，对其进行100000次（多次）哈希加密后记为a<br />
-令f(k)=大于a的最小质数<br />
-生成另一大质数p<br />
-f(正确密码)×p=c，存c<br />
-输入密码k，f(k)整除c大致等价于密码正确</p>
-
-<p><a href="https://samuelhzx.github.io">我的网站</a> 就用了这个算法。</p>
-
-<p>另外，欢迎破解我的网站的密码！如果破解成功，请联系我。</p>]]></content><author><name>good day</name></author><category term="algorithm" /><summary type="html"><![CDATA[鉴于有人还不会些加密的方法（无针对），这里写几个 base64 可以解密，没有安全性。 import base64 r = "yourpassword".encode("utf-8") s = base64.b64encode(r) print(s) hash 不能解密，但是可以验证。也就导致可以被彩虹表破解。 from hashlib import sha256 r = "yourpassword".encode("utf-8") s = sha256() # Get the hash algorithm. for i in range(1000000): # prevent rainbow table. s.update(r) # Hash the data. b = s.hexdigest() # Get he hash value. print(b) AES 对称加密。]]></summary></entry><entry><title type="html">考试</title><link href="/2024/01/20/%E8%80%83%E8%AF%95.html" rel="alternate" type="text/html" title="考试" /><published>2024-01-20T00:00:00+08:00</published><updated>2024-01-20T00:00:00+08:00</updated><id>/2024/01/20/%E8%80%83%E8%AF%95</id><content type="html" xml:base="/2024/01/20/%E8%80%83%E8%AF%95.html"><![CDATA[<p>平时训练</p>
-
-<p>平时总结</p>
-
-<p>状态</p>
-
-<p>策略</p>]]></content><author><name>good day</name></author><category term="study" /><summary type="html"><![CDATA[平时训练]]></summary></entry><entry><title type="html">新经济学原理</title><link href="/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="新经济学原理" /><published>2024-01-15T00:00:00+08:00</published><updated>2024-01-15T00:00:00+08:00</updated><id>/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2024/01/15/%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html"><![CDATA[<h1 id="引言">引言</h1>
-
-<p>这篇文章的内容是我建构出的一套经济学原理，肯定有诸多不妥之处。本文中使用价值的定义和《资本论》中一致。</p>
-
-<h1 id="商品产生的二因素资源和劳动">商品产生的二因素——资源和劳动</h1>
-<p>首先要明确资源的意义。资源是一个蕴含于生产原料当中的量，代表生产原料能产生商品的多少。举个例子，开垦的土地是一种生产原料，从种植的角度看，它的资源就是它能给农作物提供的东西的量。</p>
-
-<p>一切可给予他人之物都可以叫商品。可以是物、权、知识、劳动等等。商品应当是一个人无法或不想通过自己得到的东西。不然就不会交换，也就不会有商品。
-现在来看商品产生依赖什么。</p>
-
-<p>会消耗资源的：
-如果是作为物的商品，那就一定要有原料和利用资源将原料加工成商品的劳动。还有不需要劳动的，比如权力，这个商品就只有使用价值。</p>
-
-<p>不会消耗资源的：比如传授知识，或者劳动。</p>
-
-<h2 id="合成商品的材料">合成商品的材料</h2>
-
-<p>通过上面的分析，不难总结出：资源+劳动合成了物，资源合成了权力，劳动合成了劳动，而知识的合成方式不一。这些就是商品的合成。</p>
-
-<h1 id="商品的成本">商品的成本</h1>
-<p>现在我们考察一个过程：</p>
-<blockquote>
-  <p>张三是个农场主，拥有一片开垦过的土地，他雇佣农民在这片土地上种水稻并丰收了。</p>
-</blockquote>
-
-<p>其中，经过劳动，产生了使用价值为10元的商品，同时，土地的资源消耗了一部分，这是因为土地里的养分减少了。当然，阳光也为水稻提供了资源。其他还有很多因素，这里暂不考虑了。</p>
-
-<p>水稻的成本：土地、阳光的资源，劳动</p>
-
-<p><strong>资本家会利用劳动和资源来合成商品。无产者会把劳动作为商品。</strong>
-资源会随着物商品的产生而被消耗，所以资本家会进行殖民掠夺。</p>]]></content><author><name>good day</name></author><category term="economics" /><summary type="html"><![CDATA[引言]]></summary></entry><entry><title type="html">向量分析</title><link href="/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90.html" rel="alternate" type="text/html" title="向量分析" /><published>2024-01-13T00:00:00+08:00</published><updated>2024-01-13T00:00:00+08:00</updated><id>/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90</id><content type="html" xml:base="/2024/01/13/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90.html"><![CDATA[<p>Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let
-$f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
-
-<p><strong>definition</strong> Let \(F(z)= \left[ \begin{array}{c} F_1(z )\\ F_2(z )\\\cdots \end{array} \right].\) Define</p>
-
-\[F'(z_i)=\frac{\mathrm d F}{\mathrm dx}=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}= \left[ \begin{array}{c} F_1'(z )\\ F_2'(z )\\\cdots \end{array} \right].\]
-
-\[\int_{L}f(z)\mathrm dz
-=\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i).\]
-
-<p>Let \(\displaystyle{f(z)= \left[ \begin{array}{c} z \\ z ^{ 2 } \end{array} \right],g(z)=z }\) , we have</p>
-
-\[\displaystyle
-\begin{align*}
-\int_{L}f(z)\mathrm dz
-=&amp;\int_{L}\left[ \begin{array}{c} z \\ z ^{ 2 } \end{array} \right]\mathrm dz\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\left[ \begin{array}{c} z_i \\ z_i ^{ 2 } \end{array} \right](z_{i+1}-z_i)\\
-=&amp;\left[ \begin{array}{c}\lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n-1} z_i (z_{i+1}-z_i)\\ \lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n-1}z_i ^{ 2 }(z_{i+1}-z_i) \end{array} \right]\\
-=&amp;\left[ \begin{array}{c} \int_{L}z\mathrm dz \\ \int_{L}z ^{ 2 } \mathrm dz\end{array} \right].\\
-
-\end{align*}\]
-
-<p>Generally, we have</p>
-
-<p><strong>theorem 1</strong> Let \(\displaystyle{f(z)= \left[ \begin{array}{c} f_1(z )\\ f_2(z )\\\cdots \end{array} \right]}\) . Then</p>
-
-\[\displaystyle
-\begin{align*}
-\int_{L}f(z)\mathrm dz
-
-=&amp;\left[ \begin{array}{c} \int_{L} f_1(z )\mathrm dz \\ \int_{L} f_2(z )\mathrm dz\\\cdots\end{array} \right].\\
-
-\end{align*}\tag1\]
-
-<p>which implies the Newton-Leibniz formula.</p>
-
-<p><strong>theorem 2 (Newton-Leibniz formula)</strong>  let \(\displaystyle{f(z)= \left[ \begin{array}{c} f_1(z )\\ f_2(z )\\\cdots \end{array} \right]}\) , $F’(z)=f(z)$. then</p>
-
-\[\displaystyle
-\begin{align*}
-\int_{L}f(z)\mathrm dz
-
-=&amp;F(b)-F(a).\\
-
-\end{align*}\tag2\]
-
-<p><strong>proof 1</strong>  From theorem 1 we have</p>
-
-\[\displaystyle
-\begin{align*}
-\int_{L}f(z)\mathrm dz
-
-=&amp;\left[ \begin{array}{c} \int_{L} f_1(z )\mathrm dz \\ \int_{L} f_2(z )\mathrm dz\\\cdots\end{array} \right]\\
-=&amp;\left[ \begin{array}{c} F_1(b)-F_1(a) \\ F_2(b)-F_2(a)\\\cdots\end{array} \right]\tag{Newton-Leibniz}\\
-=&amp;F(b)-F(a).
-\end{align*}\]
-
-<p><strong>proof 2</strong></p>
-
-\[\begin{align*}
-\int_{L}f(z)\mathrm dz
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}F(z_{i+1})-F(z_i)\\
-=&amp;F(z_{n})-F(z_0)\\
-\end{align*}\]
-
-<p><strong>example</strong> Let \(\displaystyle{f(z)= \left[ \begin{array}{c} z \\ z ^{ 2 } \end{array} \right],g(z)=z }\) . Then</p>
-
-\[\displaystyle
-\begin{align*}
-\int_{0}^1f(z)\mathrm dz
-=&amp;F(1)-F(0)\\
-=&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right]-\left[ \begin{array}{c} 0 \\0\end{array} \right]\\
-
-=&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right].\\
-\end{align*}\]]]></content><author><name>good day</name></author><category term="analysis" /><summary type="html"><![CDATA[Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$]]></summary></entry><entry><title type="html">我的3d图片渲染程序的原理</title><link href="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86</id><content type="html" xml:base="/2023/11/25/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86.html"><![CDATA[<p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
-
-<p>假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。</p>
-
-<p>怎么计算交点呢？让计算机去试肯定行不通，那肯定就要用到数学了。</p>
-
-<p>首先，我们设定眼睛和物体都位于三维空间中，那么我们就可以用一个三维向量来表示这些东西。射线是已知的，设它为 $\vec e+p\vec v$ 。设物体表面是一个二维平面，用三角形可以唯一确定一个平面，所以用三角形作为物体表面。设三个顶点为 $\vec a ,\vec a +\vec b,\vec a +\vec c$ ，平面则可以表示为 $\vec a +n\vec b+m\vec c$ 。联立，可得 $\vec a+n\vec b+m\vec c=\vec e+p\vec v$ 。运用一点线代知识可知</p>
-
-\[\begin{bmatrix}-n\\-m\\p\end{bmatrix}=\begin{pmatrix}
-\vec b  &amp;\vec c  &amp;\vec v
-\end{pmatrix}^{-1}\left(\vec a-\vec e\right)\\\]
-
-<p>另外，我们还要知道这个点是否在三角形内。</p>
-
-<p>注意到，如果把平面上的点都用[n,m]两个坐标表示（n,m是已求出的），a+b的坐标变成[1,0]，a+c的坐标变成[0,1]，a的坐标变成[0,0]。容易证明，变换后一个点在三角形内等价于变换前这个点在三角形内。这样就方便判断了。</p>
-
-<p>满足上述两条的点就是交点。还需要进行距离的排序，就好了。</p>
-
-<p>然后就是编程部分了。我先用python写了一遍，速度堪忧，就让那个老朋友帮忙改成了c++，用到opencv又配置了一番。暂时不开源了，我的代码也没什么可借鉴之处。</p>
-
-<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>]]></content><author><name>good day</name></author><category term="algorithm" /><summary type="html"><![CDATA[前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。]]></summary></entry><entry><title type="html">参加少代会有感</title><link href="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html" rel="alternate" type="text/html" title="参加少代会有感" /><published>2023-11-25T00:00:00+08:00</published><updated>2023-11-25T00:00:00+08:00</updated><id>/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F</id><content type="html" xml:base="/2023/11/25/%E5%8F%82%E5%8A%A0%E5%B0%91%E4%BB%A3%E4%BC%9A%E6%9C%89%E6%84%9F.html"><![CDATA[<h1 id="大队委选举">大队委选举</h1>
-<p>对于陌生的竞选者，让人想给他投票的几个点：</p>
-
-<p>演讲基本功：流利，自信，少读PPT</p>
-
-<p>内容：表明目标，不偏题，展现个人优势</p>
-
-<p>新颖：风格（因人而异）</p>
-
-<h1 id="其他">其他</h1>
-
-<p>代表提案很快就落实了，运动器材，可能食堂的辣椒酱也是</p>
-
-<p>后来八年级和操场之间的小道也拓宽了</p>]]></content><author><name>good day</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[大队委选举 对于陌生的竞选者，让人想给他投票的几个点：]]></summary></entry><entry><title type="html">改进大O记号</title><link href="/2023/10/28/about-the-big-oh-notation.html" rel="alternate" type="text/html" title="改进大O记号" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/about-the-big-oh-notation</id><content type="html" xml:base="/2023/10/28/about-the-big-oh-notation.html"><![CDATA[<p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
-
-<p>首先，它严重破坏了等于号的传递性。</p>
-
-\[\begin{array}{c}
-1= \mathcal O(1)\\
-1= \mathcal O(x)\\
-\not\Rightarrow \mathcal O(1)= \mathcal O(x)
-\end{array}\]
-
-<p>对于这一点，我想到了一种解决方案：把等于号改成 $\lesssim$ 。
-若 $\exists M&gt;0,\forall x&gt;a,|f(x)|&lt;Mg(x)$，则称
-$f(x)\lesssim \mathcal{O}(g(x)). $
- $\lesssim$ 具有和 $\le$ 类似的性质。</p>
-
-<p>其次，它不能进行乘除法。不过可以证明这种替代：</p>
-
-\[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]
-
-<p>利用大O记号的这个问题，我构造出了一个超级加强版Cauchy-Goursat积分定理的伪证，直接干翻留数理论：</p>
-
-<p>Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L.<br />
-Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
-
-\[\begin{align*}
-\int_{L}f(z)\mathrm dz
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n}f(z_i)(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=1}^{n+1}f(z_{i-1})z_{i}-\sum_{k=0}^{n}f(z_i)z_{i}\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))z_{i}\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\mathcal O(1)\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\\
-=&amp;f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)(f(z_{0})-f(z_n))\\
-=&amp;\mathcal O(f(z_n)-f(z_{0}))
-\end{align*}\]
-
-<p>Take $z_0=z_n$ , and we get</p>
-
-\[\int_{L}f(z)\mathrm dz=0\]
-
-<p>Q.E.D.</p>]]></content><author><name>good day</name></author><category term="number-theory" /><summary type="html"><![CDATA[大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。]]></summary></entry><entry><title type="html">我的仿费马猜想</title><link href="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html" rel="alternate" type="text/html" title="我的仿费马猜想" /><published>2023-10-28T00:00:00+08:00</published><updated>2023-10-28T00:00:00+08:00</updated><id>/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3</id><content type="html" xml:base="/2023/10/28/%E6%88%91%E7%9A%84%E4%BB%BF%E8%B4%B9%E9%A9%AC%E7%8C%9C%E6%83%B3.html"><![CDATA[<p>这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。</p>
-
-<p>2022年6月1号，去年的六一儿童节，正好也是疫情期间，呆在家里没什么作业，就开始想数学。想到费马大定理，忽然有了个灵感——如果把指数和底数互换会怎么样？如果把左边的项增多会怎么样？</p>
-
-<p>晚上做核酸排队的时候，我考虑了一个特殊情况：</p>
-<blockquote>
-  <p>先想到这个式子，然后想到了他的特殊解1+(n-1)n⁰+(n-1)n¹+…+(n-1)nʸ⁻¹=nʸ,就猜想这个式子的所有解都满足(K-1)÷(N-1)余0。</p>
-</blockquote>
-
-<p>（摘自2022.6.30跟数学老师的对话记录）</p>
-
-<p>然后做出了这个猜想：</p>
-
-<p>若方程 $n^{x_0}+n^{x_1}+\cdots+n^{x_k}=n^y$ 中，$n,x,y$ 有自然数解时，$(n-1) |k.$</p>
-
-<p>（改进了一下当时的表述）</p>
-
-<p>之后的四天里，我都在写它的证明。当时拟的题目就是“我的仿费马猜想”，于是沿用到这里。下面是当时写的证明。其中证法一是我想出来的，证法二是姑父想出来的。
-<img src="https://pic4.zhimg.com/80/v2-4964ebbe1bb41eb8f60a282a04a42aaa.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-3ddc705732afe675083f995c2f1cb657.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-b1966320a7ade07a62953f75dd33a87c.jpg" alt="" />
-<img src="https://pic4.zhimg.com/80/v2-ca133dadc42252f4198d4d9991a3890f.jpg" alt="" /></p>
-
-<p>前段时间，我又试着用mathgpt帮我证了一遍，没想到的是，证明是对的！</p>
-
-<p>以下是删改过的它的回答：</p>
-
-<p>$n^{x_{0}}+n^{x_{1}}+\cdots+n^{x_{k}}=n^{y}$，两边都对 $n-1$ 取模，得到：</p>
-
-\[n^{x_{0}} \bmod (n-1) + n^{x_{1}} \bmod (n-1) + \cdots + n^{x_{k}} \bmod (n-1) = n^{y} \bmod (n-1)\]
-
-<p>由于 $n \equiv 1 \pmod{n-1}$，所以 $n^{a} \equiv 1^{a} = 1 \pmod{n-1}$，对于任意的 $a$。因此，上面的等式可以简化为 $k+1 \equiv 1\bmod (n-1)$ ，即 $(n-1) |k$ 。证毕。</p>
-
-<p>比我的证明简单多了qwq。</p>]]></content><author><name>good day</name></author><category term="algebra" /><summary type="html"><![CDATA[这篇文章是一篇回忆性的记录，主要是关于“我的仿费马猜想”的证明和与它相关的事。]]></summary></entry><entry><title type="html">关于历史课改革的一点拙见</title><link href="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html" rel="alternate" type="text/html" title="关于历史课改革的一点拙见" /><published>2023-10-09T00:00:00+08:00</published><updated>2023-10-09T00:00:00+08:00</updated><id>/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81</id><content type="html" xml:base="/2023/10/09/%E5%85%B3%E4%BA%8E%E5%8E%86%E5%8F%B2%E8%AF%BE%E6%94%B9%E9%9D%A9%E7%9A%84%E4%B8%80%E7%82%B9%E6%8B%99%E8%A7%81.html"><![CDATA[<blockquote>
-  <p>这篇文章写得有点晚了，不过我还是想表达一下看法。</p>
-</blockquote>
-
-<p>这次历史课改革，我们的目标是什么？如何达到目标？这是我们要解决的问题。第一个问题很好回答，我们的总目标就是中考考出好成绩，也就是提分。第二个问题就是改革的重点了。</p>
-
-<p>考试考好主要需要两个能力：解题能力和考场时间把握能力。解题能力又包括历史思维、历史知识。</p>
-
-<p>解题能力是成绩的主要影响因素，也是提高成绩的关键。要想提分，就要提高解题能力。</p>
-
-<p>自主达到目标的过程：</p>
-
-<blockquote>
-  <p>设立目标 $\to$ 动力 $\to$ 效率 $\to$ 内容 $\to$ 坚持 $\to$ 达到目标</p>
-</blockquote>
-
-<p>解题能力算是内容，在内容前，提高动力和改善内容是必须的。我们的改革也要在这几方面展开。效率和本次改革无关，就不考虑了。</p>
-
-<p>我们首先要提高动力。我在那篇文章已经分析过动力的问题了，这里不再赘述。其中一小部分可以用于这次改革。内容方面，我们要上课认真听讲、积极发言，要让作业、试卷等做得更有意义、有效果。错题本是最常用的方案，也可以进行归纳总结。</p>
-
-<p>说完了理论之后，就要看看怎么制定计划了。</p>
-
-<h1 id="动力">动力</h1>
-
-<p>先来看看我们亲爱的历史课代表是怎么说的。</p>
-<blockquote>
-  <p>9.17<br />
-同学们，我是历史课代表XX。我想跟大家讲一些事情。<br />
-      我真心希望班级的学习氛围会越来越好，所以我才会采取分历史学习小组的方式来带动这个氛围。我希望2班每一次的历史作业都能交齐，不会落下任何人。<br />
-      我恳请各位组长进行监督与检查，各位组员积极配合。让每一个人都行动起来，不让小组成为摆设。<br />
-      我更要请各位同学不要抄作业！！！这真的很重要，不会的题先空着，让组长或老师来解答。<br />
-      从现在起，不要抄作业，谁也不例外，发现了便上报给历史老师和班主任，进行思想教育和批评处罚。<br />
-      我想在历史这一科中做出这些改变，不管对于任何人来说，这都是一个振奋人心的事情。我希望能够得到大家的支持和信任。
-      相信大家，我们会一起向充满期望的未来前进</p>
-</blockquote>
-
-<p>他主要提到了学习氛围、学习小组、不要抄作业这几点。并且他希望通过学习小组、不要抄作业的方式改善学习氛围。归根结底，这是在解决动力不足的问题。</p>
-
-<blockquote>
-  <p>9.20<br />
-      同学们，我们班已经签完了历史学习公约，那么就要向目标进发。
-     请各位同学签了公约以后，就遵守这个公约，不要对此产生蔑视的想法。
-     我无法调动班中每一位同学的积极性，但我一定会做到最好。这些事情，我会一直坚持下去，哪怕会有人不理解。
-     “团结一致，重回巅峰”不会仅仅只是一句口号。</p>
-</blockquote>
-
-<p>公约的内容主要是惩罚制度。这也是在解决动力不足的问题。</p>
-
-<p>分析材料可以得出，课代表也意识到了提升动力的根本性和必要性。从后来我们班成绩的视角来看，这几点确实起到了作用。但我想说的是，提升动力也许还有更好的方法。</p>
-
-<p>我的那篇文章提到的提升动力的方法全都可以用在这里。另有一点：那篇是关于自主学习的，然而在这个班级体中，我们还有一个方法，那就是外界力量。这主要包括同学之间的较量和竞争、他人的敦促等。对于前者，我们可以设法让同学之间有一个方面拉开差距，如按成绩发奖品，这样就可以提升同学之间的较量，从而提升动力。对于后者，课代表提到的学习小组就是很好的方案。所以课代表第一次说的总体上没什么问题。</p>
-
-<p>然而第二次的公约就引起了一些意见。</p>
-
-<blockquote>
-  <p>37号：关于奖惩制度这件事我想说明一下，就是每个人能力不同，不能在短时间内一下子要求人家及格，超过年级平均分，我知道你是想让班级历史成绩变好，但是还是要讲究一下这个奖惩制度的适应性对吧，能不能提出一个更合理的，普适的一个制度，比如说每个人进步多少分，达到自己能力能够达到的分数就可以了。有些同学基础不好的确实没有办法让他们在短时间内提高到一个超越年级平均的水平。还有就是一个积极性的问题，我希望不要以惩罚来逼迫他人被动积极，没有对学科的自主认真是没办法达到主动积极的。奖惩奖惩那么也要有相对应的奖励吧。对于抄试卷这个我是比较不赞同的，试卷中的题目类型是不一样的，每套卷子考的题也不一样，我更希望能够抄写考题相关的知识，帮助巩固记忆。而且就是你所做的是团结了民心，但可能是我太浅薄了啊，我觉得没有实质性的能帮助同学们提高成绩的方法和一个成效对吧，大多是一些鼓励的话语，希望能在今后从实质性方面多出出点子，这比目前的喊口号啥的要实用多了。我也不是一个人的想法啊，历史老师自己也说了要勇于发表自己的言论嘛，所以我就来说一下一些我能触及到的同学们的新声，望我们X历史课代表谅解一下，如果冒犯到了属实不好意思，本无意冒犯的@XXXX</p>
-</blockquote>
-
-<p>主要说惩罚要切合实际、不要被迫积极，也提出了一些新方法。对于改革要切合实际这一点我也是认同的。其实切合实际是有效果的必要条件。</p>
-
-<p>为了防止在那文章里设立目标部分提到的“混过去”现象发生，可以采用互相监督的方式。这是通过外部力量来解决没有目标的问题。</p>
-
-<h1 id="内容">内容</h1>
-
-<p>在这个方面，我们的历史老师已经做了很多。我们还可以做错题本，也可以进行一个归纳总结。练习册也不要做完就过，最好是“压榨”它的所有价值，吃透这些题目。</p>
-
-<h1 id="总结">总结</h1>
-
-<p>我们要改革，就进行动力和内容两方面的改革。动力方面，学习小组、按成绩（的提升）给奖励（或处罚）等。内容方面，错题本、归纳总结、“压榨”作业等。改革的方案需要满足切合实际、有效果。</p>
-
-<p><strong>我们班将会，也必定会重回巅峰！</strong></p>
-
-<p>2023年12月4日。</p>]]></content><author><name>good day</name></author><category term="纸上谈兵" /><summary type="html"><![CDATA[这篇文章写得有点晚了，不过我还是想表达一下看法。]]></summary></entry></feed>
