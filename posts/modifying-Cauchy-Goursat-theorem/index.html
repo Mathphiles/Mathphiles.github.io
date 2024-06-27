@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="向量分析" />
+<meta property="og:title" content="修改Cauchy-Goursat定理的证明" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。" />
-<meta property="og:description" content="前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。" />
-<link rel="canonical" href="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" />
-<meta property="og:url" content="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" />
+<meta name="description" content="最近冒出个点子，需要把复分析里的一些结论做一个推广1。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明。 这篇文章写完大半年后注：这个想法最终没有实现。后来对这个想法的一点零碎进展写在了向量分析这篇文章里。 &#8617;&amp;#xfe0e;" />
+<meta property="og:description" content="最近冒出个点子，需要把复分析里的一些结论做一个推广1。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明。 这篇文章写完大半年后注：这个想法最终没有实现。后来对这个想法的一点零碎进展写在了向量分析这篇文章里。 &#8617;&amp;#xfe0e;" />
+<link rel="canonical" href="/posts/modifying-Cauchy-Goursat-theorem/" />
+<meta property="og:url" content="/posts/modifying-Cauchy-Goursat-theorem/" />
 <meta property="og:site_name" content="Charlie" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-13T00:00:00+08:00" />
+<meta property="article:published_time" content="2023-09-30T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="向量分析" />
+<meta property="twitter:title" content="修改Cauchy-Goursat定理的证明" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-13T00:00:00+08:00","datePublished":"2024-01-13T00:00:00+08:00","description":"前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。","headline":"向量分析","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/"},"url":"/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-30T00:00:00+08:00","datePublished":"2023-09-30T00:00:00+08:00","description":"最近冒出个点子，需要把复分析里的一些结论做一个推广1。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明。 这篇文章写完大半年后注：这个想法最终没有实现。后来对这个想法的一点零碎进展写在了向量分析这篇文章里。 &#8617;&amp;#xfe0e;","headline":"修改Cauchy-Goursat定理的证明","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/modifying-Cauchy-Goursat-theorem/"},"url":"/posts/modifying-Cauchy-Goursat-theorem/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>向量分析 | Charlie
+  <title>修改Cauchy-Goursat定理的证明 | Charlie
   </title>
 
   <!--
@@ -373,7 +373,7 @@
         
           
             
-              <span>向量分析</span>
+              <span>修改Cauchy-Goursat定理的证明</span>
             
 
           
@@ -441,6 +441,331 @@
 
 
 
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
 
 <!-- Add header for code snippets -->
 
@@ -482,9 +807,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>向量分析</h1>
-    
-      <p class="post-desc fw-light mb-4">前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。</p>
+    <h1 data-toc-skip>修改Cauchy-Goursat定理的证明</h1>
     
 
     <div class="post-meta text-muted">
@@ -501,13 +824,13 @@
 
 <time
   
-  data-ts="1705075200"
+  data-ts="1696003200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 13, 2024
+  Sep 30, 2023
 </time>
 
       </span>
@@ -556,9 +879,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="282 words"
+  title="613 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
         </div>
       </div>
@@ -566,82 +889,72 @@
   </header>
 
   <div class="content">
-    <p>Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let
-$f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
+    <p>最近冒出个点子，需要把复分析里的一些结论做一个推广<sup id="fnref:note" role="doc-noteref"><a href="#fn:note" class="footnote" rel="footnote">1</a></sup>。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明。</p>
 
-<p><strong>definition</strong> Let \(F(z)= \left[ \begin{array}{c} F_1(z )\\ F_2(z )\\\cdots \end{array} \right].\) Define</p>
+<p>先放上原证明：</p>
 
-\[F'(z_i)=\frac{\mathrm d F}{\mathrm dx}=\lim_{\lambda\to 0}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}= \left[ \begin{array}{c} F_1'(z )\\ F_2'(z )\\\cdots \end{array} \right].\]
+<p><strong>Cauchy-Goursat 积分定理</strong><br />
+设  $f(z)$  是单连通区域 $D$ 内的解析函数. 若 $L$ 是 $D$ 内任一条简单曲线, 取逆时针方向, 则</p>
 
-\[\int_{L}f(z)\mathrm dz
-=\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i).\]
+\[\int_{L} f(z) \mathrm{d} z=0\]
 
-<p>Let \(\displaystyle{f(z)= \left[ \begin{array}{c} z \\ z ^{ 2 } \end{array} \right],g(z)=z }\) , we have</p>
+<p><a href="https://pic4.zhimg.com/80/v2-1de52cf0aa9aa6d20f978a153638e8cb.jpg" class="popup img-link  shimmer"><img src="https://pic4.zhimg.com/80/v2-1de52cf0aa9aa6d20f978a153638e8cb.jpg" alt="" loading="lazy"></a>
+<a href="https://pic4.zhimg.com/80/v2-2f455cd5077aff510dc5a4d26d7df700.jpg" class="popup img-link  shimmer"><img src="https://pic4.zhimg.com/80/v2-2f455cd5077aff510dc5a4d26d7df700.jpg" alt="" loading="lazy"></a>
+<a href="https://pic4.zhimg.com/80/v2-d8dbd544939f5c096f903c64a1d02e9d.jpg" class="popup img-link  shimmer"><img src="https://pic4.zhimg.com/80/v2-d8dbd544939f5c096f903c64a1d02e9d.jpg" alt="" loading="lazy"></a>
+<a href="https://pic4.zhimg.com/80/v2-b711e5552e5d8c4181ca17db4aa10aff.jpg" class="popup img-link  shimmer"><img src="https://pic4.zhimg.com/80/v2-b711e5552e5d8c4181ca17db4aa10aff.jpg" alt="" loading="lazy"></a></p>
 
-\[\displaystyle
-\begin{align*}
-\int_{L}f(z)\mathrm dz
-=&amp;\int_{L}\left[ \begin{array}{c} z \\ z ^{ 2 } \end{array} \right]\mathrm dz\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\left[ \begin{array}{c} z_i \\ z_i ^{ 2 } \end{array} \right](z_{i+1}-z_i)\\
-=&amp;\left[ \begin{array}{c}\lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n-1} z_i (z_{i+1}-z_i)\\ \lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n-1}z_i ^{ 2 }(z_{i+1}-z_i) \end{array} \right]\\
-=&amp;\left[ \begin{array}{c} \int_{L}z\mathrm dz \\ \int_{L}z ^{ 2 } \mathrm dz\end{array} \right].\\
+<p>修改：</p>
 
-\end{align*}\]
+<p>1.把引理中 $\eta$ 的定义换成 $0&lt;\eta\le\min{\delta,\delta’}$ ，于是让 $\eta$ 趋于0——即n趋于无穷——也有</p>
 
-<p>Generally, we have</p>
+\[\left|\int_{L} f(z) \mathrm{d} z-\int_{P} f(z) \mathrm{d} z\right|&lt;\varepsilon\]
 
-<p><strong>theorem 1</strong> Let \(\displaystyle{f(z)= \left[ \begin{array}{c} f_1(z )\\ f_2(z )\\\cdots \end{array} \right]}\) . Then</p>
+<p>即</p>
 
-\[\displaystyle
-\begin{align*}
-\int_{L}f(z)\mathrm dz
+\[\int_{L} f(z) \mathrm{d} z=\int_{P} f(z) \mathrm{d} z\]
 
-=&amp;\left[ \begin{array}{c} \int_{L} f_1(z )\mathrm dz \\ \int_{L} f_2(z )\mathrm dz\\\cdots\end{array} \right].\\
+<p>2.补充一下引理证明第一段里最后一句“完全在G内”的证明。<br />
+$\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\delta’,pz_{k-1}\ge\delta’$ 。 由于三角形的顶点和对边不相交，因此得证。</p>
 
-\end{align*}\tag1\]
+<p>3.修改证明后半部分，即三步中的后两步。这部分可以说是完全换了个思路。<br />
+首先我们有任意的一条路径 $L$ ，在 $L$ 上取点 $z_0,z_1,z_2,\cdots ,z_{2^n}$，使每个弧段 $z_{k-1}z_k$ 长度小于 $\eta$ 。对于所有的 $a$ 从0到n，连结所有下标为 $2^{n-a}m\,\,\,(m=0,1,2\cdots)$ 的点，得到的折线记为 $P_a$ 。
+<a href="https://pic4.zhimg.com/80/v2-5507a7d74263e3cacd431efeaf61f4fb.png" class="popup img-link  shimmer"><img src="https://pic4.zhimg.com/80/v2-5507a7d74263e3cacd431efeaf61f4fb.png" alt="示意图" loading="lazy"></a></p>
 
-<p>which implies the Newton-Leibniz formula.</p>
+<p><strong>注意</strong> 以上这一步不再对所有区域 $D$ 有效了。比较保守的话，可以让 $D$ 是有界凸集或者全集。我初想到这一点的时候也很惋惜。</p>
 
-<p><strong>theorem 2 (Newton-Leibniz formula)</strong>  let \(\displaystyle{f(z)= \left[ \begin{array}{c} f_1(z )\\ f_2(z )\\\cdots \end{array} \right]}\) , $F’(z)=f(z)$. then</p>
+<p>对于每个相邻的 $P_{k-1},P_k$ ，它们组成了一组三角形的边界。一看到三角形，自然想到第一步里的结论。于是如果让积分方向为顺下标方向（如z0-z1-z2-z0），那么易知</p>
 
-\[\displaystyle
-\begin{align*}
-\int_{L}f(z)\mathrm dz
+\[\int_{P_k} f(z) \mathrm{d} z=\sum_{\bigtriangleup }\int_{\partial \bigtriangleup } f(z) \mathrm{d} z+\int_{P_{k-1}} f(z) \mathrm{d} z\]
 
-=&amp;F(b)-F(a).\\
+<p>由第一步里的结论已知</p>
 
-\end{align*}\tag2\]
+\[\int_{\partial \bigtriangleup } f(z) \mathrm{d} z=0\]
 
-<p><strong>proof 1</strong>  From theorem 1 we have</p>
+<p>于是</p>
 
-\[\displaystyle
-\begin{align*}
-\int_{L}f(z)\mathrm dz
+\[\int_{P_k} f(z) \mathrm{d} z=\int_{P_{k-1}} f(z) \mathrm{d} z\]
 
-=&amp;\left[ \begin{array}{c} \int_{L} f_1(z )\mathrm dz \\ \int_{L} f_2(z )\mathrm dz\\\cdots\end{array} \right]\\
-=&amp;\left[ \begin{array}{c} F_1(b)-F_1(a) \\ F_2(b)-F_2(a)\\\cdots\end{array} \right]\tag{Newton-Leibniz}\\
-=&amp;F(b)-F(a).
-\end{align*}\]
+<p>进而对于任意两个 $P_{i},P_j$ ，有</p>
 
-<p><strong>proof 2</strong></p>
+\[\int_{P_i} f(z) \mathrm{d} z=\int_{P_{j}} f(z) \mathrm{d} z\]
 
-\[\begin{align*}
-\int_{L}f(z)\mathrm dz
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}\frac{F(z_{i+1})-F(z_i)}{z_{i+1}-z_i}(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}F(z_{i+1})-F(z_i)\\
-=&amp;F(z_{n})-F(z_0)\\
-\end{align*}\]
+<p>而在修改1里已证明</p>
 
-<p><strong>example</strong> Let \(\displaystyle{f(z)= \left[ \begin{array}{c} z \\ z ^{ 2 } \end{array} \right],g(z)=z }\) . Then</p>
+\[\int_{L} f(z) \mathrm{d} z=\lim_{i\to\infty}\int_{P_i} f(z) \mathrm{d} z\]
 
-\[\displaystyle
-\begin{align*}
-\int_{0}^1f(z)\mathrm dz
-=&amp;F(1)-F(0)\\
-=&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right]-\left[ \begin{array}{c} 0 \\0\end{array} \right]\\
+<p>所以</p>
 
-=&amp;\left[ \begin{array}{c} \frac{ 1 }{ 2 } \\ \frac{ 1 }{ 3 }\end{array} \right].\\
-\end{align*}\]
+\[\int_{L} f(z) \mathrm{d} z=\int_{P_0} f(z) \mathrm{d} z\]
+
+<p>也就证明了积分的值和路径无关，只和起点终点有关。于是可以取起点=终点，就证明了弱的 Cauchy-Goursat 积分定理。</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:note" role="doc-endnote">
+      <p>这篇文章写完大半年后注：这个想法最终没有实现。后来对这个想法的一点零碎进展写在了<a href="/posts/向量分析/">向量分析</a>这篇文章里。 <a href="#fnref:note" class="reversefootnote" role="doc-backlink">&#8617;&#xfe0e;</a></p>
+    </li>
+  </ol>
+</div>
 
   </div>
 
@@ -972,19 +1285,19 @@ $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1000,7 +1313,7 @@ $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/modifying-Cauchy-Goursat-theorem/" class="post-preview card h-100">
+          <a href="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1012,26 +1325,16 @@ $f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$</p>
 
 <time
   
-  data-ts="1696003200"
+  data-ts="1705075200"
   data-df="ll"
   
 >
-  Sep 30, 2023
+  Jan 13, 2024
 </time>
 
-              <h4 class="pt-0 my-2">修改Cauchy-Goursat定理的证明</h4>
+              <h4 class="pt-0 my-2">向量分析</h4>
               <div class="text-muted">
-                <p>最近冒出个点子，需要把复分析里的一些结论做一个推广1。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明。
-
-先放上原证明：
-
-Cauchy-Goursat 积分定理
-设  $f(z)$  是单连通区域 $D$ 内的解析函数. 若 $L$ 是 $D$ 内任一条简单曲线, 取逆时针方向, 则
-
-[\int_{L} f(z) \mathrm{d} z=0]
-
-
-...</p>
+                <p>前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。</p>
               </div>
             </div>
           </a>
@@ -1051,22 +1354,18 @@ Cauchy-Goursat 积分定理
   
 
   
-    <a
-      href="/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/"
-      class="btn btn-outline-primary"
-      aria-label="Older"
-    >
-      <p>我的3d图片渲染程序的原理</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Older">
+      <p>-</p>
+    </div>
   
 
   
     <a
-      href="/posts/der_politischen_oekonomie/"
+      href="/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>关于政治经济学的想法</p>
+      <p>我的3d图片渲染程序的原理</p>
     </a>
   
 </nav>

@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>I'm a student in grade 8 who is keen on mathematics recently.</subtitle>
-  <updated>2024-06-21T00:31:24+08:00</updated>
+  <updated>2024-06-27T21:36:35+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -20,8 +20,62 @@
 
   
   <entry>
-    <title>游记第一 · 烟雨桂林</title>
-    <link href="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/" rel="alternate" type="text/html" title="游记第一 · 烟雨桂林" />
+    <title>谈思想第二</title>
+    <link href="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%BA%8C/" rel="alternate" type="text/html" title="谈思想第二" />
+    <published>2024-06-27T00:00:00+08:00</published>
+  
+    <updated>2024-06-27T00:00:00+08:00</updated>
+  
+    <id>/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%BA%8C/</id>
+    <content src="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%BA%8C/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="思考" />
+    
+  
+
+  <summary>这篇文章主要谈谈古希腊和中国的思想。
+
+古希腊地处爱琴海周围，它的领土是由很多零碎的小岛组成的，也有欧洲大陆的一条细长的海岸线。希腊地形以山地为主，四分之三为山地，沿海有低地平原。奥林匹斯山是希腊最高峰，海拔2917米；最低点在海平面。
+
+希腊的地理环境，特别是环海，多山，多岛屿的特性，不利于大规模的农业生产和中央集权的统一政权形成。相反，这种环境促进了城邦制度的发展，形成了数百个独立的城邦国家，贵族和国王的权力无法像统一政权那么大，为民主制度的产生和发展提供了有利条件。从经济角度来看，雅典社会经济的繁荣与工商业的活跃，使城邦倾向于建立民主形式的国家制度。此外，社会平民阶层与贵族的斗争促成了雅典民主政治走向成熟。
+
+以上这段改编自两年前的一道一模题的答案。解释了古希腊民主政治的原因。而这样的民主正是也就催生了古希腊的思想繁荣。至于为什么会形成对于理性的重视，我认为也一定程度上和他们的...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>谈思想第一</title>
+    <link href="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%B8%80/" rel="alternate" type="text/html" title="谈思想第一" />
+    <published>2024-06-25T00:00:00+08:00</published>
+  
+    <updated>2024-06-25T00:00:00+08:00</updated>
+  
+    <id>/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%B8%80/</id>
+    <content src="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%B8%80/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="思考" />
+    
+  
+
+  <summary>记录这段时间我对思想的思考</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>游记 · 烟雨桂林第一</title>
+    <link href="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/" rel="alternate" type="text/html" title="游记 · 烟雨桂林第一" />
     <published>2024-05-16T00:00:00+08:00</published>
   
     <updated>2024-05-16T00:00:00+08:00</updated>
@@ -46,6 +100,30 @@
 
   
   <entry>
+    <title>关于政治经济学的想法</title>
+    <link href="/posts/der_politischen_oekonomie/" rel="alternate" type="text/html" title="关于政治经济学的想法" />
+    <published>2024-01-15T00:00:00+08:00</published>
+  
+    <updated>2024-01-15T00:00:00+08:00</updated>
+  
+    <id>/posts/der_politischen_oekonomie/</id>
+    <content src="/posts/der_politischen_oekonomie/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="思考" />
+    
+  
+
+  <summary>这篇文章的内容是我看了一丁点《资本论》之后自己构思出的简陋经济学原理，肯定有诸多不妥之处。</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>向量分析</title>
     <link href="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" rel="alternate" type="text/html" title="向量分析" />
     <published>2024-01-13T00:00:00+08:00</published>
@@ -60,46 +138,11 @@
 
   
     
-    <category term="maths" />
+    <category term="math" />
     
   
 
-  <summary>前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。
-
-Suppose L is a curve on the complex plain. Take dividing points $z_0,z_1\cdots z_n$, where $z_0$ is the start of L and $z_n$ is the end. Let
-$f:\mathbb{C}\to\mathbb{R}^n,g:\mathbb{C}\to\mathbb{C}.$
-
-definition Let \(F(z)= \left[ \begin{array}{c} F_1(z )\\ F_2(z )\\\cdots \end{array} \right].\) Define
-
-[F’(z_i)=\frac{\mathrm d F}{\mathrm dx}=\lim...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>我的3d图片渲染程序的原理</title>
-    <link href="/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/" rel="alternate" type="text/html" title="我的3d图片渲染程序的原理" />
-    <published>2023-11-25T00:00:00+08:00</published>
-  
-    <updated>2023-11-25T00:00:00+08:00</updated>
-  
-    <id>/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/</id>
-    <content src="/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-  
-
-  <summary>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。
-
-假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。
-
-怎么计算交点呢？让计算机去试肯定行不通，那肯定就要用到数学了。
-
-首先，我们设定眼睛和物体都位于三维空间中，那么我们就可以用一个三维向量来表示这些东西。射线是已知的，设它为 $\vec e+p\vec v$ 。设物体表面是一个二维平面，用三角形可以唯一确定一个平面，所以用三角形作为物体表面。设三个顶点为 $\vec a ,\vec a +\vec b,\vec a +\vec c$ ，平面则可以表示为 $\vec a +n\vec b+m\vec c$ 。联立，可得 $\vec ...</summary>
+  <summary>前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。</summary>
 
   </entry>
 
