@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>I'm a student in grade 8 who is keen on mathematics recently.</subtitle>
-  <updated>2024-06-28T17:44:16+08:00</updated>
+  <updated>2024-07-01T22:29:45+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,36 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>解析素数定理的证明</title>
+    <link href="/posts/prime_number_theorem/" rel="alternate" type="text/html" title="解析素数定理的证明" />
+    <published>2024-07-01T00:00:00+08:00</published>
+  
+    <updated>2024-07-01T00:00:00+08:00</updated>
+  
+    <id>/posts/prime_number_theorem/</id>
+    <content src="/posts/prime_number_theorem/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>介绍
+我一向景仰的知乎大佬TravorLZH在3年前发表了一篇论文A Direct Proof of the Prime Number Theorem using Riemann’s Prime-counting Function，用一种独特的方法证明了素数定理。
+
+
+  In this paper, we develop a novel analytic method to prove the prime number theorem in de la Vallée Poussin’s form:
+\(\pi(x)=\operatorname{li}(x)+\mathcal O(xe^{-c\sqrt{\log x}})\)
+Instead of performing asymptotic expansion on Chebyshev functions as in convent...</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,30 +149,6 @@
   
 
   <summary>这篇文章的内容是我看了一丁点《资本论》之后自己构思出的简陋经济学原理，肯定有诸多不妥之处。</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>向量分析</title>
-    <link href="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" rel="alternate" type="text/html" title="向量分析" />
-    <published>2024-01-13T00:00:00+08:00</published>
-  
-    <updated>2024-01-13T00:00:00+08:00</updated>
-  
-    <id>/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/</id>
-    <content src="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-  
-
-  <summary>前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。</summary>
 
   </entry>
 
