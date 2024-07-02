@@ -675,7 +675,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1110 words"
+  title="1081 words"
 >
   <em>6 min</em> read</span>
 
@@ -784,9 +784,9 @@ J(x)-\pi(x)
 
 <p>为了证明（4），我们需要算等式右半边。</p>
 
-<blockquote class="prompt-info">
-  <p>原文中说选取恰当的delta可以使得围道中间仅有s=1这个奇点，但是没有给出证明。但这似乎并不是显然的，因为这涉及到zeta函数零点的问题。为了证明这一点，我从书中找到一段关于zeta函数第一象限无零点区域的证明，但这样似乎也无法得到证明。但这个结果应当是对的，只是我还没找到证明方法。</p>
-</blockquote>
+<p>原文中说选取恰当的delta可以使得围道中间仅有s=1这个奇点。但这似乎并不是显然的，因为这涉及到zeta函数零点的问题。这里证明一下：</p>
+
+<p>反证法，设  $\forall \delta&gt;0, \exists 1-\delta&lt;\operatorname{Re}(s)&lt;1$  使得  $\zeta(s)=0$ ,令  $\delta \rightarrow 0$  ，根据连续函数性质得  $\exists  \operatorname{Re}(s)=1$  使得  $\zeta(s)=0$ 与  $\zeta  (s)$ 在  $\sigma=1$  上无零点矛盾</p>
 
 <p>我们继续，在这个围道中间有一个奇点，为了分析这个奇点，我们定义 \(\displaystyle f(r)={1\over2\pi i}\oint_{(r+)}{x^s\over s}\log{1\over s/r-1}\mathrm ds\)，于是</p>
 
@@ -1821,7 +1821,7 @@ Cauchy-Goursat 积分定理
   <!-- MathJax -->
   <script src="/assets/js/data/mathjax.js"></script>
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js"></script>
 
 
 <!-- Pageviews -->
