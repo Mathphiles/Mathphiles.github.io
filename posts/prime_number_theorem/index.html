@@ -675,9 +675,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1081 words"
+  title="1072 words"
 >
-  <em>6 min</em> read</span>
+  <em>5 min</em> read</span>
 
         </div>
       </div>
@@ -723,13 +723,10 @@ Instead of performing asymptotic expansion on Chebyshev functions as in conventi
 
 <p>$\displaystyle{\pi \left( x \right) }$正好就是其中k=1的情况，于是</p>
 
-\[\begin{align*}
-J(x)-\pi(x)
-&amp;=\sum_{2\le k\le\log_2x}{\pi(x^{1/k})\over k}
-\le{\sqrt x\over2}+\sum_{3\le k\le\log_2x}{\sqrt[3]x\over k} \\
-&amp;\ll\sqrt x+\sqrt[3]x\log\log x
-=\mathcal O\left(\sqrt x\right)
-\end{align*}\]
+\[J(x)-\pi(x)
+=\sum_{2\le k\le\log_2x}{\pi(x^{1/k})\over k}
+\le{\sqrt x\over2}+\sum_{3\le k\le\log_2x}{\sqrt[3]x\over k} \ll\sqrt x+\sqrt[3]x\log\log x
+=\mathcal O\left(\sqrt x\right)\]
 
 <p>（文中的loglogx，其实估计到logx即可。）</p>
 
@@ -773,13 +770,10 @@ J(x)-\pi(x)
 
 <p>我们接着分析 \(\displaystyle{1\over2\pi i}\int_{k-iT}^{k+iT}{x^s\over s}\log\zeta(s)\mathrm ds\) 。</p>
 
-\[\begin{align*}
+\[{1\over2\pi i}\int_{k-iT}^{k+iT}{x^s\over s}\log\zeta(s)\mathrm ds
+		={1\over2\pi i}\oint_{\partial R}{x^s\over s}\log\zeta(s)\mathrm ds 
 
-		{1\over2\pi i}\int_{k-iT}^{k+iT}{x^s\over s}\log\zeta(s)\mathrm ds
-		&amp;={1\over2\pi i}\oint_{\partial R}{x^s\over s}\log\zeta(s)\mathrm ds \\
-
-		&amp;+{1\over2\pi i}\left[\int_{k-iT}^{1-\delta-iT}+\int_{1-\delta-iT}^{1-\delta+iT}+\int_{1-\delta+iT}^{k+iT}\right]{x^s\over s}\log\zeta(s)\mathrm ds
-	\end{align*}\]
+		+{1\over2\pi i}\left[\int_{k-iT}^{1-\delta-iT}+\int_{1-\delta-iT}^{1-\delta+iT}+\int_{1-\delta+iT}^{k+iT}\right]{x^s\over s}\log\zeta(s)\mathrm ds\]
 
 <p><a href="/assets/img/weidao.svg" class="popup img-link  shimmer"><img src="/assets/img/weidao.svg" alt="画得不是很好" loading="lazy"></a></p>
 
@@ -808,12 +802,9 @@ J(x)-\pi(x)
 \[\left|\int_{k\pm iT}^{1-\delta\pm iT}{x^s\over s}\log\zeta(s)\mathrm ds\right|
 \ll{\log T\over T}\int_k^{1-\delta}x^u\mathrm du\ll{x\log T\over T\log x}\]
 
-\[\begin{align*}
-			\left|\int_{1-\delta-iT}^{1-\delta+iT}{x^s\over s}\log\zeta(s)\mathrm ds\right|
-			&amp;\ll x^{1-\delta}\log T\int_{-T}^T{\mathrm du\over|1-\delta+it|} \\
-
-			&amp;\ll x^{1-\delta}\log^2T=x\log^2T\exp\left(-{A\log x\over\log T}\right)
-		\end{align*}\]
+\[\left|\int_{1-\delta-iT}^{1-\delta+iT}{x^s\over s}\log\zeta(s)\mathrm ds\right|
+\ll x^{1-\delta}\log T\int_{-T}^T{\mathrm du\over|1-\delta+it|} 
+\ll x^{1-\delta}\log^2T=x\log^2T\exp\left(-{A\log x\over\log T}\right)\]
 
 <p>全部带入即得（4）.</p>
 
@@ -921,6 +912,13 @@ J(x)-\pi(x)
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/">这三天的数学研究</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/">面积公理</a>
         </li>
       
@@ -943,13 +941,6 @@ J(x)-\pi(x)
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%B8%80/">谈思想第一</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/">游记 · 烟雨桂林第一</a>
         </li>
       
     </ul>
@@ -1014,6 +1005,34 @@ J(x)-\pi(x)
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1082,36 +1101,6 @@ J(x)-\pi(x)
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1144,8 +1133,6 @@ J(x)-\pi(x)
     
     
     
-    
-      
     
   
     
@@ -1186,8 +1173,6 @@ J(x)-\pi(x)
     
     
     
-    
-      
     
   
     
@@ -1227,6 +1212,9 @@ J(x)-\pi(x)
         <a class="post-tag btn btn-outline-primary" href="/tags/analysis/">analysis</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/number-theory/">number theory</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
@@ -1234,9 +1222,6 @@ J(x)-\pi(x)
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/algorithm/">algorithm</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/number-theory/">number theory</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/">初中数学</a>
@@ -1338,6 +1323,18 @@ J(x)-\pi(x)
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1351,6 +1348,34 @@ J(x)-\pi(x)
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1721664000"
+  data-df="ll"
+  
+>
+  Jul 23, 2024
+</time>
+
+              <h4 class="pt-0 my-2">这三天的数学研究</h4>
+              <div class="text-muted">
+                <p>研究了同余式当中三次方程的解的情况</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/" class="post-preview card h-100">
@@ -1409,44 +1434,6 @@ J(x)-\pi(x)
               <h4 class="pt-0 my-2">向量分析</h4>
               <div class="text-muted">
                 <p>前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/modifying-Cauchy-Goursat-theorem/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1696003200"
-  data-df="ll"
-  
->
-  Sep 30, 2023
-</time>
-
-              <h4 class="pt-0 my-2">修改Cauchy-Goursat定理的证明</h4>
-              <div class="text-muted">
-                <p>最近冒出个点子，需要把复分析里的一些结论做一个推广1。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明。
-
-先放上原证明：
-
-Cauchy-Goursat 积分定理
-设  $f(z)$  是单连通区域 $D$ 内的解析函数. 若 $L$ 是 $D$ 内任一条简单曲线, 取逆时针方向, 则
-
-[\int_{L} f(z) \mathrm{d} z=0]
-
-
-...</p>
               </div>
             </div>
           </a>
@@ -1594,6 +1581,34 @@ Cauchy-Goursat 积分定理
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1662,36 +1677,6 @@ Cauchy-Goursat 积分定理
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1724,8 +1709,6 @@ Cauchy-Goursat 积分定理
     
     
     
-    
-      
     
   
     
@@ -1766,8 +1749,6 @@ Cauchy-Goursat 积分定理
     
     
     
-    
-      
     
   
     
@@ -1807,6 +1788,9 @@ Cauchy-Goursat 积分定理
         <a class="post-tag btn btn-outline-primary" href="/tags/analysis/">analysis</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/number-theory/">number theory</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
@@ -1814,9 +1798,6 @@ Cauchy-Goursat 积分定理
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/algorithm/">algorithm</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/number-theory/">number theory</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/">初中数学</a>
@@ -1986,7 +1967,7 @@ Cauchy-Goursat 积分定理
   <!-- MathJax -->
   <script src="/assets/js/data/mathjax.js"></script>
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js"></script>
+  <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 <!-- Pageviews -->
@@ -2097,4 +2078,25 @@ Cauchy-Goursat 积分定理
     alert(e.message);
   })
 </script> -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+
+
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": {
+      linebreaks: { automatic: true, width: "container" }          
+    }       
+  });
+</script>
+
+  <style>
+    body{
+      word-wrap: break-word; 
+      word-break: break-all;
+    }
+  </style>
 

@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="我的3d图片渲染程序的原理" />
+<meta property="og:title" content="这三天的数学研究" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。" />
-<meta property="og:description" content="前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。" />
-<link rel="canonical" href="/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/" />
-<meta property="og:url" content="/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/" />
+<meta name="description" content="研究了同余式当中三次方程的解的情况" />
+<meta property="og:description" content="研究了同余式当中三次方程的解的情况" />
+<link rel="canonical" href="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/" />
+<meta property="og:url" content="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/" />
 <meta property="og:site_name" content="Charlie" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-11-25T00:00:00+08:00" />
+<meta property="article:published_time" content="2024-07-23T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="我的3d图片渲染程序的原理" />
+<meta property="twitter:title" content="这三天的数学研究" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-25T00:00:00+08:00","datePublished":"2023-11-25T00:00:00+08:00","description":"前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。","headline":"我的3d图片渲染程序的原理","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/"},"url":"/posts/%E6%88%91%E7%9A%843d%E5%9B%BE%E7%89%87%E6%B8%B2%E6%9F%93%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-07-23T00:00:00+08:00","datePublished":"2024-07-23T00:00:00+08:00","description":"研究了同余式当中三次方程的解的情况","headline":"这三天的数学研究","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/"},"url":"/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>我的3d图片渲染程序的原理 | Charlie
+  <title>这三天的数学研究 | Charlie
   </title>
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
@@ -356,7 +356,7 @@
         
           
             
-              <span>我的3d图片渲染程序的原理</span>
+              <span>这三天的数学研究</span>
             
 
           
@@ -465,7 +465,9 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>我的3d图片渲染程序的原理</h1>
+    <h1 data-toc-skip>这三天的数学研究</h1>
+    
+      <p class="post-desc fw-light mb-4">研究了同余式当中三次方程的解的情况</p>
     
 
     <div class="post-meta text-muted">
@@ -482,13 +484,13 @@
 
 <time
   
-  data-ts="1700841600"
+  data-ts="1721664000"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Nov 25, 2023
+  Jul 23, 2024
 </time>
 
       </span>
@@ -537,9 +539,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="573 words"
+  title="1160 words"
 >
-  <em>3 min</em> read</span>
+  <em>6 min</em> read</span>
 
         </div>
       </div>
@@ -547,27 +549,150 @@
   </header>
 
   <div class="content">
-    <p>前段时间写了个渲染3d图片的程序。我没参考任何有关的资料，从零开始的，所以可能和主流实现有冲突。</p>
+    <p>前两天无意中发现，一到九每个数三次方之后个位数仍然是一到九，这引发了我的联想，满足(模n的完系)$^3$  也是模n的完系的n有什么规律？</p>
 
-<p>假设眼睛是一个点，这个程序要做的就是把物体映射到眼睛前的一块画布上。所以可以画一条从眼睛为起始的一条射线，在暂时不考虑光影的情况下，射线和物体离眼睛最近的焦点的颜色就画在画布与射线的交点上。这就是核心原理。</p>
+<p>沿着这个想法，可以定义如下函数：</p>
 
-<p>怎么计算交点呢？让计算机去试肯定行不通，那肯定就要用到数学了。</p>
+\[\begin{align*}
 
-<p>首先，我们设定眼睛和物体都位于三维空间中，那么我们就可以用一个三维向量来表示这些东西。射线是已知的，设它为 $\vec e+p\vec v$ 。设物体表面是一个二维平面，用三角形可以唯一确定一个平面，所以用三角形作为物体表面。设三个顶点为 $\vec a ,\vec a +\vec b,\vec a +\vec c$ ，平面则可以表示为 $\vec a +n\vec b+m\vec c$ 。联立，可得 $\vec a+n\vec b+m\vec c=\vec e+p\vec v$ 。运用一点线代知识可知</p>
+f(n)=\begin{cases}
+1   \,\,\,\,\,\,\text{ if } (模 n的完系)^3也是模n的完系 \\
+ 0  \,\,\,\,\,\,\text{ otherwise }   \end{cases}
 
-\[\begin{bmatrix}-n\\-m\\p\end{bmatrix}=\begin{pmatrix}
-\vec b  &amp;\vec c  &amp;\vec v
-\end{pmatrix}^{-1}\left(\vec a-\vec e\right)\\\]
+\end{align*}\]
 
-<p>另外，我们还要知道这个点是否在三角形内。</p>
+<p>它的值大概长这样：</p>
 
-<p>注意到，如果把平面上的点都用[n,m]两个坐标表示（n,m是已求出的），a+b的坐标变成[1,0]，a+c的坐标变成[0,1]，a的坐标变成[0,0]。容易证明，变换后一个点在三角形内等价于变换前这个点在三角形内。这样就方便判断了。</p>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>n</th>
+      <th>f(n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table></div>
 
-<p>满足上述两条的点就是交点。还需要进行距离的排序，就好了。</p>
+<p>以下是我这几天发现的规律：</p>
 
-<p>然后就是编程部分了。我先用python写了一遍，速度堪忧，就让那个老朋友帮忙改成了c++，用到opencv又配置了一番。暂时不开源了，我的代码也没什么可借鉴之处。</p>
+<p><strong>theorem</strong> 对于任意素数p, 对于任意整数a&gt;1, $f(p^a)=0$</p>
 
-<p>先写到这儿，以后加了新特性（比如光影）就再更新。2023年11月25日。</p>
+<p>证明：对于所有b&gt;a/3，$(kp^b)^3 \equiv 0 \pmod{p^a}$，因此$(模 p^a的完系)^3$一定不是模 p^a完系。</p>
+
+<p><strong>theorem</strong> $a^3${$i^3$}={$i^3$}</p>
+
+<p>证明：$a^3${$i^3$}={$(ai)^3$}={$i^3$}</p>
+
+<p><strong>theorem</strong> f(n)是积性函数</p>
+
+<p>证明：</p>
+
+<p><strong>lemma</strong> 让$f$是一个整系数多项式,$m_1,m_2,…,m_r$是两两互素的正整数，并让$m=m_1m_2…m_r$,则同余式</p>
+
+\[f(x) \equiv 0 \pmod m\tag{1}\]
+
+<p>有一个解,当且仅当同余式组</p>
+
+\[f(x) \equiv 0 \pmod {m_i}\quad i=1,2,...,r\tag{2}\]
+
+<p>的每一个有一个解.并且,如果$V(m)$与$V(m_i)$分别表示式(1)与(2)的解的个数,则有</p>
+
+\[V(m)=V(m_1)V(m_2)...V(m_r).\tag{3}\]
+
+<p>证明：如果$f(a) \equiv 0\pmod m$, 则$f(a) \equiv 0\pmod {m_i}$对每个i成立, 于是式(1)的每个解也是式(2)的解. 反之,令$a_i$是式(2)的一个解, 于是根据中国剩余定理, 存在一个整数a, 使得</p>
+
+\[a \equiv a_i\pmod {m_i}\quad i=1,2,...,r\tag4\]
+
+<p>所以 $f(a) = f(a_i) \equiv 0\pmod {m_i}.$ 因为这些模是两两互素的, 故我们也有$f(a) \equiv 0\pmod m$. 因此,如果式(2)的每一个同余都有解, 则式(1)也有解.</p>
+
+<p>根据定理5.26,我们还知道, 同余式组(2)的每一个(r)个数组的解$(a_1,…,a_r)$给出满足式(4)的唯一整数$a\pmod m$. 当每个$a_i$通过式(2)的$V(m_i)$个数时,满足式(4)也也就满足式(2)的整数a通过$V(m_1)\cdot V(m_2)\cdot…\cdot V(m_r)$个. 这证明了式(3).</p>
+
+<p>$f(m)=1\iff a^3-b^3 \equiv 0\pmod m仅有a=b一个解\iff a^3-b^3 \equiv 0\pmod {m_i}对于每个i\iff f(m_i)=1对于每个i$</p>
+
+<p>因此 $f(m)=\prod f(m_i)$，得证。</p>
+
+<p>以上定理揭示了f(n)在合数上的所有表现。</p>
+
+<p><strong>theorem</strong> $n=p_1^ap_2^b\cdots,\sum_{d|n}f(d)=2^{f(p_1^a)+f(p_2^b)+\cdots}$</p>
+
+<p>易证</p>
+
+<p><strong>theorem</strong> 对于不是2或3的素数p，$f(p)=1\iff p=6k+5$</p>
+
+<p>$f(p)=1\iff a^3-b^3 \equiv 0\pmod p仅有a=b一个解\iff a^2+ab+b^2 \equiv 0\pmod p无解$</p>
+
+<p>我们考虑方程 $ a^2 + ab + b^2 \equiv 0 \pmod{p} $。我们可以将其改写为：</p>
+
+\[a^2 + ab + b^2 = 0\]
+
+<p>这是一个关于 $ a $ 的二次方程，其判别式为：</p>
+
+\[\Delta = b^2 - 4 \cdot 1 \cdot b^2 = b^2 - 4b^2 = -3b^2\]
+
+<p>为了使得这个方程在模 $ p $ 意义下无解，判别式 $ \Delta $ 必须不是模 $ p $ 的二次剩余。也就是说，-3 不是模 $ p $ 的二次剩余。</p>
+
+<p>根据二次互反律，-3 是模 $ p $ 的二次剩余当且仅当 $ p \equiv 1 \pmod{6} $。因此，为了使得 $ -3 $ 不是模 $ p $ 的二次剩余，$ p $ 必须满足：</p>
+
+\[p \equiv 5 \pmod{6}\]
+
+<p>证毕。</p>
+
+<p><strong>corollary</strong> 有无穷多个n使得f(n)=1</p>
+
+<p>把上面定理的结论带入到迪利克雷定理中，可得满足f(n)=1的素数有无穷多个，即证。</p>
+
+<p><strong>theorem</strong> 对于任意素数p满足f(p)=0,对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 总有正好3个不同余的解.</p>
+
+<p>证明分两步。第一步，证明对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 的解的个数相同。再根据拉格朗日定理可知这个个数要么是2，要么是3. 第二步，证明不可能有2个解。</p>
+
+<p>根据前文已得到的定理，$a^3${$i^3$}={$(ai)^3$}={$i^3$}。这意味着，如果 $x^3 \equiv b \pmod{p}$ 有m个解， $x^3 \equiv ab \pmod{p}$ 也有m个解。a是没有限制的，所以让它跑遍整个完系，这样就证明了第一步。</p>
+
+<p>第二步，如果 $x^3 \equiv 1 \pmod{p}$ ，那么 $(x^2)^3 \equiv 1 \pmod{p}$ 。如果 $x^3 \equiv 1 \pmod{p}$ 有两个解，其中一个肯定是x=1，那么只剩下一个名额了。但是前面又说了，要么没有，要么x和x^2都是，所以只能是 $x^2 \equiv x \pmod{p}$ . 可以解得 $x \equiv 1 \pmod{p}$ ，但这就和第一个解重合了。因此不可能有2个解 。证毕。</p>
+
+<p><strong>theorem</strong> 对于不含平方因子的n，令g(n)=对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 的解的个数，则 $g(n)=g(p_1)g(p_2)…$</p>
+
+<p>由上文的引理和定理易得。</p>
 
   </div>
 
@@ -577,7 +702,7 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/computer/">computer</a>
+          <a href="/categories/math/">math</a>
       </div>
     
 
@@ -587,9 +712,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/algorithm/"
+            href="/tags/number-theory/"
             class="post-tag no-text-decoration"
-          >algorithm</a>
+          >number theory</a>
         
       </div>
     
@@ -1042,6 +1167,54 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
 
 
@@ -1052,6 +1225,108 @@
 
 
 
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/prime_number_theorem/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1719763200"
+  data-df="ll"
+  
+>
+  Jul  1, 2024
+</time>
+
+              <h4 class="pt-0 my-2">解析素数定理的证明</h4>
+              <div class="text-muted">
+                <p>介绍
+我一向景仰的知乎大佬TravorLZH在3年前发表了一篇论文A Direct Proof of the Prime Number Theorem using Riemann’s Prime-counting Function，用一种独特的方法证明了素数定理。
+
+
+  In this paper, we develop a novel analytic method to prove t...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1720800000"
+  data-df="ll"
+  
+>
+  Jul 13, 2024
+</time>
+
+              <h4 class="pt-0 my-2">面积公理</h4>
+              <div class="text-muted">
+                <p>我们常常发现，有一些命题不通过等面积法是做不出来的。比如勾股定理，相似三角形的定理。这是为什么呢？
+
+我认为是因为等面积法基于一个独立于角、线段的公理。为什么这么说呢？因为如果没有这样一条公理，那么根据角和线就可以推得勾股定理和相似三角形，但目前来看是不行的。
+
+我把它称为面积公理。在《几何原本》中，我找到公理4：彼此重合的东西，彼此相等。但这还不完全是我的面积公理。我的表述如下：
+
+  S...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705075200"
+  data-df="ll"
+  
+>
+  Jan 13, 2024
+</time>
+
+              <h4 class="pt-0 my-2">向量分析</h4>
+              <div class="text-muted">
+                <p>前段时间我尝试了在微积分中用向量来求解一些问题，在这里记录一下。用英文写是因为懒得切换输入法了。</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1064,22 +1339,18 @@
 
   
     <a
-      href="/posts/about-dream/"
+      href="/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>浅谈自主达到目标的方法</p>
+      <p>面积公理</p>
     </a>
   
 
   
-    <a
-      href="/posts/%E5%90%91%E9%87%8F%E5%88%86%E6%9E%90/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>向量分析</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>I'm a student in grade 8 who is keen on mathematics recently.</subtitle>
-  <updated>2024-07-13T16:31:31+08:00</updated>
+  <updated>2024-07-24T00:05:12+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>这三天的数学研究</title>
+    <link href="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/" rel="alternate" type="text/html" title="这三天的数学研究" />
+    <published>2024-07-23T00:00:00+08:00</published>
+  
+    <updated>2024-07-23T00:00:00+08:00</updated>
+  
+    <id>/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/</id>
+    <content src="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>研究了同余式当中三次方程的解的情况</summary>
+
+  </entry>
 
   
   <entry>
@@ -139,32 +163,6 @@ Instead of performing asymptotic expansion on Chebyshev functions as in convent.
   
 
   <summary>记录这段时间我对思想的思考</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>游记 · 烟雨桂林第一</title>
-    <link href="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/" rel="alternate" type="text/html" title="游记 · 烟雨桂林第一" />
-    <published>2024-05-16T00:00:00+08:00</published>
-  
-    <updated>2024-05-16T00:00:00+08:00</updated>
-  
-    <id>/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/</id>
-    <content src="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="游记" />
-    
-  
-
-  <summary>一想到旅游，往昔游历山水的画卷便在脑海中悠然展开。八达岭长城沐浴在落日余晖中，霞光为其披上绯红纱衣之景跃然眼前；杭州的桂花糕，甜美软糯仿佛仍萦绕舌尖；而济南清澈的泉水，如同明镜环绕，历历在目。在默默里算着，已然四个春秋未出过这座城市了。岁月悠悠，这些旅行断想都在时间的冲刷下逐渐沉淀，深埋在了儿时的回忆中。我常有一种感觉：随着时光的流逝，过往的每一刻似乎都被镀上了一层温柔的光辉，愈发显得美好而珍贵。或许，这正是诸多文人墨客钟情于描绘童年时光的原因吧。每当这些景象在心头重现，一股暖流携带着喜悦油然而生，不禁叹于生活的美好一面。
-
-放了寒假，我那渴望远行的心扉再也无法禁锢。于是我怀着激动的心情，踏上了往桂林的火车。旅游，当然要有头有尾。这头便是坐火车。在我的旅游印象中，来往的过程也是其中的重要一环。每当我置身机场或者火车站，心中总充满旅游的期待。对旅游的憧憬总是充满梦幻色彩，而火车站的片刻...</summary>
 
   </entry>
 
