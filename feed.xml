@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>I'm a student in grade 8 who is keen on mathematics recently.</subtitle>
-  <updated>2024-07-24T00:05:12+08:00</updated>
+  <updated>2024-10-03T00:34:17+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>群友提出的问题</title>
+    <link href="/posts/%E7%BE%A4%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" rel="alternate" type="text/html" title="群友提出的问题" />
+    <published>2024-10-02T00:00:00+08:00</published>
+  
+    <updated>2024-10-02T00:00:00+08:00</updated>
+  
+    <id>/posts/%E7%BE%A4%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <content src="/posts/%E7%BE%A4%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>群友提出的问题</summary>
+
+  </entry>
 
   
   <entry>
@@ -66,19 +90,19 @@
 
 我认为是因为等面积法基于一个独立于角、线段的公理。为什么这么说呢？因为如果没有这样一条公理，那么根据角和线就可以推得勾股定理和相似三角形，但目前来看是不行的。
 
-我把它称为面积公理。在《几何原本》中，我找到公理4：彼此重合的东西，彼此相等。但这还不完全是我的面积公理。我的表述如下：
+我把它称为面积公理。在《几何原本》中，我找到公理4：彼此重合的东西，彼此相等。但这还不完全是我的面积公理。但古希腊语中的“等于”有全等和面积相等两重含义。我的公理表述如下：
 
   S是连续的（这样说不是很严谨）
   若图形a和图形b没有重合，若称它们合并的图形为c，那么Sa+Sb=Sc
   全等三角形面积相等
 
 
+进一步地，如果我们允许使用微分思想，那么公理1和2就都可以由公理3得到。因此，从严格意义上讲的面积公理应当只有公理3.
+
 以下命题可以由它推出来：
 
   平行四边形面积正比于底乘高。
-  正方形面积正比于边长的平方。
-  若底和高相同，平行四边形面积是三角形面积的2倍。
-  接着，按照《几何原本》中的证法，就可以证明边长为直角三角形三边的正方形的面积满足两个小的之和等于第三个。再根据正...</summary>
+  正方形面积正比于边长的平方...</summary>
 
   </entry>
 
@@ -139,30 +163,6 @@ Instead of performing asymptotic expansion on Chebyshev functions as in convent.
 希腊的地理环境，特别是环海，多山，多岛屿的特性，不利于大规模的农业生产和中央集权的统一政权形成。相反，这种环境促进了城邦制度的发展，形成了数百个独立的城邦国家，贵族和国王的权力无法像统一政权那么大，为民主制度的产生和发展提供了有利条件。从经济角度来看，雅典社会经济的繁荣与工商业的活跃，使城邦倾向于建立民主形式的国家制度。此外，社会平民阶层与贵族的斗争促成了雅典民主政治走向成熟。
 
 以上这段改编自两年前的一道一模题的答案。解释了古希腊民主政治的原因。而这样的民主正是也就催生了古希腊的思想繁荣。至于为什么会形成对于理性的重视，我认为也一定程度上和他们的...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>谈思想第一</title>
-    <link href="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%B8%80/" rel="alternate" type="text/html" title="谈思想第一" />
-    <published>2024-06-25T00:00:00+08:00</published>
-  
-    <updated>2024-06-25T00:00:00+08:00</updated>
-  
-    <id>/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%B8%80/</id>
-    <content src="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%B8%80/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="思考" />
-    
-  
-
-  <summary>记录这段时间我对思想的思考</summary>
 
   </entry>
 
