@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>I'm a student in grade 8 who is keen on mathematics recently.</subtitle>
-  <updated>2024-10-03T00:34:17+08:00</updated>
+  <updated>2024-10-04T00:53:14+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -39,6 +39,39 @@
   
 
   <summary>群友提出的问题</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>关于小科目</title>
+    <link href="/posts/little/" rel="alternate" type="text/html" title="关于小科目" />
+    <published>2024-10-02T00:00:00+08:00</published>
+  
+    <updated>2024-10-02T00:00:00+08:00</updated>
+  
+    <id>/posts/little/</id>
+    <content src="/posts/little/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="小说" />
+    
+  
+
+  <summary>公元3456年，S国的S城率先开始了新一轮教育变动。对此，本报特约评论员李华发表了一篇评论，其辞曰：
+
+
+此次变动，几家欢乐几家愁。以下从愁家的视角，看看此次变动对他们有什么影响。
+
+从公开的文字上看起来，此次变动的好处有如下几点：1. 减轻童生学习负担；2. 聚焦核心科目和核心素养培养；3. 优化院试选拔机制。
+
+通过这样以减轻童生的学习负担，可能效果并不显著。这之后，童生自然会把更多的精力放在考试科目上。这样下来，势必会有更多人在院试中发挥优异。这就引出一个问题：高分扎堆，筛选不出真正优秀的童生了，反而不利于优化院试选拔机制。所以，院试一定会增加难度来区分考生。届时，为了增加难度，更多的偏题怪题会出现，还有可能为此拓宽考纲范围。但是，这就又增加童生负担了。
+
+聚焦核心科目，让童生们不要学得太杂，顾此失彼，初心是很好的。不过，若要这样说的话，此次变动不就相当于小科目全“失”了。因此...</summary>
 
   </entry>
 
@@ -133,36 +166,6 @@
   In this paper, we develop a novel analytic method to prove the prime number theorem in de la Vallée Poussin’s form:
 \(\pi(x)=\operatorname{li}(x)+\mathcal O(xe^{-c\sqrt{\log x}})\)
 Instead of performing asymptotic expansion on Chebyshev functions as in convent...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>谈思想第二</title>
-    <link href="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%BA%8C/" rel="alternate" type="text/html" title="谈思想第二" />
-    <published>2024-06-27T00:00:00+08:00</published>
-  
-    <updated>2024-06-27T00:00:00+08:00</updated>
-  
-    <id>/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%BA%8C/</id>
-    <content src="/posts/%E8%B0%88%E6%80%9D%E6%83%B3%E7%AC%AC%E4%BA%8C/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="思考" />
-    
-  
-
-  <summary>这篇文章主要谈谈古希腊和中国的思想。
-
-古希腊地处爱琴海周围，它的领土是由很多零碎的小岛组成的，也有欧洲大陆的一条细长的海岸线。希腊地形以山地为主，四分之三为山地，沿海有低地平原。奥林匹斯山是希腊最高峰，海拔2917米；最低点在海平面。
-
-希腊的地理环境，特别是环海，多山，多岛屿的特性，不利于大规模的农业生产和中央集权的统一政权形成。相反，这种环境促进了城邦制度的发展，形成了数百个独立的城邦国家，贵族和国王的权力无法像统一政权那么大，为民主制度的产生和发展提供了有利条件。从经济角度来看，雅典社会经济的繁荣与工商业的活跃，使城邦倾向于建立民主形式的国家制度。此外，社会平民阶层与贵族的斗争促成了雅典民主政治走向成熟。
-
-以上这段改编自两年前的一道一模题的答案。解释了古希腊民主政治的原因。而这样的民主正是也就催生了古希腊的思想繁荣。至于为什么会形成对于理性的重视，我认为也一定程度上和他们的...</summary>
 
   </entry>
 

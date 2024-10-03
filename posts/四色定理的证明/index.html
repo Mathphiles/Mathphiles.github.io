@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="面积公理" />
+<meta property="og:title" content="四色定理的证明？" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="我们常常发现，有一些命题不通过等面积法是做不出来的。比如勾股定理，相似三角形的定理。这是为什么呢？" />
-<meta property="og:description" content="我们常常发现，有一些命题不通过等面积法是做不出来的。比如勾股定理，相似三角形的定理。这是为什么呢？" />
-<link rel="canonical" href="/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/" />
-<meta property="og:url" content="/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/" />
+<meta name="description" content="四色定理听说证不出来，所以这篇文章肯定存在一些问题" />
+<meta property="og:description" content="四色定理听说证不出来，所以这篇文章肯定存在一些问题" />
+<link rel="canonical" href="/posts/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E/" />
+<meta property="og:url" content="/posts/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E/" />
 <meta property="og:site_name" content="Charlie" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-07-13T00:00:00+08:00" />
+<meta property="article:published_time" content="2024-04-05T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="面积公理" />
+<meta property="twitter:title" content="四色定理的证明？" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-07-13T00:00:00+08:00","datePublished":"2024-07-13T00:00:00+08:00","description":"我们常常发现，有一些命题不通过等面积法是做不出来的。比如勾股定理，相似三角形的定理。这是为什么呢？","headline":"面积公理","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/"},"url":"/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-05T00:00:00+08:00","datePublished":"2024-04-05T00:00:00+08:00","description":"四色定理听说证不出来，所以这篇文章肯定存在一些问题","headline":"四色定理的证明？","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E/"},"url":"/posts/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>面积公理 | Charlie
+  <title>四色定理的证明？ | Charlie
   </title>
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
@@ -331,7 +331,7 @@
         
           
             
-              <span>面积公理</span>
+              <span>四色定理的证明？</span>
             
 
           
@@ -440,7 +440,9 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>面积公理</h1>
+    <h1 data-toc-skip>四色定理的证明？</h1>
+    
+      <p class="post-desc fw-light mb-4">四色定理听说证不出来，所以这篇文章肯定存在一些问题</p>
     
 
     <div class="post-meta text-muted">
@@ -457,13 +459,13 @@
 
 <time
   
-  data-ts="1720800000"
+  data-ts="1712246400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jul 13, 2024
+  Apr  5, 2024
 </time>
 
       </span>
@@ -512,7 +514,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="482 words"
+  title="471 words"
 >
   <em>2 min</em> read</span>
 
@@ -522,28 +524,15 @@
   </header>
 
   <div class="content">
-    <p>我们常常发现，有一些命题不通过等面积法是做不出来的。比如勾股定理，相似三角形的定理。这是为什么呢？</p>
+    <p>四色定理不成立可以推出，一定存在一个图，使得必有大于等于5块互不相同颜色，等价于可以有5个地区两两接壤的图存在（否则第五个地区的颜色就可以取和他不接壤的一个地区的颜色）。取逆否命题即得：如果5个地区两两接壤的图不存在，则四色定理成立。</p>
 
-<p>我认为是因为等面积法基于一个独立于角、线段的公理。为什么这么说呢？因为如果没有这样一条公理，那么根据角和线就可以推得勾股定理和相似三角形，但目前来看是不行的。</p>
+<p>接下来证明这个命题。显然若有其中有空白的图存在，那必然有其中没有空白的图存在。因此只考虑实心的图。注意到一个地图一定有唯一的一个轮廓（如果有多个轮廓，那必然至少有2个地区不相连）。那么接下来分类讨论：</p>
 
-<p>我把它称为面积公理。在《几何原本》中，我找到公理4：彼此重合的东西，彼此相等。但这还不完全是我的面积公理。但古希腊语中的“等于”有全等和面积相等两重含义。我的公理表述如下：</p>
-<ol>
-  <li>S是连续的（这样说不是很严谨）</li>
-  <li>若图形a和图形b没有重合，若称它们合并的图形为c，那么Sa+Sb=Sc</li>
-  <li>全等三角形面积相等</li>
-</ol>
+<p>1.如果只有一个国家独占整个轮廓
+不妨设这个国家名字叫A，那么A就一定可以看作一个环形（如果里面还有环的话（即8字形），那一个环内和另一个环内的国家就不能相连了）。其他4个国家要和A有接壤，所以它们分别与A的内壁接触。这4个国家与A的接触只能有一段，不然就会在A里面形成一个柱子，把其他国家隔开。因此，它们一定位居环内的四方。此时对角线上的两个国家必须连起来，不然就没别的方法了，这样另两个对角线上的地区就被隔开了。</p>
 
-<p>进一步地，如果我们允许使用微分思想，那么公理1和2就都可以由公理3得到。因此，从严格意义上讲的面积公理应当只有公理3.</p>
-
-<p>以下命题可以由它推出来：</p>
-<ul>
-  <li>平行四边形面积正比于底乘高。</li>
-  <li>正方形面积正比于边长的平方。</li>
-  <li>若底和高相同，平行四边形面积是三角形面积的2倍。</li>
-  <li>接着，按照《几何原本》中的证法，就可以证明边长为直角三角形三边的正方形的面积满足两个小的之和等于第三个。再根据正方形面积正比于边长的平方，可得勾股定理。</li>
-  <li>全等形面积相等。</li>
-  <li>三角形面积正比于底乘高。</li>
-</ul>
+<p>依此类推，分析2个、3个、4个、5个国家分摊整个轮廓的情况，发现都不可能。
+因此证明了5个点两两相连的点图不存在。</p>
 
   </div>
 
@@ -563,9 +552,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/"
+            href="/tags/graph-theory/"
             class="post-tag no-text-decoration"
-          >初中数学</a>
+          >graph theory</a>
         
       </div>
     
@@ -1100,31 +1089,31 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1220,7 +1209,7 @@
         </article>
       
         <article class="col">
-          <a href="/posts/prime_number_theorem/" class="post-preview card h-100">
+          <a href="/posts/%E9%9D%A2%E7%A7%AF%E5%85%AC%E7%90%86/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1232,20 +1221,20 @@
 
 <time
   
-  data-ts="1719763200"
+  data-ts="1720800000"
   data-df="ll"
   
 >
-  Jul  1, 2024
+  Jul 13, 2024
 </time>
 
-              <h4 class="pt-0 my-2">解析素数定理的证明</h4>
+              <h4 class="pt-0 my-2">面积公理</h4>
               <div class="text-muted">
-                <p>介绍
-我一向景仰的知乎大佬TravorLZH在3年前发表了一篇论文A Direct Proof of the Prime Number Theorem using Riemann’s Prime-counting Function，用一种独特的方法证明了素数定理。
+                <p>我们常常发现，有一些命题不通过等面积法是做不出来的。比如勾股定理，相似三角形的定理。这是为什么呢？
 
+我认为是因为等面积法基于一个独立于角、线段的公理。为什么这么说呢？因为如果没有这样一条公理，那么根据角和线就可以推得勾股定理和相似三角形，但目前来看是不行的。
 
-  In this paper, we develop a novel analytic method to prove t...</p>
+我把它称为面积公理。在《几何原本》中，我找到公理4：彼此重合的东西，彼此相等。但这还不完全是我的面积公理。但古希腊语中的“等于”有...</p>
               </div>
             </div>
           </a>
@@ -1266,21 +1255,21 @@
 
   
     <a
-      href="/posts/prime_number_theorem/"
+      href="/posts/der_politischen_oekonomie/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>解析素数定理的证明</p>
+      <p>关于政治经济学的想法</p>
     </a>
   
 
   
     <a
-      href="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/"
+      href="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>这三天的数学研究</p>
+      <p>游记 · 烟雨桂林第一</p>
     </a>
   
 </nav>
