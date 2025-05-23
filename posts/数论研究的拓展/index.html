@@ -30,23 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="学习" />
+<meta property="og:title" content="数论研究的拓展" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="/categories/%E5%AD%A6%E4%B9%A0/" />
-<meta property="og:url" content="/categories/%E5%AD%A6%E4%B9%A0/" />
+<meta name="description" content="研究了同余式当中任意次二项方程的解的情况" />
+<meta property="og:description" content="研究了同余式当中任意次二项方程的解的情况" />
+<link rel="canonical" href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" />
+<meta property="og:url" content="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" />
 <meta property="og:site_name" content="Charlie" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-23T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="学习" />
+<meta property="twitter:title" content="数论研究的拓展" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"学习","url":"/categories/%E5%AD%A6%E4%B9%A0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-23T00:00:00+08:00","datePublished":"2025-05-23T00:00:00+08:00","description":"研究了同余式当中任意次二项方程的解的情况","headline":"数论研究的拓展","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/"},"url":"/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>学习 | Charlie
+  <title>数论研究的拓展 | Charlie
   </title>
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
@@ -93,9 +94,16 @@
   <!-- 3rd-party Dependencies -->
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.25.0/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
   <!-- JavaScript -->
@@ -320,14 +328,10 @@
           
         
           
-            <span>
-              <a href="/categories/">Categories</a>
-            </span>
-          
         
           
             
-              <span>学习</span>
+              <span>数论研究的拓展</span>
             
 
           
@@ -341,7 +345,7 @@
     </button>
 
     <div id="topbar-title">
-      Category
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -367,28 +371,84 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
-  
+  <header>
+    <h1 data-toc-skip>数论研究的拓展</h1>
+    
+      <p class="post-desc fw-light mb-4">研究了同余式当中任意次二项方程的解的情况</p>
     
 
-
-
-<div id="page-category">
-  <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    学习
-    <span class="lead text-muted ps-2">2</span>
-  </h1>
-
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/%E5%8F%A4%E6%96%87/">古文</a>
-        <span class="dash flex-grow-1"></span>
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -399,46 +459,185 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1734710400"
+  data-ts="1747929600"
   data-df="ll"
   
->
-  Dec 21, 2024
-</time>
-
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/%E8%8B%B1%E8%AF%AD%E4%BB%8B%E8%AF%8D%E7%9A%84%E7%94%A8%E6%B3%95/">英语介词的用法</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1733500800"
-  data-df="ll"
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec  7, 2024
+  May 23, 2025
 </time>
 
-      </li>
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              <a href="">Charlie</a>
+            
+          </em>
+        </span>
+
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="645 words"
+>
+  <em>3 min</em> read</span>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <p>定义：</p>
+
+\[\begin{align*}
+
+f_n(p)=\begin{cases}
+1   \,\,\,\,\,\,\text{ if } (模 p的完系)^n也是模p的完系 \\
+ 0  \,\,\,\,\,\,\text{ otherwise }   \end{cases}
+
+\end{align*}\]
+
+<p>仿照前文可得如下定理，证明略：</p>
+
+<p><strong>theorem</strong> 对于任意素数p, 对于任意整数a&gt;1, $f(p^a)=0$</p>
+
+<p><strong>theorem</strong> f(n)是积性函数</p>
+
+<p><strong>theorem</strong> 对于不含平方因子的n，令g(n)=对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 的解的个数，则 $g(n)=g(p_1)g(p_2)…$</p>
+
+<p><strong>theorem</strong> 对于任意素数n，对于任意素数p满足 $f_n(p)=0$ ,对于任意非零整数a, $x^n \equiv a \pmod{p}$ 有n个或0个不同余的解，且有n整除p-1，$a^3$模p下共有 $\frac{p-1}n$ 个不同的值。对于任意素数n，对于任意素数p满足 $f_n(p)=1$ ,对于任意非零整数a, $x^n \equiv a \pmod{p}$ 总有唯一解。</p>
+
+<p>设 $x^m \equiv a \pmod{p}$ 有小于 $n$ 个解。
+设 $x$ 的一个解为 $x \equiv t \pmod{p}$。
+则对于任意整数 $c$，</p>
+
+\[(t^c)^n \equiv (t^n)^c \equiv 1 \pmod{p}\]
+
+<p>则 $\forall t, t^n, \ldots$ 均为原方程的解。
+由抽屉原理，存在重复解，即存在 $t^m \equiv t^q \pmod{p}$（其中 $1 \leq q &lt; m \leq n$）。
+此时 $t^{m-q} \equiv 1 \pmod{p}$，则序列 $t,t^n, \ldots, t^n \pmod{p}$ 的周期为 $m-q$。
+$m-q$ 整除 $n$ ，因为 $n$ 为素数，$m-q=1$ 。
+由此可得 $t \equiv 1 \pmod{p}$。因此，方程 $x^n \equiv 1 \pmod{p}$ 有 $n$ 个解或唯一解 $x \equiv 1 \pmod{p}$。</p>
+
+<p>考虑方程 $x^n \equiv a^n \pmod{p}$。若 $x^n \equiv 1 \, (\text{mod } p)$ 有 $d$ 个解，则 $x^n \equiv a^n$ 也有 $d$ 个解。这是因为后者的解与前者的解的 $a$ 倍一一对应。令 $a$ 遍历模 $p$ 的完全剩余系可得，对于 $a^n$ 可取到的值，$x^n$ 总有 $d$ 个解。而对于 $a^n$ 取不到的值，$x$ 总无解。当 $f_n(p)=1$，即 (模 $p$ 的完系)$^n$ 也是模 $p$ 的完系时，x总有唯一解。当 $f_n(p)=0$ 时，一定有 $a^n$ 取不到的值，此时 $x$ 无解。当同余式右侧取遍完系时，$x$ 的解的个数之和一定等于 $n$，因此，$d$一定大于 1，由上文的结论可得 $d=n$。</p>
+
+<p><strong>theorem</strong> $f_n(p)=0 \iff p \equiv 1 \pmod{n}$</p>
+
+<p>$f_n(p)=0 \Rightarrow p \equiv 1 \pmod{n}$ 由上文命题可直接得出。</p>
+
+<p>若 $p \equiv 1 \pmod{n}$ ，设  $p - 1 = \alpha n$， $x^n \equiv a \pmod{p}$，则 $x^{\frac{p-1}{\alpha}} \equiv a \pmod{p}$， $x^{\frac{1}{\alpha}} \equiv a \pmod{p} \Rightarrow x \equiv a^{\alpha} \pmod{p}$，因为  $p - 1$ 为偶数， $n$ 为奇数，所以  $\alpha$ 被 2 整除，所以  $x \equiv \beta^2 \pmod{p}$，当  $\beta_1 = -\beta_2$ 时， $x$ 的解相同，则  $f_2(p) = 0$，存在  $\beta$ 使  $x$ 无解，则存在  $a$ 使  $x^n \equiv a \pmod{p}$ 无解，则  $f_n(p) = 0$ 。</p>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
     
-  </ul>
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/math/">math</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/number-theory/"
+            class="post-tag no-text-decoration"
+          >number theory</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+          CC BY-NC-ND 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
-  
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -915,12 +1114,270 @@
             </div>
 
             
+              
+              
+
+
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%E7%BE%A4%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1727798400"
+  data-df="ll"
+  
+>
+  Oct  2, 2024
+</time>
+
+              <h4 class="pt-0 my-2">群友提出的问题</h4>
+              <div class="text-muted">
+                <p>群友提出的问题</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1721664000"
+  data-df="ll"
+  
+>
+  Jul 23, 2024
+</time>
+
+              <h4 class="pt-0 my-2">这三天的数学研究</h4>
+              <div class="text-muted">
+                <p>研究了同余式当中三次方程的解的情况</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/prime_number_theorem/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1719763200"
+  data-df="ll"
+  
+>
+  Jul  1, 2024
+</time>
+
+              <h4 class="pt-0 my-2">解析素数定理的证明</h4>
+              <div class="text-muted">
+                <p>介绍
+我一向景仰的知乎大神TravorLZH在3年前发表了一篇论文A Direct Proof of the Prime Number Theorem using Riemann’s Prime-counting Function，用一种独特的方法证明了素数定理。
+
+
+  In this paper, we develop a novel analytic method to prove t...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/%E5%8F%A4%E6%96%87/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>古文</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!-- The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1430,6 +1887,13 @@
 
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1479,20 +1943,50 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
 
 
 
 
 
 
-<script src="/assets/js/dist/misc.min.js"></script>
+<script src="/assets/js/dist/post.min.js"></script>
 
+
+  <!-- MathJax -->
+  <script src="/assets/js/data/mathjax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 <!-- Pageviews -->
+
+  
+
+  
 
 
 

@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-12-21T14:24:20+08:00</updated>
+  <updated>2025-05-24T00:07:16+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -13,10 +13,34 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2024 Charlie </rights>
+  <rights> © 2025 Charlie </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>数论研究的拓展</title>
+    <link href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" rel="alternate" type="text/html" title="数论研究的拓展" />
+    <published>2025-05-23T00:00:00+08:00</published>
+  
+    <updated>2025-05-23T00:00:00+08:00</updated>
+  
+    <id>/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/</id>
+    <content src="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>研究了同余式当中任意次二项方程的解的情况</summary>
+
+  </entry>
 
   
   <entry>
@@ -120,39 +144,6 @@
   
 
   <summary>群友提出的问题</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>关于小科目</title>
-    <link href="/posts/little/" rel="alternate" type="text/html" title="关于小科目" />
-    <published>2024-10-02T00:00:00+08:00</published>
-  
-    <updated>2024-10-02T00:00:00+08:00</updated>
-  
-    <id>/posts/little/</id>
-    <content src="/posts/little/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="小说" />
-    
-  
-
-  <summary>公元3456年，S国的S城率先开始了新一轮教育变动。对此，本报特约评论员李华发表了一篇评论，其辞曰：
-
-
-此次变动，几家欢乐几家愁。以下从愁家的视角，看看此次变动对他们有什么影响。
-
-从公开的文字上看起来，此次变动的好处有如下几点：1. 减轻童生学习负担；2. 聚焦核心科目和核心素养培养；3. 优化院试选拔机制。
-
-通过这样以减轻童生的学习负担，可能效果并不显著。这之后，童生自然会把更多的精力放在考试科目上。这样下来，势必会有更多人在院试中发挥优异。这就引出一个问题：高分扎堆，筛选不出真正优秀的童生了，反而不利于优化院试选拔机制。所以，院试一定会增加难度来区分考生。届时，为了增加难度，更多的偏题怪题会出现，还有可能为此拓宽考纲范围。但是，这就又增加童生负担了。
-
-聚焦核心科目，让童生们不要学得太杂，顾此失彼，初心是很好的。不过，若要这样说的话，此次变动不就相当于小科目全“失”了。因此...</summary>
 
   </entry>
 
