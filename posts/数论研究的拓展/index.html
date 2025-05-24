@@ -514,7 +514,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="645 words"
+  title="710 words"
 >
   <em>3 min</em> read</span>
 
@@ -536,11 +536,11 @@ f_n(p)=\begin{cases}
 
 <p>仿照前文可得如下定理，证明略：</p>
 
-<p><strong>theorem</strong> 对于任意素数p, 对于任意整数a&gt;1, $f(p^a)=0$</p>
+<p><strong>theorem</strong> 对于任意素数p, 对于任意整数a&gt;1, $f_n(p^a)=0$</p>
 
 <p><strong>theorem</strong> f(n)是积性函数</p>
 
-<p><strong>theorem</strong> 对于不含平方因子的n，令g(n)=对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 的解的个数，则 $g(n)=g(p_1)g(p_2)…$</p>
+<p><strong>theorem</strong> $m_1,m_2,…,m_r$是两两互素的正整数，$m=m_1m_2…m_r$ ，对于特定非零整数a, 令 $g_n(m)$ 等于 $x^n \equiv a \pmod{m}$ 的解的个数，则 $g_n(m)=g(m_1)g(m_2)…g(m_r)$，即 $g_n(m)$ 是积性函数。</p>
 
 <p><strong>theorem</strong> 对于任意素数n，对于任意素数p满足 $f_n(p)=0$ ,对于任意非零整数a, $x^n \equiv a \pmod{p}$ 有n个或0个不同余的解，且有n整除p-1，$a^3$模p下共有 $\frac{p-1}n$ 个不同的值。对于任意素数n，对于任意素数p满足 $f_n(p)=1$ ,对于任意非零整数a, $x^n \equiv a \pmod{p}$ 总有唯一解。</p>
 
@@ -550,10 +550,10 @@ f_n(p)=\begin{cases}
 
 \[(t^c)^n \equiv (t^n)^c \equiv 1 \pmod{p}\]
 
-<p>则 $\forall t, t^n, \ldots$ 均为原方程的解。
-由抽屉原理，存在重复解，即存在 $t^m \equiv t^q \pmod{p}$（其中 $1 \leq q &lt; m \leq n$）。
-此时 $t^{m-q} \equiv 1 \pmod{p}$，则序列 $t,t^n, \ldots, t^n \pmod{p}$ 的周期为 $m-q$。
-$m-q$ 整除 $n$ ，因为 $n$ 为素数，$m-q=1$ 。
+<p>则对于任意整数 $c$， $t^c$ 均为原方程的解。
+取 $1\le c \le n$ 的n个解，由抽屉原理，存在重复解，即存在 $t^m \equiv t^q \pmod{p}$（其中 $1 \leq q &lt; m \leq n$）。
+此时 $t^{m-q} \equiv 1 \pmod{p}$，则序列 $t, \dots, t^n \pmod{p}$ 的周期为 $m-q$，因此
+$m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
 由此可得 $t \equiv 1 \pmod{p}$。因此，方程 $x^n \equiv 1 \pmod{p}$ 有 $n$ 个解或唯一解 $x \equiv 1 \pmod{p}$。</p>
 
 <p>考虑方程 $x^n \equiv a^n \pmod{p}$。若 $x^n \equiv 1 \, (\text{mod } p)$ 有 $d$ 个解，则 $x^n \equiv a^n$ 也有 $d$ 个解。这是因为后者的解与前者的解的 $a$ 倍一一对应。令 $a$ 遍历模 $p$ 的完全剩余系可得，对于 $a^n$ 可取到的值，$x^n$ 总有 $d$ 个解。而对于 $a^n$ 取不到的值，$x$ 总无解。当 $f_n(p)=1$，即 (模 $p$ 的完系)$^n$ 也是模 $p$ 的完系时，x总有唯一解。当 $f_n(p)=0$ 时，一定有 $a^n$ 取不到的值，此时 $x$ 无解。当同余式右侧取遍完系时，$x$ 的解的个数之和一定等于 $n$，因此，$d$一定大于 1，由上文的结论可得 $d=n$。</p>
@@ -563,6 +563,10 @@ $m-q$ 整除 $n$ ，因为 $n$ 为素数，$m-q=1$ 。
 <p>$f_n(p)=0 \Rightarrow p \equiv 1 \pmod{n}$ 由上文命题可直接得出。</p>
 
 <p>若 $p \equiv 1 \pmod{n}$ ，设  $p - 1 = \alpha n$， $x^n \equiv a \pmod{p}$，则 $x^{\frac{p-1}{\alpha}} \equiv a \pmod{p}$， $x^{\frac{1}{\alpha}} \equiv a \pmod{p} \Rightarrow x \equiv a^{\alpha} \pmod{p}$，因为  $p - 1$ 为偶数， $n$ 为奇数，所以  $\alpha$ 被 2 整除，所以  $x \equiv \beta^2 \pmod{p}$，当  $\beta_1 = -\beta_2$ 时， $x$ 的解相同，则  $f_2(p) = 0$，存在  $\beta$ 使  $x$ 无解，则存在  $a$ 使  $x^n \equiv a \pmod{p}$ 无解，则  $f_n(p) = 0$ 。</p>
+
+<p><strong>theorem</strong>  $n_1,n_2,…,n_r$是两两互素的正整数，$n=n_1n_2…n_r$ ，令 $h_m(n)=1-f_n(m)$ ，则 $h_m(n)=h_{m}(n_1)h_{m}(n_2)…h_{m}(n_r)$，即 $h_m(n)$ 是积性函数。</p>
+
+<p>易证 $f_n(p)=0\iff \forall i,f_{n_i}(p)=0$，即得本命题。</p>
 
   </div>
 
