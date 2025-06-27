@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>/</id>
-  <title>Charlie</title>
+  <title>HZX</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-24T21:02:57+08:00</updated>
+  <updated>2025-06-28T00:14:40+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -20,8 +20,32 @@
 
   
   <entry>
-    <title>数论研究的拓展</title>
-    <link href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" rel="alternate" type="text/html" title="数论研究的拓展" />
+    <title>解析数论笔记（1）</title>
+    <link href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="解析数论笔记（1）" />
+    <published>2025-06-27T00:00:00+08:00</published>
+  
+    <updated>2025-06-27T00:00:00+08:00</updated>
+  
+    <id>/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/</id>
+    <content src="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>数论常用函数</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>数论研究的拓展：同余式当中任意次二项方程的解的情况</title>
+    <link href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" rel="alternate" type="text/html" title="数论研究的拓展：同余式当中任意次二项方程的解的情况" />
     <published>2025-05-23T00:00:00+08:00</published>
   
     <updated>2025-05-23T00:00:00+08:00</updated>
@@ -38,36 +62,7 @@
     
   
 
-  <summary>研究了同余式当中任意次二项方程的解的情况</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>古文</title>
-    <link href="/posts/%E5%8F%A4%E6%96%87/" rel="alternate" type="text/html" title="古文" />
-    <published>2024-12-21T00:00:00+08:00</published>
-  
-    <updated>2024-12-21T00:00:00+08:00</updated>
-  
-    <id>/posts/%E5%8F%A4%E6%96%87/</id>
-    <content src="/posts/%E5%8F%A4%E6%96%87/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="学习" />
-    
-  
-
-  <summary>滕王阁序
-　　豫章故郡，洪都新府。星分翼轸(zhěn)，地接衡庐。襟三江而带五湖，控蛮荆而引瓯(ōu)越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃(fān)之榻。雄州雾列，俊采星驰，台隍(huáng)枕夷夏之交，宾主尽东南之美。都督阎公之雅望，棨(qǐ)戟遥临；宇文新州之懿(yì)范，襜(chān)帷(wéi)暂驻。十旬休假(xiá)，胜友如云；千里逢迎，高朋满座。腾蛟起凤，孟学士之词宗；紫电清霜，王将军之武库。家君作宰，路出名区；童子何知，躬逢胜饯。
-
-　　时维九月，序属三秋。潦(lǎo)水尽而寒潭清，烟光凝而暮山紫。俨(yǎn)骖騑(cān fēi)于上路，访风景于崇阿(ē)。临帝子之长洲，得天人之旧馆。层峦耸翠，上出重霄；飞阁流丹，下临无地。鹤汀(tīng)凫(fú)渚(zhǔ)，穷岛屿之萦(yíng)回；桂殿兰宫，即冈峦之体势。
-
-　　披绣闼(tà)，俯雕甍(méng)...</summary>
+  <summary>这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明</summary>
 
   </entry>
 
@@ -125,8 +120,8 @@
 
   
   <entry>
-    <title>朋友提出的问题</title>
-    <link href="/posts/%E6%9C%8B%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" rel="alternate" type="text/html" title="朋友提出的问题" />
+    <title>满足ab=c+d，a+b=cd的数有无穷组吗？</title>
+    <link href="/posts/%E6%9C%8B%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" rel="alternate" type="text/html" title="满足ab=c+d，a+b=cd的数有无穷组吗？" />
     <published>2024-10-02T00:00:00+08:00</published>
   
     <updated>2024-10-02T00:00:00+08:00</updated>
@@ -143,7 +138,7 @@
     
   
 
-  <summary>朋友提出的问题</summary>
+  <summary>这是一个朋友提出的问题，我把我的解答放在这里了</summary>
 
   </entry>
 

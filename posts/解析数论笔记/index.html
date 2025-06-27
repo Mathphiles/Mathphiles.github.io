@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="改进大O记号" />
+<meta property="og:title" content="解析数论笔记（1）" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="大O记号破坏了等于和一众运算的和平！" />
-<meta property="og:description" content="大O记号破坏了等于和一众运算的和平！" />
-<link rel="canonical" href="/posts/about-the-big-oh-notation/" />
-<meta property="og:url" content="/posts/about-the-big-oh-notation/" />
-<meta property="og:site_name" content="Charlie" />
+<meta name="description" content="数论常用函数" />
+<meta property="og:description" content="数论常用函数" />
+<link rel="canonical" href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" />
+<meta property="og:url" content="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" />
+<meta property="og:site_name" content="HZX" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-10-28T00:00:00+08:00" />
+<meta property="article:published_time" content="2025-06-27T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="改进大O记号" />
+<meta property="twitter:title" content="解析数论笔记（1）" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-28T00:00:00+08:00","datePublished":"2023-10-28T00:00:00+08:00","description":"大O记号破坏了等于和一众运算的和平！","headline":"改进大O记号","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/about-the-big-oh-notation/"},"url":"/posts/about-the-big-oh-notation/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-27T00:00:00+08:00","datePublished":"2025-06-27T00:00:00+08:00","description":"数论常用函数","headline":"解析数论笔记（1）","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/"},"url":"/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>改进大O记号 | Charlie
+  <title>解析数论笔记（1） | HZX
   </title>
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
@@ -230,7 +230,7 @@
     <a href="/" id="avatar" class="rounded-circle"><img src="https://pic4.zhimg.com/80/v2-0a4b8c520c87c3026573d66d47cb2f12.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">Charlie</a>
+      <a href="/">HZX</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">山气日夕佳，飞鸟相与还。</p>
   </header>
@@ -331,7 +331,7 @@
         
           
             
-              <span>改进大O记号</span>
+              <span>解析数论笔记（1）</span>
             
 
           
@@ -440,9 +440,9 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>改进大O记号</h1>
+    <h1 data-toc-skip>解析数论笔记（1）</h1>
     
-      <p class="post-desc fw-light mb-4">大O记号破坏了等于和一众运算的和平！</p>
+      <p class="post-desc fw-light mb-4">数论常用函数</p>
     
 
     <div class="post-meta text-muted">
@@ -459,13 +459,13 @@
 
 <time
   
-  data-ts="1698422400"
+  data-ts="1750953600"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Oct 28, 2023
+  Jun 27, 2025
 </time>
 
       </span>
@@ -514,7 +514,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="248 words"
+  title="212 words"
 >
   <em>1 min</em> read</span>
 
@@ -524,47 +524,141 @@
   </header>
 
   <div class="content">
-    <p>大O记号，确实是一众渐近符号里最好用的一个，然而确有很多的弊端。</p>
-
-<p>首先，它严重破坏了等于号的传递性。</p>
-
-\[\begin{array}{c}
-1= \mathcal O(1)\\
-1= \mathcal O(x)\\
-\not\Rightarrow \mathcal O(1)= \mathcal O(x)
-\end{array}\]
-
-<p>对于这一点，我想到了一种解决方案：把等于号改成 $\lesssim$ 。
-若 $\exists M&gt;0,\forall x&gt;a,|f(x)|&lt;Mg(x)$，则称
-$f(x)\lesssim \mathcal{O}(g(x)). $
- $\lesssim$ 具有和 $\le$ 类似的性质。</p>
-
-<p>其次，它不能进行乘除法。不过可以证明这种替代：</p>
-
-\[f(x)\lesssim\mathcal{O}(ag(x))\Leftrightarrow f(x)\lesssim\sum_{i=1}^{a} \mathcal{O}(g(x))\quad(a&gt;0)\]
-
-<p>利用大O记号的这个问题，我构造出了一个超级加强版Cauchy-Goursat积分定理的伪证，直接推翻留数理论：</p>
-
-<p>Suppose L is a curve on the complex plain, take dividing points $z_0,z_1\cdots z_n$ on L, where $z_0$ is the start of L and $z_n$ is the end of L.<br />
-Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
+    <p>the Möbius funtion</p>
 
 \[\begin{align*}
-\int_{L}f(z)\mathrm dz
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n-1}f(z_i)(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=0}^{n}f(z_i)(z_{i+1}-z_i)\\
-=&amp;\lim_{\lambda\to 0}\sum_{i=1}^{n+1}f(z_{i-1})z_{i}-\sum_{k=0}^{n}f(z_i)z_{i}\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))z_{i}\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\mathcal O(1)\\
-=&amp;\lim_{\lambda\to 0}f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)\sum_{k=1}^{n}(f(z_{i-1})-f(z_i))\\
-=&amp;f(z_{n})z_{n+1}-f(z_0)z_0+\mathcal O(1)(f(z_{0})-f(z_n))\\
-=&amp;\mathcal O(f(z_n)-f(z_{0}))
+
+\mu(n)=\begin{cases}
+1   \,\,\,\,\,\,\text{ if } n=1 \\
+(-1)^k  \,\,\,\,\,\,\text{ if } a_1=a_2=a_3=...=a_k=1\\
+ 0  \,\,\,\,\,\,\text{ otherwise }   \end{cases}
+
 \end{align*}\]
 
-<p>Take $z_0=z_n$ , and we get</p>
+<p>the Euler totient function</p>
 
-\[\int_{L}f(z)\mathrm dz=0\]
+\[\begin{align*}
 
-<p>Q.E.D.</p>
+\varphi(n)=\sum_{ \substack{1\le k\lt n \\ k与n互素} }1
+
+\end{align*}\]
+
+<p>the Mangoldt function</p>
+
+\[\begin{align*}
+
+\Lambda(n)=\begin{cases}
+\log(p)   \,\,\,\,\,\,\text{ if } n=p^m \\
+ 0  \,\,\,\,\,\,\text{ otherwise }   \end{cases}
+
+\end{align*}\]
+
+<p>Liouville’s function</p>
+
+\[\begin{align*}
+
+\lambda(n)=\begin{cases}
+1   \,\,\,\,\,\,\text{ if } n=1 \\
+(-1)^{a_1+a_2+a_3+...+a_k}  \,\,\,\,\,\,\text{ if } n=p_1^{a_1}p_2^{a_2}...p_k^{a_k}  \end{cases}
+
+\end{align*}\]
+
+<p>the divisor functions</p>
+
+\[\begin{align*}
+
+\sigma_\alpha(n)=\sum_{ d|n}d^\alpha
+
+\end{align*}\]
+
+\[\begin{align*}
+
+d(n)=\sum_{ d|n}1
+
+\end{align*}\]
+
+<p>the identity function</p>
+
+\[\begin{align*}
+
+I(n)=\left[\frac1n\right]
+
+\end{align*}\]
+
+<p>the Riemann zeta function</p>
+
+\[\begin{align*}
+
+\zeta(n)=\sum_{ n=1}^\infty \frac{1}{n^s}
+
+\end{align*}\]
+
+<p>the number of primes</p>
+
+\[\begin{align*}
+
+\pi(x)=\sum_{ 2\le p\le x}1
+
+\end{align*}\]
+
+<p>Chebyshev’s $\varPsi$-function</p>
+
+\[\begin{align*}
+\varPsi(n)=\sum_{ n\le x}\Lambda (n)
+
+\end{align*}\]
+
+<p>Chebyshev’s $\vartheta$-function</p>
+
+\[\begin{align*}
+\vartheta(n)=\sum_{ p\le x}\log (p)
+
+\end{align*}\]
+
+<p>partial sums of the Möbius funtion</p>
+
+\[\begin{align*}
+M(x)=\sum_{ n\le x}\mu(n)
+
+\end{align*}\]
+
+<p>Dirichlet characters</p>
+
+\[\begin{align*}
+
+\chi=\chi_f(n)=\begin{cases}
+f(\hat n)   \,\,\,\,\,\,\text{ if } (n,k)=1 \\
+0  \,\,\,\,\,\,\text{ if } (n,k)\gt 1  \end{cases}
+
+\end{align*}\]
+
+<p>the Dirichlet-L functions</p>
+
+\[\begin{align*}
+
+L(s,\chi)=\sum_{ n=1}^\infty \frac{\chi(n)}{n^s}
+
+\end{align*}\]
+
+<p>the Gauss sum associated with $\chi$</p>
+
+\[\begin{align*}
+
+G(n,\chi)=\sum_{ m=1}^k \chi(m)e^{2\pi i mn/k}
+
+\end{align*}\]
+
+<p>the hurwitz zeta function</p>
+
+\[\begin{align*}
+
+\zeta(s,a)=\sum_{ n=0}^\infty \frac{1}{(n+a)^s}
+
+\end{align*}\]
+
+<p>Riemann’s prime counting function</p>
+
+\[\displaystyle J \left( x \right) = \sum _{ 1 &lt; p ^{ k } \leqslant x } \frac{ 1 }{ k }\]
 
   </div>
 
@@ -670,14 +764,14 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展</a>
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/">解析数论笔记（1）</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%E5%8F%A4%E6%96%87/">古文</a>
+          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展：同余式当中任意次二项方程的解的情况</a>
         </li>
       
         
@@ -791,44 +885,6 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -893,6 +949,46 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -935,6 +1031,8 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
     
     
     
+    
+      
     
   
     
@@ -968,13 +1066,13 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>
@@ -1043,79 +1141,79 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -1150,9 +1248,9 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
   May 23, 2025
 </time>
 
-              <h4 class="pt-0 my-2">数论研究的拓展</h4>
+              <h4 class="pt-0 my-2">数论研究的拓展：同余式当中任意次二项方程的解的情况</h4>
               <div class="text-muted">
-                <p>研究了同余式当中任意次二项方程的解的情况</p>
+                <p>这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明</p>
               </div>
             </div>
           </a>
@@ -1178,9 +1276,9 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
   Oct  2, 2024
 </time>
 
-              <h4 class="pt-0 my-2">朋友提出的问题</h4>
+              <h4 class="pt-0 my-2">满足ab=c+d，a+b=cd的数有无穷组吗？</h4>
               <div class="text-muted">
-                <p>朋友提出的问题</p>
+                <p>这是一个朋友提出的问题，我把我的解答放在这里了</p>
               </div>
             </div>
           </a>
@@ -1229,22 +1327,18 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
 
   
     <a
-      href="/posts/about-dream/"
+      href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>浅谈自主达到目标的方法</p>
+      <p>数论研究的拓展：同余式当中任意次二项方程的解的情况</p>
     </a>
   
 
   
-    <a
-      href="/posts/%E6%97%A9%E5%85%88%E7%9A%84%E4%B8%80%E6%AC%A1%E6%95%B0%E5%AD%A6%E8%AF%81%E6%98%8E%E5%B0%9D%E8%AF%95/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>早先的一次数学证明尝试</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
@@ -1384,44 +1478,6 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -1486,6 +1542,46 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1528,6 +1624,8 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
     
     
     
+    
+      
     
   
     
@@ -1561,13 +1659,13 @@ Let  $z_{n+1}=z_n$ , so the end of L is also $z_{n+1}$. Obviously,</p>
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>

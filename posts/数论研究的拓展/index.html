@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="数论研究的拓展" />
+<meta property="og:title" content="数论研究的拓展：同余式当中任意次二项方程的解的情况" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="研究了同余式当中任意次二项方程的解的情况" />
-<meta property="og:description" content="研究了同余式当中任意次二项方程的解的情况" />
+<meta name="description" content="这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明" />
+<meta property="og:description" content="这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明" />
 <link rel="canonical" href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" />
 <meta property="og:url" content="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" />
-<meta property="og:site_name" content="Charlie" />
+<meta property="og:site_name" content="HZX" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-05-23T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="数论研究的拓展" />
+<meta property="twitter:title" content="数论研究的拓展：同余式当中任意次二项方程的解的情况" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-23T00:00:00+08:00","datePublished":"2025-05-23T00:00:00+08:00","description":"研究了同余式当中任意次二项方程的解的情况","headline":"数论研究的拓展","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/"},"url":"/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-23T00:00:00+08:00","datePublished":"2025-05-23T00:00:00+08:00","description":"这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明","headline":"数论研究的拓展：同余式当中任意次二项方程的解的情况","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/"},"url":"/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>数论研究的拓展 | Charlie
+  <title>数论研究的拓展：同余式当中任意次二项方程的解的情况 | HZX
   </title>
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
@@ -230,7 +230,7 @@
     <a href="/" id="avatar" class="rounded-circle"><img src="https://pic4.zhimg.com/80/v2-0a4b8c520c87c3026573d66d47cb2f12.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">Charlie</a>
+      <a href="/">HZX</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">山气日夕佳，飞鸟相与还。</p>
   </header>
@@ -331,7 +331,7 @@
         
           
             
-              <span>数论研究的拓展</span>
+              <span>数论研究的拓展：同余式当中任意次二项方程的解的情况</span>
             
 
           
@@ -440,9 +440,9 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>数论研究的拓展</h1>
+    <h1 data-toc-skip>数论研究的拓展：同余式当中任意次二项方程的解的情况</h1>
     
-      <p class="post-desc fw-light mb-4">研究了同余式当中任意次二项方程的解的情况</p>
+      <p class="post-desc fw-light mb-4">这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明</p>
     
 
     <div class="post-meta text-muted">
@@ -514,7 +514,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="746 words"
+  title="769 words"
 >
   <em>4 min</em> read</span>
 
@@ -542,9 +542,11 @@ f_n(p)=\begin{cases}
 
 <p><strong>theorem</strong> $m_1,m_2,…,m_r$是两两互素的正整数，$m=m_1m_2…m_r$ ，对于特定非零整数a, 令 $g_n(m)$ 等于 $x^n \equiv a \pmod{m}$ 的解的个数，则 $g_n(m)=g(m_1)g(m_2)…g(m_r)$，即 $g_n(m)$ 是积性函数。</p>
 
-<p><strong>theorem</strong> 对于任意素数n，对于任意素数p满足 $f_n(p)=0$ ,对于任意非零整数a, $x^n \equiv a \pmod{p}$ 有n个或0个不同余的解，且有n整除p-1，$a^3$模p下共有 $\frac{p-1}n$ 个不同的值。对于任意素数n，对于任意素数p满足 $f_n(p)=1$ ,对于任意非零整数a, $x^n \equiv a \pmod{p}$ 总有唯一解。</p>
+<p><strong>theorem</strong> 对于任意素数n，对于任意素数p满足 $f_n(p)=0$ ,对于任意非零整数a, $x^n \equiv a \pmod{p}$ 有n个或0个不同余的解，且有n整除p-1，$x^n$ 模p下共有 $\frac{p-1}n$ 个不同的值。对于任意素数n，对于任意素数p满足 $f_n(p)=1$ ,对于任意非零整数a, $x^n \equiv a \pmod{p}$ 总有唯一解。</p>
 
-<p>设 $x^m \equiv a \pmod{p}$ 有小于 $n$ 个解。
+<p>根据拉格朗日定理可知原式至多有 $n$ 个解。</p>
+
+<p>设 $x^n \equiv a \pmod{p}$ 存在解且有小于 $n$ 个解。
 设 $x$ 的一个解为 $x \equiv t \pmod{p}$。
 则对于任意整数 $c$，</p>
 
@@ -676,14 +678,14 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展</a>
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/">解析数论笔记（1）</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%E5%8F%A4%E6%96%87/">古文</a>
+          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展：同余式当中任意次二项方程的解的情况</a>
         </li>
       
         
@@ -797,44 +799,6 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -899,6 +863,46 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -941,6 +945,8 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
     
     
     
+    
+      
     
   
     
@@ -974,13 +980,13 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>
@@ -1109,19 +1115,19 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1135,6 +1141,34 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1750953600"
+  data-df="ll"
+  
+>
+  Jun 27, 2025
+</time>
+
+              <h4 class="pt-0 my-2">解析数论笔记（1）</h4>
+              <div class="text-muted">
+                <p>数论常用函数</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/%E6%9C%8B%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-preview card h-100">
@@ -1156,9 +1190,9 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
   Oct  2, 2024
 </time>
 
-              <h4 class="pt-0 my-2">朋友提出的问题</h4>
+              <h4 class="pt-0 my-2">满足ab=c+d，a+b=cd的数有无穷组吗？</h4>
               <div class="text-muted">
-                <p>朋友提出的问题</p>
+                <p>这是一个朋友提出的问题，我把我的解答放在这里了</p>
               </div>
             </div>
           </a>
@@ -1192,38 +1226,6 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
           </a>
         </article>
       
-        <article class="col">
-          <a href="/posts/prime_number_theorem/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1719763200"
-  data-df="ll"
-  
->
-  Jul  1, 2024
-</time>
-
-              <h4 class="pt-0 my-2">解析素数定理的证明</h4>
-              <div class="text-muted">
-                <p>介绍
-我一向景仰的知乎大神TravorLZH在3年前发表了一篇论文A Direct Proof of the Prime Number Theorem using Riemann’s Prime-counting Function，用一种独特的方法证明了素数定理。
-
-
-  In this paper, we develop a novel analytic method to prove t...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1239,18 +1241,22 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
 
   
     <a
-      href="/posts/%E5%8F%A4%E6%96%87/"
+      href="/posts/%E8%8B%B1%E8%AF%AD%E4%BB%8B%E8%AF%8D%E7%9A%84%E7%94%A8%E6%B3%95/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>古文</p>
+      <p>英语介词的用法</p>
     </a>
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>解析数论笔记（1）</p>
+    </a>
   
 </nav>
 
@@ -1390,44 +1396,6 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -1492,6 +1460,46 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1534,6 +1542,8 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
     
     
     
+    
+      
     
   
     
@@ -1567,13 +1577,13 @@ $m-q$ 整除 $n$ 。因为 $n$ 为素数，$m-q=1$ 。
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>

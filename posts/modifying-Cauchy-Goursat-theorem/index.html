@@ -36,7 +36,7 @@
 <meta property="og:description" content="最近冒出个点子，需要把复分析里的一些结论做一个推广1。然而Couchy-Goursat定理的原证明并不能直接进行推广，于是我修改了一下证明。 这篇文章写完大半年后注：这个想法最终没有实现。后来对这个想法的一点零碎进展写在了向量分析这篇文章里。 &#8617;&amp;#xfe0e;" />
 <link rel="canonical" href="/posts/modifying-Cauchy-Goursat-theorem/" />
 <meta property="og:url" content="/posts/modifying-Cauchy-Goursat-theorem/" />
-<meta property="og:site_name" content="Charlie" />
+<meta property="og:site_name" content="HZX" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-09-30T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
@@ -47,7 +47,7 @@
 <!-- End Jekyll SEO tag -->
 
 
-  <title>修改Cauchy-Goursat定理的证明 | Charlie
+  <title>修改Cauchy-Goursat定理的证明 | HZX
   </title>
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
@@ -230,7 +230,7 @@
     <a href="/" id="avatar" class="rounded-circle"><img src="https://pic4.zhimg.com/80/v2-0a4b8c520c87c3026573d66d47cb2f12.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">Charlie</a>
+      <a href="/">HZX</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">山气日夕佳，飞鸟相与还。</p>
   </header>
@@ -837,7 +837,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="613 words"
+  title="591 words"
 >
   <em>3 min</em> read</span>
 
@@ -878,7 +878,7 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
 首先我们有任意的一条路径 $L$ ，在 $L$ 上取点 $z_0,z_1,z_2,\cdots ,z_{2^n}$，使每个弧段 $z_{k-1}z_k$ 长度小于 $\eta$ 。对于所有的 $a$ 从0到n，连结所有下标为 $2^{n-a}m\,\,\,(m=0,1,2\cdots)$ 的点，得到的折线记为 $P_a$ 。
 <a href="https://pic4.zhimg.com/80/v2-5507a7d74263e3cacd431efeaf61f4fb.png" class="popup img-link  shimmer"><img src="https://pic4.zhimg.com/80/v2-5507a7d74263e3cacd431efeaf61f4fb.png" alt="示意图" loading="lazy"></a></p>
 
-<p><strong>注意</strong> 以上这一步不再对所有区域 $D$ 有效了。比较保守的话，可以让 $D$ 是有界凸集或者全集。我初想到这一点的时候也很惋惜。</p>
+<p><strong>注意</strong> 以上这一步不再对所有区域 $D$ 有效了。可以让 $D$ 是有界凸集或者全集。</p>
 
 <p>对于每个相邻的 $P_{k-1},P_k$ ，它们组成了一组三角形的边界。一看到三角形，自然想到第一步里的结论。于是如果让积分方向为顺下标方向（如z0-z1-z2-z0），那么易知</p>
 
@@ -1018,14 +1018,14 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展</a>
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/">解析数论笔记（1）</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%E5%8F%A4%E6%96%87/">古文</a>
+          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展：同余式当中任意次二项方程的解的情况</a>
         </li>
       
         
@@ -1139,44 +1139,6 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -1241,6 +1203,46 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1283,6 +1285,8 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     
     
     
+    
+      
     
   
     
@@ -1316,13 +1320,13 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>
@@ -1507,6 +1511,34 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
         </article>
       
         <article class="col">
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1750953600"
+  data-df="ll"
+  
+>
+  Jun 27, 2025
+</time>
+
+              <h4 class="pt-0 my-2">解析数论笔记（1）</h4>
+              <div class="text-muted">
+                <p>数论常用函数</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
           <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -1526,37 +1558,9 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
   May 23, 2025
 </time>
 
-              <h4 class="pt-0 my-2">数论研究的拓展</h4>
+              <h4 class="pt-0 my-2">数论研究的拓展：同余式当中任意次二项方程的解的情况</h4>
               <div class="text-muted">
-                <p>研究了同余式当中任意次二项方程的解的情况</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%E6%9C%8B%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1727798400"
-  data-df="ll"
-  
->
-  Oct  2, 2024
-</time>
-
-              <h4 class="pt-0 my-2">朋友提出的问题</h4>
-              <div class="text-muted">
-                <p>朋友提出的问题</p>
+                <p>这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明</p>
               </div>
             </div>
           </a>
@@ -1728,44 +1732,6 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -1830,6 +1796,46 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1872,6 +1878,8 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
     
     
     
+    
+      
     
   
     
@@ -1905,13 +1913,13 @@ $\forall p\in\partial G$，可构造三角形 $pz_kz_{k-1}$ ，其中 $pz_k\ge\d
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>

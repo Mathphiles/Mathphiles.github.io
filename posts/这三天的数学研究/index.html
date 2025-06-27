@@ -36,7 +36,7 @@
 <meta property="og:description" content="研究了同余式当中三次方程的解的情况" />
 <link rel="canonical" href="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/" />
 <meta property="og:url" content="/posts/%E8%BF%99%E4%B8%89%E5%A4%A9%E7%9A%84%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6/" />
-<meta property="og:site_name" content="Charlie" />
+<meta property="og:site_name" content="HZX" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-07-23T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
@@ -47,7 +47,7 @@
 <!-- End Jekyll SEO tag -->
 
 
-  <title>这三天的数学研究 | Charlie
+  <title>这三天的数学研究 | HZX
   </title>
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
@@ -230,7 +230,7 @@
     <a href="/" id="avatar" class="rounded-circle"><img src="https://pic4.zhimg.com/80/v2-0a4b8c520c87c3026573d66d47cb2f12.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">Charlie</a>
+      <a href="/">HZX</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">山气日夕佳，飞鸟相与还。</p>
   </header>
@@ -514,9 +514,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1195 words"
+  title="948 words"
 >
-  <em>6 min</em> read</span>
+  <em>5 min</em> read</span>
 
         </div>
       </div>
@@ -595,10 +595,6 @@ f(n)=\begin{cases}
 
 <p>证明：对于所有b&gt;a/3，$(kp^b)^3 \equiv 0 \pmod{p^a}$，因此$(模 p^a的完系)^3$一定不是模 p^a完系。</p>
 
-<p><strong>theorem</strong> $a^3${$i^3$}={$i^3$}</p>
-
-<p>证明：$a^3${$i^3$}={$(ai)^3$}={$i^3$}</p>
-
 <p><strong>theorem</strong> f(n)是积性函数</p>
 
 <p>证明：</p>
@@ -621,7 +617,7 @@ f(n)=\begin{cases}
 
 <p>所以 $f(a) = f(a_i) \equiv 0\pmod {m_i}.$ 因为这些模是两两互素的, 故我们也有$f(a) \equiv 0\pmod m$. 因此,如果式(2)的每一个同余都有解, 则式(1)也有解.</p>
 
-<p>我们还知道, 同余式组(2)的每一个(r)个数组的解$(a_1,…,a_r)$给出满足式(4)的唯一整数$a\pmod m$. 当每个$a_i$通过式(2)的$V(m_i)$个数时,满足式(4)也也就满足式(2)的整数a通过$V(m_1)\cdot V(m_2)\cdot…\cdot V(m_r)$个. 这证明了式(3).</p>
+<p>我们还知道, 同余式组(2)的每一个r个数的解$(a_1,…,a_r)$给出满足式(4)的唯一整数$a\pmod m$. 当每个$a_i$通过式(2)的$V(m_i)$个数时,满足式(4)也也就满足式(2)的整数a通过$V(m_1)\cdot V(m_2)\cdot…\cdot V(m_r)$个. 这证明了式(3).<span style="float: right">$\Box$</span></p>
 
 <p>$f(m)=1\iff a^3-b^3 \equiv 0\pmod m仅有a=b一个解\iff a^3-b^3 \equiv 0\pmod {m_i}对于每个i\iff f(m_i)=1对于每个i$</p>
 
@@ -637,17 +633,9 @@ f(n)=\begin{cases}
 
 <p>$f(p)=1\iff a^3-b^3 \equiv 0\pmod p仅有a=b一个解\iff a^2+ab+b^2 \equiv 0\pmod p无解$</p>
 
-<p>我们考虑方程 $ a^2 + ab + b^2 \equiv 0 \pmod{p} $。为分析它的解，我们将其改写为一元二次方程：</p>
+<p>考虑方程 $a^2 + ab + b^2 \equiv 0 \pmod{p}$。改写为一元二次方程 $a^2 + ab + b^2 = 0$ 。将其看作一个关于 $a$ 的二次方程，其判别式为：$\Delta = b^2 - 4 \cdot 1 \cdot b^2 = b^2 - 4b^2 = -3b^2$</p>
 
-\[a^2 + ab + b^2 = 0\]
-
-<p>这是一个关于 $ a $ 的二次方程，其判别式为：</p>
-
-\[\Delta = b^2 - 4 \cdot 1 \cdot b^2 = b^2 - 4b^2 = -3b^2\]
-
-<p>为了使得这个方程在模 $ p $ 意义下无解，判别式 $ \Delta $ 必须不是模 $ p $ 的二次剩余。也就是说，-3 不是模 $ p $ 的二次剩余。</p>
-
-<p>根据二次互反律，-3 是模 $ p $ 的二次剩余当且仅当 $ p \equiv 1 \pmod{6} $。因此，为了使得 $ -3 $ 不是模 $ p $ 的二次剩余，$ p $ 必须满足：</p>
+<p>为了使得这个方程在模 $ p $ 意义下无解，判别式 $ \Delta $ 必须不是模 $ p $ 的二次剩余。也就是说，-3 不是模 $ p $ 的二次剩余。根据二次互反律，-3 是模 $ p $ 的二次剩余当且仅当 $ p \equiv 1 \pmod{6} $。因此，为了使得 $ -3 $ 不是模 $ p $ 的二次剩余，$ p $ 必须满足：</p>
 
 \[p \equiv 5 \pmod{6}\]
 
@@ -657,17 +645,21 @@ f(n)=\begin{cases}
 
 <p>把上面定理的结论带入到迪利克雷定理中，可得满足f(n)=1的素数有无穷多个，即证。</p>
 
-<p><strong>theorem</strong> 对于任意素数p满足f(p)=0,对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 总有正好3个不同余的解.</p>
+<p><strong>theorem</strong> 对于任意素数p满足 $f(p)=0$ ,对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 有3个或0个不同余的解。对于任意素数p满足 $f(p)=1$ ,对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 总有唯一解。</p>
 
 <blockquote class="prompt-info">
-  <p>这个定理和证明有误。正确且更一般的表述和证明在新的文章中。</p>
+  <p>这个定理的更一般的表述和证明在新的文章中。</p>
 </blockquote>
 
-<p>证明分两步。第一步，证明对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 的解的个数相同。再根据拉格朗日定理可知这个个数要么是2，要么是3. 第二步，证明不可能有2个解。</p>
+<!-- **theorem** 对于任意素数p满足f(p)=0,对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 总有正好3个不同余的解.
 
-<p>根据前文已得到的定理，$a^3${$i^3$}={$(ai)^3$}={$i^3$}。这意味着，如果 $x^3 \equiv b \pmod{p}$ 有m个解， $x^3 \equiv ab \pmod{p}$ 也有m个解。a是没有限制的，所以让它跑遍整个完系，这样就证明了第一步。</p>
 
-<p>第二步，如果 $x^3 \equiv 1 \pmod{p}$ ，那么 $(x^2)^3 \equiv 1 \pmod{p}$ 。如果 $x^3 \equiv 1 \pmod{p}$ 有两个解，其中一个肯定是x=1，那么只剩下一个名额了。但是前面又说了，要么没有，要么x和x^2都是，所以只能是 $x^2 \equiv x \pmod{p}$ . 可以解得 $x \equiv 1 \pmod{p}$ ，但这就和第一个解重合了。因此不可能有2个解 。证毕。</p>
+
+证明分两步。第一步，证明对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 的解的个数相同。再根据拉格朗日定理可知这个个数要么是2，要么是3. 第二步，证明不可能有2个解。
+
+根据前文已得到的定理，$a^3${$i^3$}={$(ai)^3$}={$i^3$}。这意味着，如果 $x^3 \equiv b \pmod{p}$ 有m个解， $x^3 \equiv ab \pmod{p}$ 也有m个解。a是没有限制的，所以让它跑遍整个完系，这样就证明了第一步。
+
+第二步，如果 $x^3 \equiv 1 \pmod{p}$ ，那么 $(x^2)^3 \equiv 1 \pmod{p}$ 。如果 $x^3 \equiv 1 \pmod{p}$ 有两个解，其中一个肯定是x=1，那么只剩下一个名额了。但是前面又说了，要么没有，要么x和x^2都是，所以只能是 $x^2 \equiv x \pmod{p}$ . 可以解得 $x \equiv 1 \pmod{p}$ ，但这就和第一个解重合了。因此不可能有2个解 。证毕。 -->
 
 <p><strong>theorem</strong> 对于不含平方因子的n，令g(n)=对于任意非零整数a, $x^3 \equiv a \pmod{p}$ 的解的个数，则 $g(n)=g(p_1)g(p_2)…$</p>
 
@@ -777,14 +769,14 @@ f(n)=\begin{cases}
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展</a>
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/">解析数论笔记（1）</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%E5%8F%A4%E6%96%87/">古文</a>
+          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展：同余式当中任意次二项方程的解的情况</a>
         </li>
       
         
@@ -898,44 +890,6 @@ f(n)=\begin{cases}
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -1000,6 +954,46 @@ f(n)=\begin{cases}
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1042,6 +1036,8 @@ f(n)=\begin{cases}
     
     
     
+    
+      
     
   
     
@@ -1075,13 +1071,13 @@ f(n)=\begin{cases}
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>
@@ -1186,19 +1182,19 @@ f(n)=\begin{cases}
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1238,6 +1234,34 @@ f(n)=\begin{cases}
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1750953600"
+  data-df="ll"
+  
+>
+  Jun 27, 2025
+</time>
+
+              <h4 class="pt-0 my-2">解析数论笔记（1）</h4>
+              <div class="text-muted">
+                <p>数论常用函数</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
           <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -1257,9 +1281,9 @@ f(n)=\begin{cases}
   May 23, 2025
 </time>
 
-              <h4 class="pt-0 my-2">数论研究的拓展</h4>
+              <h4 class="pt-0 my-2">数论研究的拓展：同余式当中任意次二项方程的解的情况</h4>
               <div class="text-muted">
-                <p>研究了同余式当中任意次二项方程的解的情况</p>
+                <p>这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明</p>
               </div>
             </div>
           </a>
@@ -1285,41 +1309,9 @@ f(n)=\begin{cases}
   Oct  2, 2024
 </time>
 
-              <h4 class="pt-0 my-2">朋友提出的问题</h4>
+              <h4 class="pt-0 my-2">满足ab=c+d，a+b=cd的数有无穷组吗？</h4>
               <div class="text-muted">
-                <p>朋友提出的问题</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/prime_number_theorem/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1719763200"
-  data-df="ll"
-  
->
-  Jul  1, 2024
-</time>
-
-              <h4 class="pt-0 my-2">解析素数定理的证明</h4>
-              <div class="text-muted">
-                <p>介绍
-我一向景仰的知乎大神TravorLZH在3年前发表了一篇论文A Direct Proof of the Prime Number Theorem using Riemann’s Prime-counting Function，用一种独特的方法证明了素数定理。
-
-
-  In this paper, we develop a novel analytic method to prove t...</p>
+                <p>这是一个朋友提出的问题，我把我的解答放在这里了</p>
               </div>
             </div>
           </a>
@@ -1340,11 +1332,11 @@ f(n)=\begin{cases}
 
   
     <a
-      href="/posts/%E5%95%86/"
+      href="/posts/prime_number_theorem/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>学科思维</p>
+      <p>解析素数定理的证明</p>
     </a>
   
 
@@ -1495,44 +1487,6 @@ f(n)=\begin{cases}
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -1597,6 +1551,46 @@ f(n)=\begin{cases}
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1639,6 +1633,8 @@ f(n)=\begin{cases}
     
     
     
+    
+      
     
   
     
@@ -1672,13 +1668,13 @@ f(n)=\begin{cases}
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>
