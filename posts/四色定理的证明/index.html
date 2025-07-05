@@ -30,28 +30,84 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="学习" />
+<meta property="og:title" content="四色定理的证明？" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="/tags/%E5%AD%A6%E4%B9%A0/" />
-<meta property="og:url" content="/tags/%E5%AD%A6%E4%B9%A0/" />
-<meta property="og:site_name" content="HZX" />
-<meta property="og:type" content="website" />
+<meta name="description" content="四色定理证不出来，所以这篇文章肯定存在一些问题" />
+<meta property="og:description" content="四色定理证不出来，所以这篇文章肯定存在一些问题" />
+<link rel="canonical" href="/posts/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E/" />
+<meta property="og:url" content="/posts/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E/" />
+<meta property="og:site_name" content="Charlie" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-04-05T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="学习" />
+<meta property="twitter:title" content="四色定理的证明？" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"学习","url":"/tags/%E5%AD%A6%E4%B9%A0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-05T00:00:00+08:00","datePublished":"2024-04-05T00:00:00+08:00","description":"四色定理证不出来，所以这篇文章肯定存在一些问题","headline":"四色定理的证明？","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E/"},"url":"/posts/%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%E7%9A%84%E8%AF%81%E6%98%8E/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>学习 | HZX
+  <title>四色定理的证明？ | Charlie
   </title>
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
 <link rel="icon" type="image/png" href="/assets/img/favicons/favicon.png">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<style>
+:root {
+	scroll-behavior: smooth;
+
+}
+div#main-wrapper {
+	scroll-behavior: smooth;
+}
+div.flex-grow-1 {
+	scroll-behavior: smooth;
+}
+/* div.access, */ section#access-lastmod{
+    display:none
+}
+ul.toc-list{
+    /* overflow-x: scroll; */
+	scroll-behavior: smooth;
+}/* 
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+} */
+/* ::-webkit-scrollbar-track{
+  background: rgb(27,27,30)
+} */
+/* .card{
+  
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+a.nav-link:hover{
+  
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+} */
+</style>
+
+<!-- <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+</script> -->
 
   <!-- Resource Hints -->
   
@@ -93,9 +149,16 @@
   <!-- 3rd-party Dependencies -->
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.25.0/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
   <!-- JavaScript -->
@@ -219,10 +282,10 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://pic4.zhimg.com/80/v2-0a4b8c520c87c3026573d66d47cb2f12.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/favicons/favicon.svg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">HZX</a>
+      <a href="/">Charlie</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">山气日夕佳，飞鸟相与还。</p>
   </header>
@@ -320,14 +383,10 @@
           
         
           
-            <span>
-              <a href="/tags/">Tags</a>
-            </span>
-          
         
           
             
-              <span>学习</span>
+              <span>四色定理的证明？</span>
             
 
           
@@ -341,7 +400,7 @@
     </button>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -367,27 +426,84 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
-  
+  <header>
+    <h1 data-toc-skip>四色定理的证明？</h1>
+    
+      <p class="post-desc fw-light mb-4">四色定理证不出来，所以这篇文章肯定存在一些问题</p>
     
 
-
-
-<div id="page-tag">
-  <h1 class="ps-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    学习
-    <span class="lead text-muted ps-2">1</span>
-  </h1>
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/about-dream/">浅谈自主达到目标的方法</a>
-        <span class="dash flex-grow-1"></span>
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -398,22 +514,145 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1696780800"
+  data-ts="1712246400"
   data-df="ll"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
-  Oct  9, 2023
+  Apr  5, 2024
 </time>
 
-      </li>
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              <a href="">Charlie</a>
+            
+          </em>
+        </span>
+
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="471 words"
+>
+  <em>2 min</em> read</span>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <p>四色定理不成立可以推出，一定存在一个图，使得必有大于等于5块互不相同颜色，等价于可以有5个地区两两接壤的图存在（否则第五个地区的颜色就可以取和他不接壤的一个地区的颜色）。取逆否命题即得：如果5个地区两两接壤的图不存在，则四色定理成立。</p>
+
+<p>接下来证明这个命题。显然若有其中有空白的图存在，那必然有其中没有空白的图存在。因此只考虑实心的图。注意到一个地图一定有唯一的一个轮廓（如果有多个轮廓，那必然至少有2个地区不相连）。那么接下来分类讨论：</p>
+
+<p>1.如果只有一个国家独占整个轮廓
+不妨设这个国家名字叫A，那么A就一定可以看作一个环形（如果里面还有环的话（即8字形），那一个环内和另一个环内的国家就不能相连了）。其他4个国家要和A有接壤，所以它们分别与A的内壁接触。这4个国家与A的接触只能有一段，不然就会在A里面形成一个柱子，把其他国家隔开。因此，它们一定位居环内的四方。此时对角线上的两个国家必须连起来，不然就没别的方法了，这样另两个对角线上的地区就被隔开了。</p>
+
+<p>依此类推，分析2个、3个、4个、5个国家分摊整个轮廓的情况，发现都不可能。
+因此证明了5个点两两相连的点图不存在。</p>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
     
-  </ul>
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/math/">math</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+          CC BY-NC-ND 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
-  
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -444,35 +683,35 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/%E5%9B%9B%E6%A0%A1%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/">四校自招笔试数学</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/">数论小发现</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/">解析数论笔记（3）</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-2/">解析数论笔记（2）</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/">解析数论笔记（1）</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/">数论研究的拓展：同余式当中任意次二项方程的解的情况</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%E8%8B%B1%E8%AF%AD%E4%BB%8B%E8%AF%8D%E7%9A%84%E7%94%A8%E6%B3%95/">英语介词的用法</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/noun/">名词</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/little/">关于小科目</a>
         </li>
       
     </ul>
@@ -506,11 +745,6 @@
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -524,22 +758,6 @@
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -600,126 +818,10 @@
     
     
     
-      
-    
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -740,25 +842,16 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/number-theory/">number theory</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/">解析数论笔记</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/analysis/">analysis</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%8B%B1%E8%AF%AD/">英语</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/politische-%C3%B6konomie/">Politische Ökonomie</a>
       
     </div>
   </section>
@@ -767,12 +860,330 @@
             </div>
 
             
+              
+              
+
+
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-2/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1751212800"
+  data-df="ll"
+  
+>
+  Jun 30, 2025
+</time>
+
+              <h4 class="pt-0 my-2">解析数论笔记（2）</h4>
+              <div class="text-muted">
+                <p>重要定理</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1750953600"
+  data-df="ll"
+  
+>
+  Jun 27, 2025
+</time>
+
+              <h4 class="pt-0 my-2">解析数论笔记（1）</h4>
+              <div class="text-muted">
+                <p>常用函数</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1747929600"
+  data-df="ll"
+  
+>
+  May 23, 2025
+</time>
+
+              <h4 class="pt-0 my-2">数论研究的拓展：同余式当中任意次二项方程的解的情况</h4>
+              <div class="text-muted">
+                <p>这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/der_politischen_oekonomie/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>关于政治经济学的想法</p>
+    </a>
+  
+
+  
+    <a
+      href="/posts/%E7%83%9F%E9%9B%A8%E6%A1%82%E6%9E%97/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>游记 · 烟雨桂林第一</p>
+    </a>
+  
+</nav>
+
+            
+              
+              <!-- The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -845,11 +1256,6 @@
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -863,22 +1269,6 @@
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -939,126 +1329,10 @@
     
     
     
-      
-    
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1079,25 +1353,16 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/number-theory/">number theory</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/">解析数论笔记</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/analysis/">analysis</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E6%83%B3/">思想</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/2024%E5%AF%92%E5%81%87%E6%97%85%E8%A1%8C/">2024寒假旅行</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/">政治经济</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%8B%B1%E8%AF%AD/">英语</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/politische-%C3%B6konomie/">Politische Ökonomie</a>
       
     </div>
   </section>
@@ -1159,6 +1424,13 @@
 
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1208,20 +1480,45 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
 
 
 
 
 
 
-<script src="/assets/js/dist/misc.min.js"></script>
+<script src="/assets/js/dist/post.min.js"></script>
 
 
 
 <!-- Pageviews -->
+
+  
+
+  
 
 
 
@@ -1336,14 +1633,25 @@
     },
     "HTML-CSS": {
       linebreaks: { automatic: true, width: "container" }          
-    }       
+    }  ,
+    macros: {
+        'e': '\\mathrm{e}',
+        'RR': '\\mathbb{R}',
+        'ZZ': '\\mathbb{Z}',
+        'QQ': '\\mathbb{Q}',
+        'dt': '\\mathrm{d}t',
+      }     
   });
 </script>
 
   <style>
-    body{
+    div.animation-circle{
+      z-index: -100;
+    }
+    /* body{
       word-wrap: break-word; 
       word-break: break-all;
-    }
+    } */
+
   </style>
 

@@ -1,0 +1,8 @@
+jekyll serve
+jekyll build
+将site文件夹内东西复制到..\site内（..\site内除了.git全部清空）
+git bash here
+git init
+git add .
+git commit -m ""
+git push -u origin main

@@ -5,7 +5,14 @@ MathJax = {
     ],displayMath: [
       ['$$', '$$'],
       ['\\[', '\\]']
-    ],tags: 'ams'
+    ],tags: 'ams',
+    macros: {
+        'e': '\\mathrm{e}',
+        'RR': '\\mathbb{R}',
+        'ZZ': '\\mathbb{Z}',
+        'QQ': '\\mathbb{Q}',
+        'dt': '\\mathrm{d}t',
+      }
   }
 };
 

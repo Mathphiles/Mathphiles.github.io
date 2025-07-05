@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>/</id>
-  <title>HZX</title>
+  <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-28T00:14:40+08:00</updated>
+  <updated>2025-07-05T22:54:48+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,102 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>数论小发现</title>
+    <link href="/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/" rel="alternate" type="text/html" title="数论小发现" />
+    <published>2025-07-04T00:00:00+08:00</published>
+  
+    <updated>2025-07-04T00:00:00+08:00</updated>
+  
+    <id>/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/</id>
+    <content src="/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>附带验证工具</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>四校自招笔试数学</title>
+    <link href="/posts/%E5%9B%9B%E6%A0%A1%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/" rel="alternate" type="text/html" title="四校自招笔试数学" />
+    <published>2025-07-04T00:00:00+08:00</published>
+  
+    <updated>2025-07-04T00:00:00+08:00</updated>
+  
+    <id>/posts/%E5%9B%9B%E6%A0%A1%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/</id>
+    <content src="/posts/%E5%9B%9B%E6%A0%A1%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>非官方解法</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>解析数论笔记（3）</title>
+    <link href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/" rel="alternate" type="text/html" title="解析数论笔记（3）" />
+    <published>2025-07-02T00:00:00+08:00</published>
+  
+    <updated>2025-07-02T00:00:00+08:00</updated>
+  
+    <id>/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/</id>
+    <content src="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>常用公式</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>解析数论笔记（2）</title>
+    <link href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-2/" rel="alternate" type="text/html" title="解析数论笔记（2）" />
+    <published>2025-06-30T00:00:00+08:00</published>
+  
+    <updated>2025-06-30T00:00:00+08:00</updated>
+  
+    <id>/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-2/</id>
+    <content src="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-2/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>重要定理</summary>
+
+  </entry>
 
   
   <entry>
@@ -38,107 +134,7 @@
     
   
 
-  <summary>数论常用函数</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>数论研究的拓展：同余式当中任意次二项方程的解的情况</title>
-    <link href="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" rel="alternate" type="text/html" title="数论研究的拓展：同余式当中任意次二项方程的解的情况" />
-    <published>2025-05-23T00:00:00+08:00</published>
-  
-    <updated>2025-05-23T00:00:00+08:00</updated>
-  
-    <id>/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/</id>
-    <content src="/posts/%E6%95%B0%E8%AE%BA%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8B%93%E5%B1%95/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-  
-
-  <summary>这篇是对之前同余式当中三次方程的解的情况的研究的拓展，从三次推广到任意次，得到了一些有意思的结论和证明</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>英语介词的用法</title>
-    <link href="/posts/%E8%8B%B1%E8%AF%AD%E4%BB%8B%E8%AF%8D%E7%9A%84%E7%94%A8%E6%B3%95/" rel="alternate" type="text/html" title="英语介词的用法" />
-    <published>2024-12-07T00:00:00+08:00</published>
-  
-    <updated>2024-12-07T00:00:00+08:00</updated>
-  
-    <id>/posts/%E8%8B%B1%E8%AF%AD%E4%BB%8B%E8%AF%8D%E7%9A%84%E7%94%A8%E6%B3%95/</id>
-    <content src="/posts/%E8%8B%B1%E8%AF%AD%E4%BB%8B%E8%AF%8D%E7%9A%84%E7%94%A8%E6%B3%95/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="学习" />
-    
-  
-
-  <summary>我自己总结的介词用法，可能不全</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>名词</title>
-    <link href="/posts/noun/" rel="alternate" type="text/html" title="名词" />
-    <published>2024-10-26T00:00:00+08:00</published>
-  
-    <updated>2024-10-26T00:00:00+08:00</updated>
-  
-    <id>/posts/noun/</id>
-    <content src="/posts/noun/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="思考" />
-    
-  
-
-  <summary>名词，是除祈使与感叹之外所有句子的骨架。它们如此常见，以至于鲜有人深究其本质。直至我学习定冠词、不定冠词及零冠词的用法时，我才思考起名词的本质。何为名词？我举一个简单的例子：当我们提及“一只狗”，这“狗”一词，是指所有符合狗的定义的物质总和，还是一种抽象的特征约束，抑或仅仅是一个符号？
-
-名词之间存在着包含关系。譬如，若探寻“狗”的定义，会发现它被定义为什么什么的动物，这里的“动物”便是包容“狗”这一名词的更广泛范畴，而定义中的种种特性则构成了对“狗”的约束条件。因此，名词展现出了类似集合的特性，然而，“概念”是名词的最高层级，与数学中的集合理论不同。数学中没有“最大”的集合。
-
-我倾向于将“狗”视为一个纯粹的人类构建的概念。这种抽象，超越了人类语言的描述，甚至可能超出了人类的想象范畴，颇有些“道可道，非常道；名可名，非常名”的哲学意味。名词是人类构建的一种结构化产物，它们之间能建立...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>满足ab=c+d，a+b=cd的数有无穷组吗？</title>
-    <link href="/posts/%E6%9C%8B%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" rel="alternate" type="text/html" title="满足ab=c+d，a+b=cd的数有无穷组吗？" />
-    <published>2024-10-02T00:00:00+08:00</published>
-  
-    <updated>2024-10-02T00:00:00+08:00</updated>
-  
-    <id>/posts/%E6%9C%8B%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/</id>
-    <content src="/posts/%E6%9C%8B%E5%8F%8B%E7%9A%84%E9%97%AE%E9%A2%98/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-  
-
-  <summary>这是一个朋友提出的问题，我把我的解答放在这里了</summary>
+  <summary>常用函数</summary>
 
   </entry>
 
