@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-07-06T23:54:34+08:00</updated>
+  <updated>2025-08-05T00:45:08+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>上中自招面试数学</title>
+    <link href="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/" rel="alternate" type="text/html" title="上中自招面试数学" />
+    <published>2025-07-07T00:00:00+08:00</published>
+  
+    <updated>2025-07-07T00:00:00+08:00</updated>
+  
+    <id>/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/</id>
+    <content src="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>非官方解法</summary>
+
+  </entry>
 
   
   <entry>
@@ -44,14 +68,14 @@
 
   
   <entry>
-    <title>四校自招笔试数学</title>
-    <link href="/posts/%E5%9B%9B%E6%A0%A1%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/" rel="alternate" type="text/html" title="四校自招笔试数学" />
+    <title>上中自招笔试数学</title>
+    <link href="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/" rel="alternate" type="text/html" title="上中自招笔试数学" />
     <published>2025-07-04T00:00:00+08:00</published>
   
     <updated>2025-07-04T00:00:00+08:00</updated>
   
-    <id>/posts/%E5%9B%9B%E6%A0%A1%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/</id>
-    <content src="/posts/%E5%9B%9B%E6%A0%A1%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/" />
+    <id>/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/</id>
+    <content src="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/" />
     <author>
       <name>Charlie</name>
     </author>
@@ -111,30 +135,6 @@
   
 
   <summary>重要定理</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>解析数论笔记（1）</title>
-    <link href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="解析数论笔记（1）" />
-    <published>2025-06-27T00:00:00+08:00</published>
-  
-    <updated>2025-06-27T00:00:00+08:00</updated>
-  
-    <id>/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/</id>
-    <content src="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-  
-
-  <summary>常用函数</summary>
 
   </entry>
 
