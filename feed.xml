@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-05T00:45:08+08:00</updated>
+  <updated>2025-08-16T16:54:26+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>积分变换第一 · 傅里叶变换</title>
+    <link href="/posts/%E5%82%85%E9%87%8C%E5%8F%B6/" rel="alternate" type="text/html" title="积分变换第一 · 傅里叶变换" />
+    <published>2025-08-16T00:00:00+08:00</published>
+  
+    <updated>2025-08-16T00:00:00+08:00</updated>
+  
+    <id>/posts/%E5%82%85%E9%87%8C%E5%8F%B6/</id>
+    <content src="/posts/%E5%82%85%E9%87%8C%E5%8F%B6/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+    <category term="analysis" />
+    
+  
+
+  <summary>傅里叶级数
+
+​由于圆周运动的中心恒为原点，故下式成立：
+
+[\int_0^{nT}e^{i\omega t}dt=0\quad(\omega\ne0,\quad T=\frac{2\pi}{\omega})\tag1]
+
+设函数 f(t) 可表示成
+
+[f(t)=\sum_{k=-\infty}^{+\infty}c_ke^{ik\omega_0t}]
+
+[=\cdots+c_{-2}e^{-2i\omega_0t}+c_{-1}e^{-1i\omega_0t}+c_0e^{0i\omega_0t}+c_1e^{1i\omega_0t}+c_2e^{2i\omega_0t}+\cdots]
+
+上式两端同时乘以 $e^{-in\omega_0t}$ 得
+
+[f(t)e^{-in\omega_0t}=\sum_{k=-\infty}^{+\infty}c_ke^{i(k-n)\omeg...</summary>
+
+  </entry>
 
   
   <entry>
@@ -59,6 +99,8 @@
   
     
     <category term="math" />
+    
+    <category term="number theory" />
     
   
 
@@ -108,33 +150,11 @@
     
     <category term="math" />
     
+    <category term="number theory" />
+    
   
 
   <summary>常用公式</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>解析数论笔记（2）</title>
-    <link href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-2/" rel="alternate" type="text/html" title="解析数论笔记（2）" />
-    <published>2025-06-30T00:00:00+08:00</published>
-  
-    <updated>2025-06-30T00:00:00+08:00</updated>
-  
-    <id>/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-2/</id>
-    <content src="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-2/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-  
-
-  <summary>重要定理</summary>
 
   </entry>
 
