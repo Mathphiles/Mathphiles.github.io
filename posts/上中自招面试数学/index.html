@@ -569,7 +569,7 @@ a.nav-link:hover{
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="140 words"
+  title="251 words"
 >
   <em>1 min</em> read</span>
 
@@ -607,10 +607,470 @@ a.nav-link:hover{
 
 <p>$2$</p>
 
-<p>当 $ab+\stackrel\frown{acb} =k(ab+\stackrel\frown{ab})$，k为大于1的整数时，两只小虫可不相遇。</p>
+<p>设 $ab+\stackrel\frown{acb} =k(ab+\stackrel\frown{ab})$，$k&gt;0$。k为正整数时，两只小虫可不相遇。k为无理数时，两只小虫一定能相遇。k为 $\frac n2,n$为奇数时，当且仅当 $2ab+\stackrel\frown{ab}\ge\stackrel\frown{acb}$ 时小虫一定相遇。</p>
 <blockquote class="prompt-info">
   <p>不一定对，还需要进一步的讨论</p>
 </blockquote>
+
+<body>
+    <title>IloveSHS</title>
+    <style>
+        /**body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            flex-shrink: 0;
+        }*/
+        canvas {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            height: 100%;
+        }
+        .bug {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        #bug1 {
+            background: red;
+        }
+        #bug2 {
+            background: blue;
+        }
+        .controls {
+            width: 100%;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex-grow: 1;
+        }
+        .control-group {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .control-group:last-child {
+            border-bottom: none;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        #ratioValue, .pos-value, #speedValue {
+            font-weight: bold;
+        }
+        .position-controls {
+            display: flex;
+            gap: 20px;
+        }
+        .position-control {
+            flex: 1;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #4CAF50;
+            color: white;
+        }
+        button#stopBtn {
+            background: #f44336;
+        }
+        button#resetBtn {
+            background: #2196F3;
+        }
+        #ratioInput {
+            padding: 6px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            width: 100%;
+        }
+        #ratioInput:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+    </style>
+    <!-- <h2>虫子沿弧和弦运动模拟</h2> -->
+    <div class="main-content">
+        <div class="container">
+            <canvas id="canvas" width="600" height="600"></canvas>
+        </div>
+        <div class="controls">
+<div class="control-group">
+    <label>路径比值 (弦AB+优弧AB)/(弦AB+劣弧AB): <span id="ratioValue">2.0</span></label>
+    
+    <input type="text" id="ratioInput" value="2" />
+</div>
+
+        <div class="control-group">
+            <label>运动速度: </label>
+            <input type="range" id="speedSlider" min="0.01" max="1.0" step="0.01" value="0.1" />
+            <span id="speedValue">0.1</span>
+            <div class="action-buttons">
+                <button id="startBtn">开始</button>
+                <button id="stopBtn">停止</button>
+                <button id="resetBtn">重置</button>
+            </div>
+        </div>
+
+        <div class="position-controls">
+            <div class="position-control">
+                <label>红色虫子（优弧）起始位置（%）: </label>
+                <input type="range" id="bug1PosSlider" min="0" max="100" step="1" value="0" />
+                <span class="pos-value" id="bug1PosValue">0%</span>
+            </div>
+            <div class="position-control">
+                <label>蓝色虫子（劣弧）起始位置（%）: </label>
+                <input type="range" id="bug2PosSlider" min="0" max="100" step="1" value="0" />
+                <span class="pos-value" id="bug2PosValue">0%</span>
+            </div>
+        </div>
+
+        <p><strong>运动规则</strong>：虫子沿逆时针运动，弦上方向相反</p>
+        </div>
+    </div>
+
+    <script>
+        // 基础设置
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = 250;
+        let ratio = 2.0;
+        let speed = 1;  // 提高初始速度
+        let isRunning = false; // 初始为停止状态
+        let animationId = null;
+
+        // 计算A、B点和弧长
+        let pointA, pointB;
+        let minorArcAngle, majorArcAngle; // 劣弧和优弧的圆心角（弧度）
+        let chordLength, minorArcLength, majorArcLength;
+        let bug1TotalPath, bug2TotalPath; // 两只虫子的总路径长度
+
+        // 虫子状态
+        const bug1 = { // 红色：优弧AB + 弦AB(B→A)
+            x: 0, y: 0,
+            phase: 'arc', // 阶段：优弧(A→B)或弦(B→A)
+            progress: 0, // 当前阶段的进度（0-1）
+            startPos: 0 // 起始位置百分比（0-100）
+        };
+        const bug2 = { // 蓝色：弦AB(A→B) + 劣弧(B→A)
+            x: 0, y: 0,
+            phase: 'chord', // 阶段：弦(A→B)或劣弧(B→A)
+            progress: 0,
+            startPos: 0
+        };
+
+        // 初始化
+        function init() {
+            calculatePointsAndLengths();
+            setupEventListeners();
+            resetBugs();
+            draw();
+        }
+
+        // 计算A、B点坐标和各部分长度
+        function calculatePointsAndLengths() {
+            // 用二分法计算劣弧角度（满足比值条件）
+            let low = 0.1, high = Math.PI;
+            for (let i = 0; i < 50; i++) {
+                const mid = (low + high) / 2;
+                const major = 2 * Math.PI - mid;
+                const chord = 2 * radius * Math.sin(mid / 2);
+                const left = chord + radius * major;
+                const right = ratio * (chord + radius * mid);
+                if (left > right) low = mid;
+                else high = mid;
+            }
+            minorArcAngle = low;
+            majorArcAngle = 2 * Math.PI - minorArcAngle;
+
+            // 计算长度
+            chordLength = 2 * radius * Math.sin(minorArcAngle / 2);
+            minorArcLength = radius * minorArcAngle;
+            majorArcLength = radius * majorArcAngle;
+
+            // 总路径长度
+            bug1TotalPath = majorArcLength + chordLength; // 红色：优弧+弦
+            bug2TotalPath = chordLength + minorArcLength; // 蓝色：弦+劣弧
+
+            // A点和B点坐标
+            pointA = { x: centerX + radius, y: centerY };
+            pointB = {
+                x: centerX + radius * Math.cos(minorArcAngle),
+                y: centerY + radius * Math.sin(minorArcAngle)
+            };
+        }
+
+        // 设置事件监听
+        function setupEventListeners() {
+document.getElementById('ratioInput').addEventListener('input', function() {
+    try {
+        // 使用eval计算表达式（注意：实际应用中应考虑安全性）
+        ratio = eval(this.value);
+        document.getElementById('ratioValue').textContent = ratio;
+        calculatePointsAndLengths();
+        resetBugs();
+        draw();
+    } catch (e) {
+        console.error("表达式错误:", e);
+        // 可以添加错误提示
+    }
+});
+
+            // 速度调整（增大到1.0）
+            document.getElementById('speedSlider').addEventListener('input', function() {
+                speed = parseFloat(this.value);
+                document.getElementById('speedValue').textContent = speed.toFixed(2);
+            });
+
+            // 红色虫子（优弧）起始位置调整
+            document.getElementById('bug1PosSlider').addEventListener('input', function() {
+                bug1.startPos = parseInt(this.value);
+                document.getElementById('bug1PosValue').textContent = `${bug1.startPos}%`;
+                setBugStartPosition(bug1);
+                draw();
+            });
+
+            // 蓝色虫子（劣弧）起始位置调整
+            document.getElementById('bug2PosSlider').addEventListener('input', function() {
+                bug2.startPos = parseInt(this.value);
+                document.getElementById('bug2PosValue').textContent = `${bug2.startPos}%`;
+                setBugStartPosition(bug2);
+                draw();
+            });
+
+            // 开始按钮
+            document.getElementById('startBtn').addEventListener('click', function() {
+                if (!isRunning) {
+                    isRunning = true;
+                    animate();
+                }
+            });
+
+            // 停止按钮
+            document.getElementById('stopBtn').addEventListener('click', function() {
+                isRunning = false;
+                if (animationId) {
+                    cancelAnimationFrame(animationId);
+                    animationId = null;
+                }
+            });
+
+            // 重置按钮
+            document.getElementById('resetBtn').addEventListener('click', function() {
+                resetBugs();
+                draw();
+            });
+        }
+
+        // 重置虫子位置
+        function resetBugs() {
+            setBugStartPosition(bug1);
+            setBugStartPosition(bug2);
+        }
+
+        // 设置虫子起始位置
+        function setBugStartPosition(bug) {
+            const totalRatio = bug.startPos / 100;
+            const isBug1 = bug === bug1;
+            const totalPath = isBug1 ? bug1TotalPath : bug2TotalPath;
+            const arcLength = isBug1 ? majorArcLength : minorArcLength;
+
+            // 红色虫子（优弧+弦）的起始位置计算
+            if (isBug1) {
+                const arcRatio = arcLength / totalPath;
+                if (totalRatio < arcRatio) {
+                    bug.phase = 'arc';
+                    bug.progress = totalRatio / arcRatio;
+                } else {
+                    bug.phase = 'chord';
+                    bug.progress = (totalRatio - arcRatio) / (1 - arcRatio);
+                }
+            }
+            // 蓝色虫子（弦+劣弧）的起始位置计算
+            else {
+                const chordRatio = chordLength / totalPath;
+                if (totalRatio < chordRatio) {
+                    bug.phase = 'chord';
+                    bug.progress = totalRatio / chordRatio;
+                } else {
+                    bug.phase = 'arc';
+                    bug.progress = (totalRatio - chordRatio) / (1 - chordRatio);
+                }
+            }
+
+            // 计算坐标
+            updateBugPosition(bug);
+        }
+
+        // 绘制场景
+        function draw() {
+            // 清空画布
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // 绘制圆
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+            ctx.strokeStyle = '#ccc';
+            ctx.stroke();
+
+            // 绘制弦AB
+            ctx.beginPath();
+            ctx.moveTo(pointA.x, pointA.y);
+            ctx.lineTo(pointB.x, pointB.y);
+            ctx.strokeStyle = '#666';
+            ctx.stroke();
+
+            // 绘制优弧（红色路径A→B）
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, minorArcAngle, true);
+            ctx.strokeStyle = 'rgba(255,0,0,0.3)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // 绘制劣弧（蓝色路径B→A）
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, minorArcAngle, 0, true);
+            ctx.strokeStyle = 'rgba(0,0,255,0.3)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // 标记A和B点
+            drawPoint(pointA.x, pointA.y, 'A');
+            drawPoint(pointB.x, pointB.y, 'B');
+
+            // 绘制虫子
+            drawBugPosition();
+        }
+
+        // 绘制点和标签
+        function drawPoint(x, y, label) {
+            ctx.beginPath();
+            ctx.arc(x, y, 6, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.strokeStyle = '#333';
+            ctx.fill();
+            ctx.stroke();
+            ctx.fillStyle = '#333';
+            ctx.textAlign = 'center';
+            ctx.fillText(label, x, y - 10);
+        }
+
+        // 绘制虫子位置
+        function drawBugPosition() {
+            // 红色虫子
+            ctx.beginPath();
+            ctx.arc(bug1.x, bug1.y, 8, 0, 2 * Math.PI);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+
+            // 蓝色虫子
+            ctx.beginPath();
+            ctx.arc(bug2.x, bug2.y, 8, 0, 2 * Math.PI);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+        }
+
+        // 更新虫子位置
+        function updateBugs() {
+            if (!isRunning) return;
+
+            // 更新红色虫子（优弧A→B + 弦B→A）
+            updateBugMovement(bug1, majorArcLength);
+
+            // 更新蓝色虫子（弦A→B + 劣弧B→A）
+            updateBugMovement(bug2, minorArcLength);
+
+            // 不再需要更新DOM位置，因为已经移除了HTML虫子元素
+        }
+
+        // 更新单个虫子的运动
+        function updateBugMovement(bug, arcLength) {
+            const phaseLength = bug.phase === 'arc' ? arcLength : chordLength;
+            bug.progress += speed / (phaseLength)*10; // 速度系数调整，避免过快
+
+            // 阶段切换
+            if (bug.progress >= 1) {
+                const remaining = bug.progress - 1;
+                bug.phase = bug.phase === 'arc' ? 'chord' : 'arc';
+                bug.progress = remaining;
+            }
+
+            // 更新位置
+            updateBugPosition(bug, arcLength);
+        }
+
+        // 计算虫子当前位置坐标
+        function updateBugPosition(bug, arcLength = majorArcLength) {
+            if (bug === bug1) {
+                // 红色虫子（优弧+反向弦）
+                if (bug.phase === 'arc') {
+                    // 优弧A→B（逆时针）
+                    const angle = 0 - majorArcAngle * bug.progress;
+                    bug.x = centerX + radius * Math.cos(angle);
+                    bug.y = centerY + radius * Math.sin(angle);
+                } else {
+                    // 弦B→A（反向）
+                    bug.x = pointB.x + (pointA.x - pointB.x) * bug.progress;
+                    bug.y = pointB.y + (pointA.y - pointB.y) * bug.progress;
+                }
+            } else {
+                // 蓝色虫子（正向弦+劣弧）
+                if (bug.phase === 'chord') {
+                    // 弦A→B（正向）
+                    bug.x = pointA.x + (pointB.x - pointA.x) * bug.progress;
+                    bug.y = pointA.y + (pointB.y - pointA.y) * bug.progress;
+                } else {
+                    // 劣弧B→A（顺时针）
+                    const angle = minorArcAngle - minorArcAngle * bug.progress;
+                    bug.x = centerX + radius * Math.cos(angle);
+                    bug.y = centerY + radius * Math.sin(angle);
+                }
+            }
+        }
+        // 动画循环
+        function animate() {
+            if (!isRunning) return; 
+            draw();
+            updateBugs();
+            animationId = requestAnimationFrame(animate);
+        }
+        // 启动
+        init();
+    </script>
+</body>
 
   </div>
 
@@ -706,6 +1166,13 @@ a.nav-link:hover{
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/junxun/">军训随笔</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/%E5%82%85%E9%87%8C%E5%8F%B6/">积分变换第一 · 傅里叶变换</a>
         </li>
       
@@ -728,13 +1195,6 @@ a.nav-link:hover{
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/">数论小发现</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/">解析数论笔记（3）</a>
         </li>
       
     </ul>
@@ -855,6 +1315,11 @@ a.nav-link:hover{
               
 
 
+
+  <section id="toc-wrapper" class="d-none ps-0 pe-4">
+    <h2 class="panel-heading ps-3 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             
@@ -1484,9 +1949,16 @@ a.nav-link:hover{
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.25.0/dist/tocbot.min.js"></script>
 
 
 

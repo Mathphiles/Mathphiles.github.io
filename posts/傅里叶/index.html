@@ -752,7 +752,7 @@ a.nav-link:hover{
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="3035 words"
+  title="3058 words"
 >
   <em>16 min</em> read</span>
 
@@ -767,6 +767,8 @@ a.nav-link:hover{
 <p>​由于圆周运动的中心恒为原点，故下式成立：</p>
 
 \[\int_0^{nT}e^{i\omega t}dt=0\quad(\omega\ne0,\quad T=\frac{2\pi}{\omega})\tag1\]
+
+<p>进一步地，若积分覆盖整数倍的单位圆都满足(1)式。</p>
 
 <p>设函数 f(t) 可表示成</p>
 
@@ -842,7 +844,7 @@ a.nav-link:hover{
 
 <p>如果 $f(t)$ 是周期函数，它能完整地用傅里叶级数表示，但它反而求不出傅里叶变换。因为它的分量是离散分布的，求不出分布密度。</p>
 
-<p>例如周期函数 $f(t)=e^{it}+2e^{2it}$，它的离散频谱为 $\begin{cases} c_1=1\ c_2=2\ c_n=0&amp;n\ne1,2\ \end{cases}$。我们试着求它的傅里叶变换：</p>
+<p>例如周期函数 $f(t)=e^{it}+2e^{2it}$，它的离散频谱为 \(\begin{cases} c_1=1\\ c_2=2\\ c_n=0&amp;n\ne1,2\\ \end{cases}\)。我们试着求它的傅里叶变换：</p>
 
 \[\mathscr F[f(t)]=\int_{-\infty}^{+\infty}(e^{it}+2e^{2it})e^{-i\omega t}dt\]
 
@@ -864,7 +866,7 @@ a.nav-link:hover{
 
 <p>②满足积分 $\int_{-\infty}^{+\infty}\delta(x)dx=1$。</p>
 
-<p>显然，$\delta$ 函数并不能简单地记为 $\delta(x)=\begin{cases} +\infty,&amp;x=0\ 0,&amp;x\ne0\ \end{cases}$，因为这并不能体现性质②，也就无法体现 $\delta(x)$ 与 $2\delta(x)$ 的区别。$\delta$ 函数有许多直观的近似方法。</p>
+<p>显然，$\delta$ 函数并不能简单地记为 \(\delta(x)=\begin{cases} +\infty,&amp;x=0\\ 0,&amp;x\ne0\\ \end{cases}\)，因为这并不能体现性质②，也就无法体现 $\delta(x)$ 与 $2\delta(x)$ 的区别。$\delta$ 函数有许多直观的近似方法。</p>
 
 <p>通常，在画函数图像时，冲激函数用一箭头表示，并标上它的<strong>冲激强度</strong>。$A\delta(x)$ 在 $x=0$ 的冲激强度就是 $A$。</p>
 
@@ -900,8 +902,9 @@ a.nav-link:hover{
 
 <p>设 $\mathscr F[f(t)]=F(\omega),\quad \mathscr F[g(t)]=G(\omega)$，$\alpha,\beta$ 为常数，则</p>
 
-<p>\(\mathscr F[\alpha f(t)+\beta g(t)]=\alpha F(\omega)+\beta G(\omega)\)
-\(\mathscr F^{-1}[\alpha F(\omega)+\beta G(\omega)]=\alpha f(t)+\beta g(t)\)</p>
+\[\mathscr F[\alpha f(t)+\beta g(t)]=\alpha F(\omega)+\beta G(\omega)\]
+
+\[\mathscr F^{-1}[\alpha F(\omega)+\beta G(\omega)]=\alpha f(t)+\beta g(t)\]
 
 <p>傅里叶变换的本质，就是用各种频率不同的周期函数（频域）线性表示原始函数（时域），必然具有线性性。这与积分的线性性是一致的。</p>
 
@@ -909,8 +912,9 @@ a.nav-link:hover{
 
 <p>设 $\mathscr F[f(t)]=F(\omega)$，$t_0,\omega_0$ 为常数，则</p>
 
-<p>\(\mathscr F[f(t-t_0)]=e^{-i\omega t_0}F(\omega)\)
-\(\mathscr F^{-1}[F(\omega-\omega_0)]=e^{i\omega_0 t}f(t)\)</p>
+\[\mathscr F[f(t-t_0)]=e^{-i\omega t_0}F(\omega)\]
+
+\[\mathscr F^{-1}[F(\omega-\omega_0)]=e^{i\omega_0 t}f(t)\]
 
 <p>把时域的函数向右平移了 $t_0$，相当于时间起点改到了 $-t_0$，那么频域的相位也要相应地退回。分量 $e^{i\omega t}$ 在时刻 $-t_0$ 的值 $e^{-i\omega t_0}$ 的值作为起点，因此 $F(\omega)$ 乘上了该量。</p>
 
@@ -950,8 +954,9 @@ a.nav-link:hover{
 
 <p>设 $\mathscr F[f(t)]=F(\omega)$，只要相关的导数存在，则</p>
 
-<p>\(\mathscr F\left[\frac{d^nf(t)}{dt^n}\right]=(i\omega)^nF(\omega)\)
-\(\mathscr F^{-1}\left[\frac{d^nF(\omega)}{d\omega^n}\right]=(-it)^nf(t)\)</p>
+\[\mathscr F\left[\frac{d^nf(t)}{dt^n}\right]=(i\omega)^nF(\omega)\]
+
+\[\mathscr F^{-1}\left[\frac{d^nF(\omega)}{d\omega^n}\right]=(-it)^nf(t)\]
 
 <p>对于复值函数 $f(t)$，$f’(t)$ 的含义是复值速度，其中实部表示沿实轴方向的速度，虚部表示沿虚轴方向的速度。每次对 $e^{i\omega t}$ 求导会让起点逆时针旋转 $90^\circ$ 并伸缩至 $\omega$ 倍，但不改变频率。</p>
 
@@ -1124,6 +1129,13 @@ a.nav-link:hover{
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/junxun/">军训随笔</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/%E5%82%85%E9%87%8C%E5%8F%B6/">积分变换第一 · 傅里叶变换</a>
         </li>
       
@@ -1146,13 +1158,6 @@ a.nav-link:hover{
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/">数论小发现</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/">解析数论笔记（3）</a>
         </li>
       
     </ul>
@@ -1617,9 +1622,13 @@ Cauchy-Goursat 积分定理
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/junxun/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>军训随笔</p>
+    </a>
   
 </nav>
 

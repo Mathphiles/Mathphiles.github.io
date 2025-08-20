@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-16T16:54:26+08:00</updated>
+  <updated>2025-08-20T18:06:37+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,34 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>军训随笔</title>
+    <link href="/posts/junxun/" rel="alternate" type="text/html" title="军训随笔" />
+    <published>2025-08-18T00:00:00+08:00</published>
+  
+    <updated>2025-08-18T00:00:00+08:00</updated>
+  
+    <id>/posts/junxun/</id>
+    <content src="/posts/junxun/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="随笔" />
+    
+  
+
+  <summary>从动员大会落座，到XX的形影消失在同学们的欢声笑语中，军训的日子承载了太多深刻的印迹。五天时光虽短暂，却带给我不可磨灭的印象。
+
+队列训练是军训中最坚实的基本功。从立正到看齐，从齐步到正步，每一个部位，每一个动作都需经历反复锤炼。炎炎烈日炙烤着大地，阳光卷着热浪包裹着我们，顷刻间汗如雨下。擦汗的毛巾拧了一次又一次，却仍止不住蝉鸣的聒噪。汗雨连珠从额角滑落，迷彩衣领浸透在喝下去不久的水里。然而，正是这日复一日的枯燥与磨砺，悄然铸就了钢铁般的纪律与坚韧不拔的忍耐力。
+
+军训的精彩更在于那些需要齐心协力的拓展项目。翻墙时，三米的高度使人望而生畏。但事实证明，是我多虑了。两位同学挺身而出，亲自做人梯将别人抬起。坚实的双手托举着伙伴，上方伸下一双双有力的援手奋力向上拉拽。最终，我们班完成44人上墙的佳绩，为1-X班中第一名。尤其可敬的是XXX同学，甘作托举者，为他人默默奉献而不居功。正是因为有...</summary>
+
+  </entry>
 
   
   <entry>
@@ -46,6 +74,8 @@
 
 [\int_0^{nT}e^{i\omega t}dt=0\quad(\omega\ne0,\quad T=\frac{2\pi}{\omega})\tag1]
 
+进一步地，若积分覆盖整数倍的单位圆都满足(1)式。
+
 设函数 f(t) 可表示成
 
 [f(t)=\sum_{k=-\infty}^{+\infty}c_ke^{ik\omega_0t}]
@@ -54,7 +84,7 @@
 
 上式两端同时乘以 $e^{-in\omega_0t}$ 得
 
-[f(t)e^{-in\omega_0t}=\sum_{k=-\infty}^{+\infty}c_ke^{i(k-n)\omeg...</summary>
+[f(t)e^{-in\omega_0t}=\sum_{k=-\infty}...</summary>
 
   </entry>
 
@@ -129,32 +159,6 @@
   
 
   <summary>非官方解法</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>解析数论笔记（3）</title>
-    <link href="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/" rel="alternate" type="text/html" title="解析数论笔记（3）" />
-    <published>2025-07-02T00:00:00+08:00</published>
-  
-    <updated>2025-07-02T00:00:00+08:00</updated>
-  
-    <id>/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/</id>
-    <content src="/posts/%E8%A7%A3%E6%9E%90%E6%95%B0%E8%AE%BA%E7%AC%94%E8%AE%B0-3/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-    <category term="number theory" />
-    
-  
-
-  <summary>常用公式</summary>
 
   </entry>
 
