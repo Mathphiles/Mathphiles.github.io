@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-20T18:06:37+08:00</updated>
+  <updated>2025-09-16T23:13:29+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>上中赋</title>
+    <link href="/posts/shsily/" rel="alternate" type="text/html" title="上中赋" />
+    <published>2025-09-14T00:00:00+08:00</published>
+  
+    <updated>2025-09-14T00:00:00+08:00</updated>
+  
+    <id>/posts/shsily/</id>
+    <content src="/posts/shsily/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="文" />
+    
+  
+
+  <summary>虽无李杜之妙笔，犹存景仰之赤诚，遂志以此文。</summary>
+
+  </entry>
 
   
   <entry>
@@ -34,7 +58,7 @@
 
   
     
-    <category term="随笔" />
+    <category term="文" />
     
   
 
@@ -135,30 +159,6 @@
   
 
   <summary>附带验证工具</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>上中自招笔试数学</title>
-    <link href="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/" rel="alternate" type="text/html" title="上中自招笔试数学" />
-    <published>2025-07-04T00:00:00+08:00</published>
-  
-    <updated>2025-07-04T00:00:00+08:00</updated>
-  
-    <id>/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/</id>
-    <content src="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E7%AC%94%E8%AF%95%E6%95%B0%E5%AD%A6/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-  
-
-  <summary>非官方解法</summary>
 
   </entry>
 
