@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-16T23:13:29+08:00</updated>
+  <updated>2025-09-21T17:45:22+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,78 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>voice</title>
+    <link href="/posts/voice/" rel="alternate" type="text/html" title="voice" />
+    <published>2025-09-21T00:00:00+08:00</published>
+  
+    <updated>2025-09-21T00:00:00+08:00</updated>
+  
+    <id>/posts/voice/</id>
+    <content src="/posts/voice/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>语态</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>时态，语气，格</title>
+    <link href="/posts/stqg/" rel="alternate" type="text/html" title="时态，语气，格" />
+    <published>2025-09-21T00:00:00+08:00</published>
+  
+    <updated>2025-09-21T00:00:00+08:00</updated>
+  
+    <id>/posts/stqg/</id>
+    <content src="/posts/stqg/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>现在：&amp;amp;lt;现&amp;amp;gt;  
+过去：&amp;amp;lt;过&amp;amp;gt;  
+将来：will &amp;amp;lt;现&amp;amp;gt;
+
+一般：&amp;amp;lt;现&amp;amp;gt;  
+进行：be &amp;amp;lt;现分&amp;amp;gt;   
+完成：have &amp;amp;lt;过分&amp;amp;gt;
+
+被动：be &amp;amp;lt;过分&amp;amp;gt;
+
+虚拟语气：if+
+　现：过去一般；过去(were)将来一般
+　过：过去完成；过去将来完成
+　将：过去将来(should)一般；过去将来一般
+愿望：wish+
+　现：过去一般
+　过：过去完成
+　将：过去将来(would,could,might)一般
+
+
+从句时态：主将从现，主过从过，态看意思和连接词
+
+who/whom:
+
+代入him若不通则是who，否则whom</summary>
+
+  </entry>
 
   
   <entry>
@@ -109,56 +181,6 @@
 上式两端同时乘以 $e^{-in\omega_0t}$ 得
 
 [f(t)e^{-in\omega_0t}=\sum_{k=-\infty}...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>上中自招面试数学</title>
-    <link href="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/" rel="alternate" type="text/html" title="上中自招面试数学" />
-    <published>2025-07-07T00:00:00+08:00</published>
-  
-    <updated>2025-07-07T00:00:00+08:00</updated>
-  
-    <id>/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/</id>
-    <content src="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-  
-
-  <summary>非官方解法</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>数论小发现</title>
-    <link href="/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/" rel="alternate" type="text/html" title="数论小发现" />
-    <published>2025-07-04T00:00:00+08:00</published>
-  
-    <updated>2025-07-04T00:00:00+08:00</updated>
-  
-    <id>/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/</id>
-    <content src="/posts/%E6%95%B0%E8%AE%BA%E5%B0%8F%E5%8F%91%E7%8E%B0/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-    <category term="number theory" />
-    
-  
-
-  <summary>附带验证工具</summary>
 
   </entry>
 
