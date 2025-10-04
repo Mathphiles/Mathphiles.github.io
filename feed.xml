@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-21T17:45:22+08:00</updated>
+  <updated>2025-10-05T01:33:53+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -86,7 +86,10 @@
 
 who/whom:
 
-代入him若不通则是who，否则whom</summary>
+
+  Mr. Smith introduced a young scientist _____ （he said）插入语 he had met at an international conference.
+A. who
+B....</summary>
 
   </entry>
 
@@ -111,34 +114,6 @@ who/whom:
   
 
   <summary>虽无李杜之妙笔，犹存景仰之赤诚，遂志以此文。</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>军训随笔</title>
-    <link href="/posts/junxun/" rel="alternate" type="text/html" title="军训随笔" />
-    <published>2025-08-18T00:00:00+08:00</published>
-  
-    <updated>2025-08-18T00:00:00+08:00</updated>
-  
-    <id>/posts/junxun/</id>
-    <content src="/posts/junxun/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="文" />
-    
-  
-
-  <summary>从动员大会落座，到XX的形影消失在同学们的欢声笑语中，军训的日子承载了太多深刻的印迹。五天时光虽短暂，却带给我不可磨灭的印象。
-
-队列训练是军训中最坚实的基本功。从立正到看齐，从齐步到正步，每一个部位，每一个动作都需经历反复锤炼。炎炎烈日炙烤着大地，阳光卷着热浪包裹着我们，顷刻间汗如雨下。擦汗的毛巾拧了一次又一次，却仍止不住蝉鸣的聒噪。汗雨连珠从额角滑落，迷彩衣领浸透在喝下去不久的水里。然而，正是这日复一日的枯燥与磨砺，悄然铸就了钢铁般的纪律与坚韧不拔的忍耐力。
-
-军训的精彩更在于那些需要齐心协力的拓展项目。翻墙时，三米的高度使人望而生畏。但事实证明，是我多虑了。两位同学挺身而出，亲自做人梯将别人抬起。坚实的双手托举着伙伴，上方伸下一双双有力的援手奋力向上拉拽。最终，我们班完成44人上墙的佳绩，为1-X班中第一名。尤其可敬的是XXX同学，甘作托举者，为他人默默奉献而不居功。正是因为有...</summary>
 
   </entry>
 
@@ -181,6 +156,30 @@ who/whom:
 上式两端同时乘以 $e^{-in\omega_0t}$ 得
 
 [f(t)e^{-in\omega_0t}=\sum_{k=-\infty}...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>上中自招面试数学</title>
+    <link href="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/" rel="alternate" type="text/html" title="上中自招面试数学" />
+    <published>2025-07-07T00:00:00+08:00</published>
+  
+    <updated>2025-07-07T00:00:00+08:00</updated>
+  
+    <id>/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/</id>
+    <content src="/posts/%E4%B8%8A%E4%B8%AD%E8%87%AA%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%95%B0%E5%AD%A6/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="math" />
+    
+  
+
+  <summary>非官方解法</summary>
 
   </entry>
 
