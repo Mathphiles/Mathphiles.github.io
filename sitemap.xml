@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/posts/%E6%A0%BC%E5%BE%8B/</loc>
-<lastmod>0225-10-05T00:00:00+08:00</lastmod>
-</url>
-<url>
 <loc>/posts/modifying-Cauchy-Goursat-theorem/</loc>
 <lastmod>2023-09-30T00:00:00+08:00</lastmod>
 </url>
@@ -109,20 +105,24 @@
 <lastmod>2025-09-21T00:00:00+08:00</lastmod>
 </url>
 <url>
+<loc>/posts/%E6%A0%BC%E5%BE%8B%E6%A3%80%E6%9F%A5/</loc>
+<lastmod>2025-10-05T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>/categories/</loc>
-<lastmod>2025-10-05T01:33:53+08:00</lastmod>
+<lastmod>2025-10-05T22:45:37+08:00</lastmod>
 </url>
 <url>
 <loc>/tags/</loc>
-<lastmod>2025-10-05T01:33:53+08:00</lastmod>
+<lastmod>2025-10-05T22:45:37+08:00</lastmod>
 </url>
 <url>
 <loc>/timeline/</loc>
-<lastmod>2025-10-05T01:33:53+08:00</lastmod>
+<lastmod>2025-10-05T22:45:37+08:00</lastmod>
 </url>
 <url>
 <loc>/about/</loc>
-<lastmod>2025-10-05T01:33:53+08:00</lastmod>
+<lastmod>2025-10-05T22:45:37+08:00</lastmod>
 </url>
 <url>
 <loc>/</loc>
