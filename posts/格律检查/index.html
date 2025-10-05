@@ -1513,6 +1513,21 @@ a.nav-link:hover{
         "平平仄"
       ]
     }
+  },
+  {
+    id: "tianjingsha",
+    name: "天净沙",
+    pattern: {
+      句式: [6,6,6,4,6],
+      rhyme: [0,1,2,3,4],
+      平仄: [
+        "中中中仄平平",
+        "仄平平仄平平",
+        "仄仄平平仄中",
+        "中平中仄",
+        "仄平平仄平平"
+      ]
+    }
   }
 ];
     
@@ -2959,7 +2974,7 @@ a.nav-link:hover{
         for (let c of char) {
           findChar(c);
         }
-      }
+      }else{findChar(char);}
       function findChar(char){
       // 查询平水韵数据库（支持多音字）
       const rhymeInfo = findAllCharInRhyme(char);
