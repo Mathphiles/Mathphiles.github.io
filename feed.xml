@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-10-06T00:06:01+08:00</updated>
+  <updated>2026-03-22T17:55:35+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -13,10 +13,177 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2025 Charlie </rights>
+  <rights> © 2026 Charlie </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>不定式</title>
+    <link href="/posts/todo/" rel="alternate" type="text/html" title="不定式" />
+    <published>2026-03-22T00:00:00+08:00</published>
+  
+    <updated>2026-03-22T00:00:00+08:00</updated>
+  
+    <id>/posts/todo/</id>
+    <content src="/posts/todo/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>作宾语
+
+常接不定式作宾语的动词：afford, agree, aim, attempt, appear, choose, claim, demand, decide, desire, determine, expect, fail, hope, hesitate, happen, intend, long, learn, manage, offer, order, plan, promise, pretend, prepare, refuse, seem, strive, seek, tend, threaten, want, wish, volunteer
+
+作补语
+
+
+  动词 + sb. to do sth.
+    
+      advise, allow, ask, beg, cause, expect, force, forbid, get, order, permit...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>非谓语</title>
+    <link href="/posts/fwy/" rel="alternate" type="text/html" title="非谓语" />
+    <published>2026-03-22T00:00:00+08:00</published>
+  
+    <updated>2026-03-22T00:00:00+08:00</updated>
+  
+    <id>/posts/fwy/</id>
+    <content src="/posts/fwy/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>区分动名词和现在分词
+主、宾：动名词
+定状补：现在分词
+表：能互换动名词
+
+定：表状态现在分词freezing weather -&amp;amp;gt; the weather is freezing.
+
+done/being done：现在分词/动名词-&amp;amp;gt;在句首时有逗号用done
+done/being done：都是现在分词-&amp;amp;gt;表条件/表正在
+动名词与不定式的区别：
+to do去做；doing 做；
+动名词表达的是： 状态，性质，心境，抽象，经常性，已发生的
+不定式表达的是： 目的，结果，原因，具体，一次性，将发生的
+
+to have done本想做但未做；having done现完
+动词：hope, expect, intend, mean, want 等
+
+  I intended to have called on you. = I had intended to call o...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>分词</title>
+    <link href="/posts/fc/" rel="alternate" type="text/html" title="分词" />
+    <published>2026-03-22T00:00:00+08:00</published>
+  
+    <updated>2026-03-22T00:00:00+08:00</updated>
+  
+    <id>/posts/fc/</id>
+    <content src="/posts/fc/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>一、分词的用法
+
+分词包括-ing分词和-ed分词，可充当句子的定语、表语、补语和状语。
+
+
+  作定语：polluted air, sleeping baby; freezing weather, frozen food
+  作表语：The news is inspiring. / The glass is broken.
+  作补语：hear her singing a song; hear a song played on the piano
+  作状语：Given time, he’ll make a first-class tennis player.
+
+
+二、分词的形式
+
+
+  一般主动式：doing
+  一般被动式：being done
+  完成主动式：having done
+  完成被动式：having been done
+  完成/被动：done
+  否定式：not...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>动名词</title>
+    <link href="/posts/dmc/" rel="alternate" type="text/html" title="动名词" />
+    <published>2026-03-22T00:00:00+08:00</published>
+  
+    <updated>2026-03-22T00:00:00+08:00</updated>
+  
+    <id>/posts/dmc/</id>
+    <content src="/posts/dmc/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>动名词的用法
+
+a sleeping bag（区别：a sleeping boy 正在睡觉的男孩）
+
+动名词复合结构
+
+名词所有格和形容词性物主代词 + v-ing
+
+
+  My father’s being ill worried us greatly.
+
+
+动名词的复合结构作宾语时，可以用宾格代替所有格
+
+
+  We like Tom’s (Tom) singing the English song.
+  I’m quite certain about his/him keeping his promise.
+
+
+动名词作主语
+
+动名词和不定式作主语的区别：
+
+
+  动名词表抽象、表泛指；不定式表具体、表特指。
+  Translating Chinese poems into English is hard.
+  The Chinese poem is short; to put...</summary>
+
+  </entry>
 
   
   <entry>
@@ -85,147 +252,6 @@
             
             词
          ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>voice</title>
-    <link href="/posts/voice/" rel="alternate" type="text/html" title="voice" />
-    <published>2025-09-21T00:00:00+08:00</published>
-  
-    <updated>2025-09-21T00:00:00+08:00</updated>
-  
-    <id>/posts/voice/</id>
-    <content src="/posts/voice/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="学习" />
-    
-  
-
-  <summary>语态</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>时态，语气，格</title>
-    <link href="/posts/stqg/" rel="alternate" type="text/html" title="时态，语气，格" />
-    <published>2025-09-21T00:00:00+08:00</published>
-  
-    <updated>2025-09-21T00:00:00+08:00</updated>
-  
-    <id>/posts/stqg/</id>
-    <content src="/posts/stqg/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="学习" />
-    
-  
-
-  <summary>现在：&amp;amp;lt;现&amp;amp;gt;  
-过去：&amp;amp;lt;过&amp;amp;gt;  
-将来：will &amp;amp;lt;现&amp;amp;gt;
-
-一般：&amp;amp;lt;现&amp;amp;gt;  
-进行：be &amp;amp;lt;现分&amp;amp;gt;   
-完成：have &amp;amp;lt;过分&amp;amp;gt;
-
-被动：be &amp;amp;lt;过分&amp;amp;gt;
-
-虚拟语气：if+
-　现：过去一般；过去(were)将来一般
-　过：过去完成；过去将来完成
-　将：过去将来(should)一般；过去将来一般
-愿望：wish+
-　现：过去一般
-　过：过去完成
-　将：过去将来(would,could,might)一般
-
-
-从句时态：主将从现，主过从过，态看意思和连接词
-
-who/whom:
-
-
-  Mr. Smith introduced a young scientist _____ （he said）插入语 he had met at an international conference.
-A. who
-B....</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>上中赋</title>
-    <link href="/posts/shsily/" rel="alternate" type="text/html" title="上中赋" />
-    <published>2025-09-14T00:00:00+08:00</published>
-  
-    <updated>2025-09-14T00:00:00+08:00</updated>
-  
-    <id>/posts/shsily/</id>
-    <content src="/posts/shsily/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="文" />
-    
-  
-
-  <summary>虽无李杜之妙笔，犹存景仰之赤诚，遂志以此文。</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>积分变换第一 · 傅里叶变换</title>
-    <link href="/posts/%E5%82%85%E9%87%8C%E5%8F%B6/" rel="alternate" type="text/html" title="积分变换第一 · 傅里叶变换" />
-    <published>2025-08-16T00:00:00+08:00</published>
-  
-    <updated>2025-08-16T00:00:00+08:00</updated>
-  
-    <id>/posts/%E5%82%85%E9%87%8C%E5%8F%B6/</id>
-    <content src="/posts/%E5%82%85%E9%87%8C%E5%8F%B6/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="math" />
-    
-    <category term="analysis" />
-    
-  
-
-  <summary>傅里叶级数
-
-​由于圆周运动的中心恒为原点，故下式成立：
-
-[\int_0^{nT}e^{i\omega t}dt=0\quad(\omega\ne0,\quad T=\frac{2\pi}{\omega})\tag1]
-
-进一步地，若积分覆盖整数倍的单位圆都满足(1)式。
-
-设函数 f(t) 可表示成
-
-[f(t)=\sum_{k=-\infty}^{+\infty}c_ke^{ik\omega_0t}]
-
-[=\cdots+c_{-2}e^{-2i\omega_0t}+c_{-1}e^{-1i\omega_0t}+c_0e^{0i\omega_0t}+c_1e^{1i\omega_0t}+c_2e^{2i\omega_0t}+\cdots]
-
-上式两端同时乘以 $e^{-in\omega_0t}$ 得
-
-[f(t)e^{-in\omega_0t}=\sum_{k=-\infty}...</summary>
 
   </entry>
 

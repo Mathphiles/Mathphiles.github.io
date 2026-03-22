@@ -1,4 +1,4 @@
-jekyll build
+call jekyll build
 cd ./_site
 git init
 git add .
