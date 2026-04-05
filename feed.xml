@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Charlie</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-03-22T17:55:35+08:00</updated>
+  <updated>2026-04-06T02:25:08+08:00</updated>
   <author>
     <name>Charlie</name>
     <uri>/</uri>
@@ -17,6 +17,100 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>英语积累</title>
+    <link href="/posts/%E8%8B%B1%E8%AF%AD%E7%A7%AF%E7%B4%AF/" rel="alternate" type="text/html" title="英语积累" />
+    <published>2026-04-06T00:00:00+08:00</published>
+  
+    <updated>2026-04-06T00:00:00+08:00</updated>
+  
+    <id>/posts/%E8%8B%B1%E8%AF%AD%E7%A7%AF%E7%B4%AF/</id>
+    <content src="/posts/%E8%8B%B1%E8%AF%AD%E7%A7%AF%E7%B4%AF/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>Your English TV program has brought home to me the need for some suggestions about how to dispose the food close to the shelf life.
+
+around the corner 指日可待
+
+neglect one’s duty 玩忽职守
+
+take a heavy toll 严重后果
+
+For students, a trade-off between short-term pleasure and long-term goals is necessary.
+
+Taking a nap is a good way to unwind.
+
+Navigating bad mood in time can be helpful in studying.
+
+hands-...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>英语杂</title>
+    <link href="/posts/%E8%8B%B1%E8%AF%AD%E6%9D%82/" rel="alternate" type="text/html" title="英语杂" />
+    <published>2026-04-06T00:00:00+08:00</published>
+  
+    <updated>2026-04-06T00:00:00+08:00</updated>
+  
+    <id>/posts/%E8%8B%B1%E8%AF%AD%E6%9D%82/</id>
+    <content src="/posts/%E8%8B%B1%E8%AF%AD%E6%9D%82/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>can’t be … enough 再也不为过
+
+aabis according to/ apart from/ because of/ instead of/ such as</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>介词和易错拼写</title>
+    <link href="/posts/%E4%BB%8B%E8%AF%8D/" rel="alternate" type="text/html" title="介词和易错拼写" />
+    <published>2026-04-06T00:00:00+08:00</published>
+  
+    <updated>2026-04-06T00:00:00+08:00</updated>
+  
+    <id>/posts/%E4%BB%8B%E8%AF%8D/</id>
+    <content src="/posts/%E4%BB%8B%E8%AF%8D/" />
+    <author>
+      <name>Charlie</name>
+    </author>
+
+  
+    
+    <category term="学习" />
+    
+  
+
+  <summary>prefer to/ integrate into/ replace with/ substitute for
+
+sb. is to blame for sth. / blame sb. for sth. / blame sth. on sb.
+
+accumulate knowledge by reading
+
+devote oneself to doing</summary>
+
+  </entry>
 
   
   <entry>
@@ -71,7 +165,11 @@
     
   
 
-  <summary>区分动名词和现在分词
+  <summary>看成分，析语义
+忆固搭，对并列
+查被动，判时态
+
+区分动名词和现在分词
 主、宾：动名词
 定状补：现在分词
 表：能互换动名词
@@ -88,170 +186,7 @@ to do去做；doing 做；
 to have done本想做但未做；having done现完
 动词：hope, expect, intend, mean, want 等
 
-  I intended to have called on you. = I had intended to call o...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>分词</title>
-    <link href="/posts/fc/" rel="alternate" type="text/html" title="分词" />
-    <published>2026-03-22T00:00:00+08:00</published>
-  
-    <updated>2026-03-22T00:00:00+08:00</updated>
-  
-    <id>/posts/fc/</id>
-    <content src="/posts/fc/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="学习" />
-    
-  
-
-  <summary>一、分词的用法
-
-分词包括-ing分词和-ed分词，可充当句子的定语、表语、补语和状语。
-
-
-  作定语：polluted air, sleeping baby; freezing weather, frozen food
-  作表语：The news is inspiring. / The glass is broken.
-  作补语：hear her singing a song; hear a song played on the piano
-  作状语：Given time, he’ll make a first-class tennis player.
-
-
-二、分词的形式
-
-
-  一般主动式：doing
-  一般被动式：being done
-  完成主动式：having done
-  完成被动式：having been done
-  完成/被动：done
-  否定式：not...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>动名词</title>
-    <link href="/posts/dmc/" rel="alternate" type="text/html" title="动名词" />
-    <published>2026-03-22T00:00:00+08:00</published>
-  
-    <updated>2026-03-22T00:00:00+08:00</updated>
-  
-    <id>/posts/dmc/</id>
-    <content src="/posts/dmc/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-    <category term="学习" />
-    
-  
-
-  <summary>动名词的用法
-
-a sleeping bag（区别：a sleeping boy 正在睡觉的男孩）
-
-动名词复合结构
-
-名词所有格和形容词性物主代词 + v-ing
-
-
-  My father’s being ill worried us greatly.
-
-
-动名词的复合结构作宾语时，可以用宾格代替所有格
-
-
-  We like Tom’s (Tom) singing the English song.
-  I’m quite certain about his/him keeping his promise.
-
-
-动名词作主语
-
-动名词和不定式作主语的区别：
-
-
-  动名词表抽象、表泛指；不定式表具体、表特指。
-  Translating Chinese poems into English is hard.
-  The Chinese poem is short; to put...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>格律检查</title>
-    <link href="/posts/%E6%A0%BC%E5%BE%8B%E6%A3%80%E6%9F%A5/" rel="alternate" type="text/html" title="格律检查" />
-    <published>2025-10-05T00:00:00+08:00</published>
-  
-    <updated>2025-10-05T00:00:00+08:00</updated>
-  
-    <id>/posts/%E6%A0%BC%E5%BE%8B%E6%A3%80%E6%9F%A5/</id>
-    <content src="/posts/%E6%A0%BC%E5%BE%8B%E6%A3%80%E6%9F%A5/" />
-    <author>
-      <name>Charlie</name>
-    </author>
-
-  
-    
-  
-
-  <summary>诗词创作辅助工具
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          体裁选择
-        
-        
-        
-          
-            
-            诗
-          
-          
-          
-            
-              
-              古体诗
-            
-            
-              
-              近体诗
-            
-          
-          
-          
-            
-            词
-         ...</summary>
+  I intended to have called on you. =...</summary>
 
   </entry>
 
